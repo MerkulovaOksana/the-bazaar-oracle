@@ -225,7 +225,7 @@ export default function LandingPage() {
           </p>
           <div className="flex items-center justify-center gap-6 md:gap-12 mb-6">
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-bazaar-green mb-2">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-bazaar-green mb-2 shadow-lg shadow-bazaar-green/20">
                 <img
                   src="https://thebazaar.wiki.gg/images/thumb/a/a1/Bazaar-avatar-vanessa.jpg/200px-Bazaar-avatar-vanessa.jpg"
                   alt="Vanessa"
@@ -236,22 +236,26 @@ export default function LandingPage() {
               <span className="text-xs text-bazaar-muted">500 HP</span>
             </div>
             <div className="text-center">
-              <span className="text-2xl md:text-3xl font-black text-bazaar-accent">VS</span>
+              <span className="text-3xl md:text-4xl font-black text-bazaar-accent">VS</span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-bazaar-surface border-2 border-bazaar-red flex items-center justify-center text-2xl md:text-3xl mb-2">
-                🐉
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-bazaar-red mb-2 shadow-lg shadow-bazaar-red/20">
+                <img
+                  src="https://thebazaar.wiki.gg/images/Monster_Dragon_Portrait.png"
+                  alt="Dragon"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-sm font-semibold text-bazaar-red">Дракончик</span>
-              <span className="text-xs text-bazaar-muted">450 HP</span>
+              <span className="text-sm font-semibold text-bazaar-red">Dragon</span>
+              <span className="text-xs text-bazaar-muted">3675 HP</span>
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-block bg-bazaar-green/15 border border-bazaar-green/30 text-bazaar-green font-bold px-6 md:px-8 py-3 rounded-xl text-lg md:text-xl">
-              ✅ ПОБЕДА — 327 HP осталось
+            <div className="inline-block bg-bazaar-red/15 border border-bazaar-red/30 text-bazaar-red font-bold px-6 md:px-8 py-3 rounded-xl text-lg md:text-xl">
+              ПОРАЖЕНИЕ — Dragon слишком силён!
             </div>
             <p className="text-xs text-bazaar-muted mt-3">
-              20 кастов • 10.8с боя • 2 крита • Freeze 3.5с
+              42 каста • 28.5с боя • Dragon — Legendary Day 8 босс
             </p>
           </div>
         </div>

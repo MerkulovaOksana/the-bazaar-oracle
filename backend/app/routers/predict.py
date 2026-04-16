@@ -131,4 +131,10 @@ async def get_items_catalog():
 
 @router.get("/monsters")
 async def get_monsters():
-    return {"monsters": [{"id": k, **v} for k, v in MONSTERS.items()]}
+    result = []
+    for k, v in MONSTERS.items():
+        monster = {"id": k}
+        monster.update({key: val for key, val in v.items() if key != "items"})
+        monster["item_count"] = len(v.get("items", []))
+        result.append(monster)
+    return {"monsters": result}
