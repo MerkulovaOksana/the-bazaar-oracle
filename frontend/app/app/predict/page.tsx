@@ -227,7 +227,7 @@ function MonsterCard({
 }
 
 export default function PredictPage() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isLoading: authLoading } = useAuth();
   const router = useRouter();
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -246,13 +246,14 @@ export default function PredictPage() {
   const [itemFilter, setItemFilter] = useState<string>("all");
 
   useEffect(() => {
+    if (authLoading) return;
     if (!isAuthenticated) {
       router.push("/auth");
       return;
     }
     api.getCatalog().then((d) => setCatalog(d.items)).catch(() => {});
     api.getMonsters().then((d) => setMonsters(d.monsters)).catch(() => {});
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, authLoading, router]);
 
   const handleScreenshot = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];

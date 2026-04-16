@@ -12,7 +12,7 @@ interface Message {
 }
 
 export default function ChatPage() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isLoading: authLoading } = useAuth();
   const router = useRouter();
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -22,8 +22,9 @@ export default function ChatPage() {
   const chatEnd = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (authLoading) return;
     if (!isAuthenticated) router.push("/auth");
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, authLoading, router]);
 
   useEffect(() => {
     chatEnd.current?.scrollIntoView({ behavior: "smooth" });

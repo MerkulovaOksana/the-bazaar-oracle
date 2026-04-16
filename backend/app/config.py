@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite+aiosqlite:///./battle_oracle.db"
     secret_key: str = "change-me-in-production-please"
     jwt_algorithm: str = "HS256"
-    jwt_expire_minutes: int = 1440  # 24 hours
+    jwt_expire_minutes: int = 43200  # 30 days
 
     openai_api_key: str = ""
     openai_model: str = "gpt-4o"

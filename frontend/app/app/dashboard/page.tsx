@@ -8,13 +8,14 @@ import { api } from "@/lib/api";
 const FUNNEL_COLORS = ["#c9a84c", "#7c5cbf", "#b87333", "#38bdf8", "#4ade80"];
 
 export default function DashboardPage() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isLoading: authLoading } = useAuth();
   const router = useRouter();
   const [dashboard, setDashboard] = useState<any>(null);
   const [funnel, setFunnel] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (authLoading) return;
     if (!isAuthenticated) {
       router.push("/auth");
       return;
@@ -27,7 +28,7 @@ export default function DashboardPage() {
       })
       .catch(() => {})
       .finally(() => setLoading(false));
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, authLoading, router]);
 
   if (loading) {
     return (

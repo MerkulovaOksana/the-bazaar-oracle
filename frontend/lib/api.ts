@@ -7,6 +7,12 @@ function getToken(): string | null {
   return localStorage.getItem("token");
 }
 
+let onUnauthorized: (() => void) | null = null;
+
+export function setOnUnauthorized(callback: () => void) {
+  onUnauthorized = callback;
+}
+
 async function request<T>(
   path: string,
   options: RequestInit = {}
@@ -29,6 +35,11 @@ async function request<T>(
     headers,
   });
 
+  if (res.status === 401 && onUnauthorized) {
+    onUnauthorized();
+    throw new Error("Сессия истекла, войдите заново");
+  }
+
   if (!res.ok) {
     const error = await res.json().catch(() => ({ detail: res.statusText }));
     throw new Error(error.detail || "Request failed");
@@ -50,6 +61,9 @@ export const api = {
       "/auth/login",
       { method: "POST", body: JSON.stringify({ username, password }) }
     ),
+
+  getMe: () =>
+    request<{ user_id: number; username: string }>("/auth/me"),
 
   // Predict
   predictScreenshot: (file: File) => {

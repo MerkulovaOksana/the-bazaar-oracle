@@ -3,10 +3,11 @@ from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ..database import get_db
+from ..deps import get_current_user
 from ..services.auth import (
     create_user, get_user_by_username, verify_password, create_token, decode_token,
 )
-from ..models.models import AnalyticsEvent
+from ..models.models import AnalyticsEvent, User
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -55,3 +56,8 @@ async def login(req: LoginRequest, db: AsyncSession = Depends(get_db)):
 
     token = create_token(user.id, user.username)
     return TokenResponse(access_token=token, username=user.username, user_id=user.id)
+
+
+@router.get("/me")
+async def get_me(user: User = Depends(get_current_user)):
+    return {"user_id": user.id, "username": user.username}
