@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "thebazaar.wiki.gg",
       },
+      {
+        protocol: "https",
+        hostname: "playthebazaar.com",
+      },
     ],
   },
   async rewrites() {

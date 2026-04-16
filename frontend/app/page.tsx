@@ -2,52 +2,64 @@ import Link from "next/link";
 
 const heroes = [
   {
-    name: "Pygmalien",
-    img: "https://thebazaar.wiki.gg/images/thumb/1/12/Bazaar-avatar-pygmalien.jpg/200px-Bazaar-avatar-pygmalien.jpg",
-    desc: "Мастер исцеления и щитов",
+    name: "Vanessa",
+    role: "Corsair Commander",
+    img: "https://thebazaar.wiki.gg/images/thumb/a/a1/Bazaar-avatar-vanessa.jpg/200px-Bazaar-avatar-vanessa.jpg",
+    color: "from-red-500/30 to-transparent",
   },
   {
-    name: "Vanessa",
-    img: "https://thebazaar.wiki.gg/images/thumb/a/a1/Bazaar-avatar-vanessa.jpg/200px-Bazaar-avatar-vanessa.jpg",
-    desc: "Ядовитый ассасин",
+    name: "Pygmalien",
+    role: "Entre-Pig-Neur",
+    img: "https://thebazaar.wiki.gg/images/thumb/1/12/Bazaar-avatar-pygmalien.jpg/200px-Bazaar-avatar-pygmalien.jpg",
+    color: "from-blue-500/30 to-transparent",
   },
   {
     name: "Dooley",
+    role: "AI-Liberating Robot",
     img: "https://thebazaar.wiki.gg/images/thumb/b/bd/Bazaar-avatar-dooley.jpg/200px-Bazaar-avatar-dooley.jpg",
-    desc: "Инженер со щитами",
+    color: "from-cyan-500/30 to-transparent",
   },
   {
     name: "Mak",
+    role: "Alchemical Immortalist",
     img: "https://thebazaar.wiki.gg/images/thumb/4/48/Bazaar-avatar-mak.jpg/200px-Bazaar-avatar-mak.jpg",
-    desc: "Берсерк ближнего боя",
+    color: "from-green-500/30 to-transparent",
   },
   {
     name: "Stelle",
+    role: "Bright Aeronaut",
     img: "https://thebazaar.wiki.gg/images/thumb/0/0f/Bazaar-avatar-stelle.jpg/200px-Bazaar-avatar-stelle.jpg",
-    desc: "Маг стихий",
+    color: "from-amber-500/30 to-transparent",
   },
   {
-    name: "Quixel",
-    img: "https://thebazaar.wiki.gg/images/thumb/8/80/Bazaar-avatar-quixel.jpg/200px-Bazaar-avatar-quixel.jpg",
-    desc: "Хаотичный изобретатель",
+    name: "Jules",
+    role: "Chef of the Deeps",
+    img: "https://thebazaar.wiki.gg/images/thumb/2/2f/Bazaar-avatar-jules.jpg/200px-Bazaar-avatar-jules.jpg",
+    color: "from-purple-500/30 to-transparent",
+  },
+  {
+    name: "Karnok",
+    role: "Monstrous Hunter",
+    img: "https://playthebazaar.com/images/characterThumbs/Skin_KAR_01a_Thumb.webp",
+    color: "from-rose-500/30 to-transparent",
   },
 ];
 
 const features = [
   {
-    icon: "📷",
+    icon: "📸",
     title: "Анализ скриншотов",
-    desc: "Загрузи скриншот PvE-боя — ИИ распознает все предметы на обеих досках",
+    desc: "GPT-4 Vision распознаёт все предметы на обеих досках по одному скриншоту",
   },
   {
     icon: "⚔",
     title: "Симуляция боя",
-    desc: "Полноценный движок с multicast, cooldown, freeze, burn, poison, haste/slow и щитами",
+    desc: "Движок с multicast, cooldown, freeze, burn, poison, haste, slow и щитами",
   },
   {
     icon: "🤖",
     title: "RAG-ассистент",
-    desc: "Спроси что угодно о механиках игры — ИИ ответит на основе базы знаний",
+    desc: "ИИ-чат отвечает на вопросы о механиках на основе базы знаний игры",
   },
   {
     icon: "🎤",
@@ -57,12 +69,12 @@ const features = [
   {
     icon: "📱",
     title: "Telegram-бот",
-    desc: "Отправь скриншот прямо в Telegram и получи предсказание",
+    desc: "Отправь скриншот в Telegram — получи предсказание мгновенно",
   },
   {
     icon: "📊",
-    title: "Дашборд аналитики",
-    desc: "Отслеживай историю предсказаний, винрейт и статистику использования",
+    title: "Статистика и аналитика",
+    desc: "Дашборд с историей предсказаний, винрейтом и воронкой",
   },
 ];
 
@@ -70,20 +82,36 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-bazaar-purple/20 via-transparent to-transparent" />
-        <div className="relative flex flex-col items-center justify-center text-center px-4 pt-20 pb-12">
-          <div className="mb-4 text-5xl">🔮</div>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-2 gradient-text text-glow leading-tight">
-            The Bazaar Oracle
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-bazaar-purple/30 via-bazaar-bg to-bazaar-bg" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-bazaar-accent/40 to-transparent" />
+
+        <div className="relative flex flex-col items-center text-center px-4 pt-8 pb-16">
+          {/* Official game logo */}
+          <img
+            src="https://playthebazaar.com/images/bazaarLogo_small.webp"
+            alt="The Bazaar"
+            className="h-16 md:h-20 mb-6 drop-shadow-[0_0_20px_rgba(201,168,76,0.4)]"
+          />
+
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-1 gradient-text text-glow leading-tight">
+            Oracle
           </h1>
-          <p className="text-lg text-bazaar-accent font-medium mb-4 tracking-wide uppercase">
-            Предсказатель боёв
+          <p className="text-base md:text-lg text-bazaar-accent font-medium mb-5 tracking-[0.25em] uppercase">
+            Предсказатель PvE-боёв
           </p>
-          <p className="text-xl text-bazaar-muted max-w-2xl mb-8 leading-relaxed">
-            Загрузи скриншот PvE-сражения в The Bazaar — получи мгновенное
-            предсказание, победишь ты или нет. ИИ-анализ + симуляция боя.
+
+          {/* Decorative divider */}
+          <img
+            src="https://playthebazaar.com/images/pagebreak_brown.webp"
+            alt=""
+            className="w-48 mb-5 opacity-60"
+          />
+
+          <p className="text-lg md:text-xl text-bazaar-muted max-w-xl mb-8 leading-relaxed">
+            Загрузи скриншот боя в The Bazaar — ИИ распознает доски и предскажет, победишь ты или нет
           </p>
+
           <div className="flex gap-4 flex-wrap justify-center">
             <Link
               href="/auth"
@@ -92,7 +120,7 @@ export default function LandingPage() {
               Попробовать бесплатно
             </Link>
             <a
-              href="#features"
+              href="#how-it-works"
               className="border-2 border-bazaar-accent/40 hover:border-bazaar-accent text-bazaar-warm px-8 py-3.5 rounded-xl text-lg transition"
             >
               Как это работает
@@ -101,21 +129,78 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Game board showcase */}
+      <section id="how-it-works" className="max-w-5xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-bazaar-warm">
+          Как это работает
+        </h2>
+        <p className="text-center text-bazaar-muted mb-8">
+          Три шага до предсказания
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-bazaar-accent/20 flex items-center justify-center text-xl font-bold text-bazaar-accent">1</div>
+            <h3 className="text-bazaar-warm font-semibold mb-1">Сделай скриншот</h3>
+            <p className="text-sm text-bazaar-muted">Скриншот PvE-боя из игры или собери билд вручную</p>
+          </div>
+          <div className="bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-bazaar-accent/20 flex items-center justify-center text-xl font-bold text-bazaar-accent">2</div>
+            <h3 className="text-bazaar-warm font-semibold mb-1">Загрузи в Oracle</h3>
+            <p className="text-sm text-bazaar-muted">GPT-4 Vision распознает предметы на обеих досках</p>
+          </div>
+          <div className="bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-bazaar-accent/20 flex items-center justify-center text-xl font-bold text-bazaar-accent">3</div>
+            <h3 className="text-bazaar-warm font-semibold mb-1">Получи результат</h3>
+            <p className="text-sm text-bazaar-muted">Движок симулирует бой и покажет исход с логом</p>
+          </div>
+        </div>
+
+        {/* Game board screenshot */}
+        <div className="relative rounded-2xl overflow-hidden border border-bazaar-accent/20 shadow-2xl shadow-bazaar-purple/20">
+          <img
+            src="https://gaming.news/cdn-cgi/image/format=auto,quality=80,width=1200/https://gaming.news/img/article/the-bazaar-complete-beginners-guide-to-heroes-economy-combat/game-board.jpg"
+            alt="The Bazaar — игровая доска"
+            className="w-full"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-bazaar-bg via-transparent to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 text-center">
+            <p className="text-sm text-bazaar-muted">
+              Игровая доска The Bazaar — предметы, HP, cooldown
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Heroes showcase */}
       <section className="max-w-5xl mx-auto px-4 pb-16">
-        <h2 className="text-2xl font-bold text-center mb-2 text-bazaar-warm">
-          Герои The Bazaar
-        </h2>
+        <div className="flex items-center justify-center gap-3 mb-2">
+          <img
+            src="https://playthebazaar.com/images/pagebreak_brown.webp"
+            alt=""
+            className="w-24 opacity-40 rotate-180"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-bazaar-warm whitespace-nowrap">
+            Герои игры
+          </h2>
+          <img
+            src="https://playthebazaar.com/images/pagebreak_brown.webp"
+            alt=""
+            className="w-24 opacity-40"
+          />
+        </div>
         <p className="text-center text-bazaar-muted mb-8 text-sm">
-          Проверяй свои билды против любых PvE-монстров
+          Все 7 героев The Bazaar — проверяй билды каждого
         </p>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+
+        <div className="grid grid-cols-4 md:grid-cols-7 gap-3 md:gap-4">
           {heroes.map((h) => (
             <div
               key={h.name}
               className="group flex flex-col items-center text-center"
             >
-              <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-bazaar-accent/40 group-hover:border-bazaar-gold transition-all group-hover:shadow-lg group-hover:shadow-bazaar-accent/20 mb-2">
+              <div className={`relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-bazaar-accent/30 group-hover:border-bazaar-gold transition-all group-hover:shadow-lg group-hover:shadow-bazaar-accent/20 mb-2 bg-gradient-to-b ${h.color}`}>
                 <img
                   src={h.img}
                   alt={h.name}
@@ -123,74 +208,62 @@ export default function LandingPage() {
                   loading="lazy"
                 />
               </div>
-              <span className="text-sm font-semibold text-bazaar-warm">
+              <span className="text-xs md:text-sm font-semibold text-bazaar-warm">
                 {h.name}
               </span>
-              <span className="text-xs text-bazaar-muted">{h.desc}</span>
+              <span className="text-[10px] md:text-xs text-bazaar-muted hidden md:block">{h.role}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Demo */}
+      {/* Demo prediction */}
       <section className="max-w-4xl mx-auto px-4 pb-16">
-        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-8">
-          <p className="text-center text-bazaar-muted text-sm mb-4 uppercase tracking-wider">
+        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-6 md:p-8">
+          <p className="text-center text-bazaar-muted text-xs mb-4 uppercase tracking-widest">
             Пример предсказания
           </p>
-          <div className="flex items-center justify-center gap-8 md:gap-12 mb-6">
+          <div className="flex items-center justify-center gap-6 md:gap-12 mb-6">
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 rounded-full bg-bazaar-surface border-2 border-bazaar-green flex items-center justify-center text-3xl mb-2">
-                🧙
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-bazaar-green mb-2">
+                <img
+                  src="https://thebazaar.wiki.gg/images/thumb/a/a1/Bazaar-avatar-vanessa.jpg/200px-Bazaar-avatar-vanessa.jpg"
+                  alt="Vanessa"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-sm font-semibold text-bazaar-green">Игрок</span>
+              <span className="text-sm font-semibold text-bazaar-green">Vanessa</span>
               <span className="text-xs text-bazaar-muted">500 HP</span>
-              <div className="flex gap-1 mt-2">
-                <span className="text-xs bg-bazaar-surface px-2 py-0.5 rounded border border-bazaar-accent/20">
-                  Глефа
-                </span>
-                <span className="text-xs bg-bazaar-surface px-2 py-0.5 rounded border border-bazaar-accent/20">
-                  Кинжалы
-                </span>
-              </div>
             </div>
             <div className="text-center">
-              <span className="text-3xl font-black text-bazaar-accent">VS</span>
+              <span className="text-2xl md:text-3xl font-black text-bazaar-accent">VS</span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 rounded-full bg-bazaar-surface border-2 border-bazaar-red flex items-center justify-center text-3xl mb-2">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-bazaar-surface border-2 border-bazaar-red flex items-center justify-center text-2xl md:text-3xl mb-2">
                 🐉
               </div>
               <span className="text-sm font-semibold text-bazaar-red">Дракончик</span>
               <span className="text-xs text-bazaar-muted">450 HP</span>
-              <div className="flex gap-1 mt-2">
-                <span className="text-xs bg-bazaar-surface px-2 py-0.5 rounded border border-bazaar-accent/20">
-                  🔥 Огненный
-                </span>
-                <span className="text-xs bg-bazaar-surface px-2 py-0.5 rounded border border-bazaar-accent/20">
-                  🛡 Эгида
-                </span>
-              </div>
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-block bg-bazaar-green/15 border border-bazaar-green/30 text-bazaar-green font-bold px-8 py-3 rounded-xl text-xl">
+            <div className="inline-block bg-bazaar-green/15 border border-bazaar-green/30 text-bazaar-green font-bold px-6 md:px-8 py-3 rounded-xl text-lg md:text-xl">
               ✅ ПОБЕДА — 327 HP осталось
             </div>
             <p className="text-xs text-bazaar-muted mt-3">
-              20 кастов • 10.8 секунд боя • 2 крита • Freeze на 3.5с
+              20 кастов • 10.8с боя • 2 крита • Freeze 3.5с
             </p>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section id="features" className="max-w-6xl mx-auto px-4 pb-20">
-        <h2 className="text-3xl font-bold text-center mb-2 text-bazaar-warm">
+      <section className="max-w-6xl mx-auto px-4 pb-20">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-bazaar-warm">
           Возможности
         </h2>
         <p className="text-center text-bazaar-muted mb-10">
-          Всё, что нужно для победы в PvE
+          Полный набор инструментов для PvE
         </p>
         <div className="grid md:grid-cols-3 gap-5">
           {features.map((f) => (
@@ -214,7 +287,13 @@ export default function LandingPage() {
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-4 pb-20 text-center">
-        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-10">
+        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-10 relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-bazaar-accent/30 to-transparent" />
+          <img
+            src="https://playthebazaar.com/images/bazaarLogo_small.webp"
+            alt="The Bazaar"
+            className="h-10 mx-auto mb-4 opacity-60"
+          />
           <h2 className="text-2xl font-bold text-bazaar-warm mb-3">
             Готов узнать исход боя?
           </h2>
@@ -225,15 +304,20 @@ export default function LandingPage() {
             href="/auth"
             className="inline-block bg-gold-gradient hover:brightness-110 text-bazaar-bg font-bold px-10 py-3.5 rounded-xl text-lg transition shadow-lg shadow-bazaar-accent/30"
           >
-            Начать
+            Начать бесплатно
           </Link>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-bazaar-accent/10 py-8 text-center text-sm text-bazaar-muted">
+        <img
+          src="https://playthebazaar.com/images/bazaarLogo_small.webp"
+          alt="The Bazaar"
+          className="h-6 mx-auto mb-3 opacity-40"
+        />
         <span className="text-bazaar-accent font-medium">The Bazaar Oracle</span>
-        {" "}&mdash; Предсказатель PvE-боёв • Не аффилирован с Tempo Storm
+        {" "}&mdash; Предсказатель PvE-боёв • Не аффилирован с AVY Entertainment
       </footer>
     </div>
   );
