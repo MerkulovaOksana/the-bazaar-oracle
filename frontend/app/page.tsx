@@ -270,22 +270,35 @@ export default function LandingPage() {
           Полный набор инструментов для PvE
         </p>
         <div className="grid md:grid-cols-3 gap-5">
-          {features.map((f) => (
-            <div
-              key={f.title}
-              className="bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 hover:border-bazaar-accent/40 hover:shadow-lg hover:shadow-bazaar-purple/10 transition-all group"
-            >
-              <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
-                {f.icon}
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-bazaar-warm">
-                {f.title}
-              </h3>
-              <p className="text-sm text-bazaar-muted leading-relaxed">
-                {f.desc}
-              </p>
-            </div>
-          ))}
+          {features.map((f) => {
+            const isTelegram = f.title === "Telegram-бот";
+            const Card = isTelegram ? "a" : "div";
+            const extraProps = isTelegram
+              ? { href: "https://t.me/bazaar_oracle_bot", target: "_blank", rel: "noopener noreferrer" }
+              : {};
+            return (
+              <Card
+                key={f.title}
+                {...extraProps}
+                className={`bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 hover:border-bazaar-accent/40 hover:shadow-lg hover:shadow-bazaar-purple/10 transition-all group ${isTelegram ? "cursor-pointer" : ""}`}
+              >
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
+                  {f.icon}
+                </div>
+                <h3 className="text-lg font-semibold mb-2 text-bazaar-warm">
+                  {f.title}
+                </h3>
+                <p className="text-sm text-bazaar-muted leading-relaxed">
+                  {f.desc}
+                </p>
+                {isTelegram && (
+                  <span className="inline-block mt-3 text-xs text-[#29B6F6] font-medium">
+                    @bazaar_oracle_bot →
+                  </span>
+                )}
+              </Card>
+            );
+          })}
         </div>
       </section>
 
@@ -304,12 +317,23 @@ export default function LandingPage() {
           <p className="text-bazaar-muted mb-6">
             Загрузи скриншот или собери билд вручную — Oracle предскажет результат за секунды
           </p>
-          <Link
-            href="/auth"
-            className="inline-block bg-gold-gradient hover:brightness-110 text-bazaar-bg font-bold px-10 py-3.5 rounded-xl text-lg transition shadow-lg shadow-bazaar-accent/30"
-          >
-            Начать бесплатно
-          </Link>
+          <div className="flex gap-4 flex-wrap justify-center">
+            <Link
+              href="/auth"
+              className="bg-gold-gradient hover:brightness-110 text-bazaar-bg font-bold px-10 py-3.5 rounded-xl text-lg transition shadow-lg shadow-bazaar-accent/30"
+            >
+              Начать бесплатно
+            </Link>
+            <a
+              href="https://t.me/bazaar_oracle_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#29B6F6] hover:bg-[#039BE5] text-white font-bold px-8 py-3.5 rounded-xl text-lg transition shadow-lg shadow-[#29B6F6]/20"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.492-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram-бот
+            </a>
+          </div>
         </div>
       </section>
 
@@ -320,8 +344,19 @@ export default function LandingPage() {
           alt="The Bazaar"
           className="h-6 mx-auto mb-3 opacity-40"
         />
-        <span className="text-bazaar-accent font-medium">The Bazaar Oracle</span>
-        {" "}&mdash; Предсказатель PvE-боёв • Не аффилирован с AVY Entertainment
+        <div className="flex items-center justify-center gap-4 mb-2">
+          <span className="text-bazaar-accent font-medium">The Bazaar Oracle</span>
+          <span className="text-bazaar-accent/30">•</span>
+          <a
+            href="https://t.me/bazaar_oracle_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#29B6F6] hover:text-[#039BE5] transition font-medium"
+          >
+            @bazaar_oracle_bot
+          </a>
+        </div>
+        Предсказатель PvE-боёв &mdash; Не аффилирован с AVY Entertainment
       </footer>
     </div>
   );
