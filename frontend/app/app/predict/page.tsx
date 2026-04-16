@@ -305,7 +305,7 @@ export default function PredictPage() {
     );
   };
 
-  const categories = ["all", ...new Set(catalog.map((i) => i.category))];
+  const categories = ["all", ...Array.from(new Set(catalog.map((i) => i.category)))];
   const filteredItems = itemFilter === "all" ? catalog : catalog.filter((i) => i.category === itemFilter);
 
   const selectedMonsterData = monsters.find((m) => m.id === selectedMonster);
