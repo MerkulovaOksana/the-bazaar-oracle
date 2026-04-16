@@ -159,15 +159,15 @@ export default function LandingPage() {
         {/* Game board screenshot */}
         <div className="relative rounded-2xl overflow-hidden border border-bazaar-accent/20 shadow-2xl shadow-bazaar-purple/20">
           <img
-            src="https://gaming.news/cdn-cgi/image/format=auto,quality=80,width=1200/https://gaming.news/img/article/the-bazaar-complete-beginners-guide-to-heroes-economy-combat/game-board.jpg"
-            alt="The Bazaar — игровая доска"
+            src="https://playthebazaar.com/images/karnok/karnok-enrage.jpg"
+            alt="The Bazaar — игровой бой"
             className="w-full"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-bazaar-bg via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-bazaar-bg/80 via-transparent to-transparent" />
           <div className="absolute bottom-4 left-4 right-4 text-center">
-            <p className="text-sm text-bazaar-muted">
-              Игровая доска The Bazaar — предметы, HP, cooldown
+            <p className="text-sm text-bazaar-warm font-medium">
+              Бой в The Bazaar — предметы, способности, эффекты
             </p>
           </div>
         </div>
