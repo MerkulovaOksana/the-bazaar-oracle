@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+aiosqlite
+pydantic-settings
+python-multipart
+passlib[bcrypt]
+PyJWT
+openai
+httpx
+python-telegram-bot
