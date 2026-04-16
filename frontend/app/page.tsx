@@ -64,31 +64,44 @@ const features = [
     icon: "📸",
     title: "Анализ скриншотов",
     desc: "GPT-4 Vision распознаёт все предметы на обеих досках по одному скриншоту",
+    href: "/app/predict",
+    linkLabel: "Загрузить скриншот →",
   },
   {
     icon: "⚔",
     title: "Симуляция боя",
     desc: "Движок с multicast, cooldown, freeze, burn, poison, haste, slow и щитами",
+    href: "/app/predict",
+    linkLabel: "Собрать билд →",
   },
   {
     icon: "🤖",
     title: "RAG-ассистент",
     desc: "ИИ-чат отвечает на вопросы о механиках на основе базы знаний игры",
+    href: "/app/chat",
+    linkLabel: "Открыть чат →",
   },
   {
     icon: "🎤",
     title: "Голосовой ввод",
     desc: "Задавай вопросы голосом — Speech-to-Text на базе Whisper",
+    href: "/app/chat",
+    linkLabel: "Попробовать →",
   },
   {
     icon: "📱",
     title: "Telegram-бот",
     desc: "Отправь скриншот в Telegram — получи предсказание мгновенно",
+    href: "https://t.me/bazaar_oracle_bot",
+    external: true,
+    linkLabel: "@bazaar_oracle_bot →",
   },
   {
     icon: "📊",
     title: "Статистика и аналитика",
     desc: "Дашборд с историей предсказаний, винрейтом и воронкой",
+    href: "/app/dashboard",
+    linkLabel: "Открыть дашборд →",
   },
 ];
 
@@ -418,17 +431,8 @@ export default function LandingPage() {
         </p>
         <div className="grid md:grid-cols-3 gap-5">
           {features.map((f) => {
-            const isTelegram = f.title === "Telegram-бот";
-            const Card = isTelegram ? "a" : "div";
-            const extraProps = isTelegram
-              ? { href: "https://t.me/bazaar_oracle_bot", target: "_blank", rel: "noopener noreferrer" }
-              : {};
-            return (
-              <Card
-                key={f.title}
-                {...extraProps}
-                className={`bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 hover:border-bazaar-accent/40 hover:shadow-lg hover:shadow-bazaar-purple/10 transition-all group ${isTelegram ? "cursor-pointer" : ""}`}
-              >
+            const inner = (
+              <>
                 <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
                   {f.icon}
                 </div>
@@ -438,12 +442,27 @@ export default function LandingPage() {
                 <p className="text-sm text-bazaar-muted leading-relaxed">
                   {f.desc}
                 </p>
-                {isTelegram && (
-                  <span className="inline-block mt-3 text-xs text-[#29B6F6] font-medium">
-                    @bazaar_oracle_bot &rarr;
-                  </span>
-                )}
-              </Card>
+                <span className={`inline-block mt-3 text-xs font-medium ${f.external ? "text-[#29B6F6]" : "text-bazaar-accent"}`}>
+                  {f.linkLabel}
+                </span>
+              </>
+            );
+            const cls = "block bg-card-gradient rounded-xl border border-bazaar-accent/15 p-6 hover:border-bazaar-accent/40 hover:shadow-lg hover:shadow-bazaar-purple/10 transition-all group cursor-pointer";
+
+            return f.external ? (
+              <a
+                key={f.title}
+                href={f.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cls}
+              >
+                {inner}
+              </a>
+            ) : (
+              <Link key={f.title} href={f.href} className={cls}>
+                {inner}
+              </Link>
             );
           })}
         </div>
