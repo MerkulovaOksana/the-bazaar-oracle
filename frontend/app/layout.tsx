@@ -6,6 +6,10 @@ import Navbar from "@/components/Navbar";
 export const metadata: Metadata = {
   title: "The Bazaar Oracle — Предсказатель боёв",
   description: "Загрузи скриншот PvE-боя в The Bazaar и узнай, победишь ты или нет",
+  icons: {
+    icon: "/oracle-icon.png",
+    apple: "/oracle-icon.png",
+  },
 };
 
 export default function RootLayout({
