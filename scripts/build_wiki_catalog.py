@@ -138,8 +138,15 @@ def wiki_effects_to_plain_text(effects: str, max_len: int = 300) -> str:
     s = re.sub(r"&(?:nbsp|#x?[0-9a-f]+|[a-z]+);", " ", s, flags=re.I)
     s = re.sub(r"\s+", " ", s).strip()
     if len(s) > max_len:
-        s = s[: max_len - 1] + "…"
-    return s
+        chunk = s[:max_len]
+        cut = chunk.rfind(" ")
+        if cut > int(max_len * 0.55):
+            chunk = chunk[:cut]
+        s = chunk.rstrip(" ,;:") + "…"
+    # Truncation can split `[[File:...]]` mid-link — strip dangling markup tails
+    s = re.sub(r"\s*\{\{[^}]*$", "", s)
+    s = re.sub(r"\s*\[\[[^\]]*$", "", s)
+    return s.rstrip(" ,;:").strip()
 
 
 def wiki_size_to_size(size_str: str) -> str:

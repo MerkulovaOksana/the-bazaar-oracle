@@ -142,7 +142,10 @@ function stripWikiMarkupForUi(s: string): string {
   t = t.replace(/'{2,}(\d+)'{2,}/g, "$1");
   t = t.replace(/<[^>]+>/g, " ");
   t = t.replace(/\s+/g, " ").trim();
-  return t;
+  // Truncated API strings sometimes end with a cut-off `[[File:...` (no closing ]])
+  t = t.replace(/\s*\{\{[^}]*$/g, "");
+  t = t.replace(/\s*\[\[[^\]]*$/g, "");
+  return t.replace(/\s+/g, " ").trim();
 }
 
 function ItemCard({
