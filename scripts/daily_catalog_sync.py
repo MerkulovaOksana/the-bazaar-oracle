@@ -4,10 +4,13 @@ Daily catalog maintenance (run from repo root, needs network).
 
 1. Query thebazaar.wiki.gg (Cargo + Category:Monsters) for current row counts.
 2. Compare with backend/app/data/wiki_catalog.json meta.
-3. If any count differs (or file missing): run scripts/build_wiki_catalog.py — full regen.
-4. If counts match: skip rebuild (wiki snapshot already matches what we shipped).
-5. Run scripts/enrich_bazaardb_catalog.py --only-missing to pull Bazaar DB art/blurbs
-   for entries still missing image_url (incremental; cap with --enrich-limit).
+3. If any count differs (or file missing): run scripts/build_wiki_catalog.py — full regen
+   (bazaar_only rows are carried forward automatically).
+4. If counts match: skip rebuild.
+5. Run scripts/import_bazaar_gaps.py — add cards that exist on Bazaar DB but not in the catalog
+   (cap with --gap-limit).
+6. Run scripts/enrich_bazaardb_catalog.py --only-missing for legacy rows still missing image_url
+   (cap with --enrich-limit).
 
 Typical cron / GitHub Actions: once per day.
 
@@ -32,6 +35,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI_CATALOG = ROOT / "backend" / "app" / "data" / "wiki_catalog.json"
 BUILD_SCRIPT = ROOT / "scripts" / "build_wiki_catalog.py"
+GAP_SCRIPT = ROOT / "scripts" / "import_bazaar_gaps.py"
 ENRICH_SCRIPT = ROOT / "scripts" / "enrich_bazaardb_catalog.py"
 
 UA = "BattleOracleDailySync/1.0 (https://github.com/MerkulovaOksana/the-bazaar-oracle)"
@@ -123,6 +127,17 @@ def main() -> None:
     ap.add_argument("--force-build", action="store_true", help="Always run build_wiki_catalog.py")
     ap.add_argument("--skip-enrich", action="store_true", help="Do not run bazaardb enrich")
     ap.add_argument(
+        "--skip-gap-import",
+        action="store_true",
+        help="Do not run import_bazaar_gaps.py",
+    )
+    ap.add_argument(
+        "--gap-limit",
+        type=int,
+        default=120,
+        help="Max new Bazaar-only entities per run (0 = unlimited). Default 120.",
+    )
+    ap.add_argument(
         "--enrich-limit",
         type=int,
         default=200,
@@ -152,6 +167,15 @@ def main() -> None:
         run_script(BUILD_SCRIPT, [])
     else:
         print("→ Wiki counts match local file; skipping full rebuild.")
+
+    if not args.skip_gap_import:
+        gap_args: list[str] = []
+        if args.gap_limit > 0:
+            gap_args = ["--limit", str(args.gap_limit)]
+        print("→ Bazaar DB gap import (new cards not in catalog).")
+        run_script(GAP_SCRIPT, gap_args)
+    else:
+        print("→ Skipping gap import (--skip-gap-import).")
 
     if args.skip_enrich:
         print("→ Skipping Bazaar enrich (--skip-enrich).")

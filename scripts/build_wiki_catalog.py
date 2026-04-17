@@ -444,6 +444,33 @@ def main():
 
     print(f"Monsters: {len(monsters_out)}")
 
+    def carry_forward_bazaar_only() -> tuple[int, int]:
+        """Keep rows imported from Bazaar DB when wiki Cargo does not list them yet."""
+        if not OUT.is_file():
+            return 0, 0
+        try:
+            prev = json.loads(OUT.read_text(encoding="utf-8"))
+        except Exception:
+            return 0, 0
+        n_i, n_m = 0, 0
+        for iid, row in (prev.get("items") or {}).items():
+            if row.get("source") != "bazaar_only":
+                continue
+            if iid not in items_out:
+                items_out[iid] = row
+                n_i += 1
+        for mid, row in (prev.get("monsters") or {}).items():
+            if row.get("source") != "bazaar_only":
+                continue
+            if mid not in monsters_out:
+                monsters_out[mid] = row
+                n_m += 1
+        return n_i, n_m
+
+    bi, bm = carry_forward_bazaar_only()
+    if bi or bm:
+        print(f"Carried forward bazaar_only (not on wiki yet): +{bi} items, +{bm} monsters")
+
     payload = {
         "meta": {
             "source": "thebazaar.wiki.gg Cargo (items+skills) + Category:Monsters",

@@ -13,6 +13,7 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -21,7 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run daily sync
-        run: python scripts/daily_catalog_sync.py --enrich-limit 200
+        run: python scripts/daily_catalog_sync.py --gap-limit 100 --enrich-limit 150
 
       - name: Commit data updates
         run: |
