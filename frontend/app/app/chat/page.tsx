@@ -143,7 +143,7 @@ export default function ChatPage() {
               {[
                 "Как работает multicast?",
                 "Что контрит poison-билды?",
-                "Лучшие предметы против Дракончика?",
+                "Какие предметы лучше против Beehive Queen?",
               ].map((q) => (
                 <button
                   key={q}

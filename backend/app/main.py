@@ -21,18 +21,21 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-allowed_origins = [
+allowed_origins = {
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3000",
-]
-frontend_url = os.getenv("FRONTEND_URL", "")
-if frontend_url:
-    allowed_origins.append(frontend_url)
+}
+frontend_urls = os.getenv("FRONTEND_URL", "")
+if frontend_urls:
+    for origin in frontend_urls.split(","):
+        cleaned = origin.strip().rstrip("/")
+        if cleaned:
+            allowed_origins.add(cleaned)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
+    allow_origins=sorted(allowed_origins),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

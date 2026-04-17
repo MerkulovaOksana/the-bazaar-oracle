@@ -5,7 +5,10 @@
     "skills_count": 311,
     "catalog_item_ids": 947,
     "monsters_count": 101,
-    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages."
+    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
+    "bazaar_gap_import_at": "2026-04-17T14:09:15.477027+00:00",
+    "bazaar_gap_last_run_new_items": 0,
+    "bazaar_gap_last_run_new_monsters": 1
   },
   "items": {
     "28_hour_fitness": {
@@ -20392,6 +20395,28 @@
         "salamander_pup",
         "trained_spider"
       ]
+    },
+    "outlands_terror": {
+      "name": "Outlands Terror",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/a30a506a4b2ccbf7c96d376dab0a159c20033de7@256.webp/wide?v=6&sig=WdcIXBC2xKiMrpl%2BAVFp1LDBBG8%3D",
+      "items": [],
+      "bazaar_desc": "Outlands Terror: See 13 enchantments, 4 hidden abilities. Offered by 14 merchants. Obtained from 1 source. Every 8.0 sec.: Deal [300/600] Damage Passive: While you are Enraged, this has Lifesteal and its Cooldown reduced by [3/5] seconds. Passive: You have double Rage gain. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/100g590fqc2bc7l3kzmq07bny1/Outlands-Terror"
+    },
+    "weather_machine": {
+      "name": "Weather Machine",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/c447c7ef490a37441b64a794d68534a0d385cc1a@256.webp/wide?v=6&sig=uRBIBwSCbU9%2FUqmVIhiQqykXdKY%3D",
+      "items": [],
+      "bazaar_desc": "Weather Machine: See 13 enchantments, 4 hidden abilities. Offered by 18 merchants. Obtained from 2 sources. Every 5.0 sec.: [2/3/4] items start Flying Freeze an item on each Player's board for [1/2/3] second(s) Slow all items for [1/2/3] second(s) Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/101khfz9qzd8gcgdw7tkxly9ktj/Weather-Machine"
     }
   }
 }

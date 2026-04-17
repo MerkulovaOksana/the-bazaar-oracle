@@ -1,6 +1,12 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL
-  ? `${process.env.NEXT_PUBLIC_API_URL}/api`
-  : "/api";
+function normalizeApiRoot(rawUrl?: string): string | null {
+  if (!rawUrl) return null;
+  const trimmed = rawUrl.trim().replace(/\/+$/, "");
+  if (!trimmed) return null;
+  return trimmed.replace(/\/api$/i, "");
+}
+
+const apiRoot = normalizeApiRoot(process.env.NEXT_PUBLIC_API_URL);
+const API_BASES = apiRoot ? [`${apiRoot}/api`, "/api"] : ["/api"];
 
 const JSON_TIMEOUT_MS = 30_000;
 const UPLOAD_TIMEOUT_MS = 120_000;
@@ -35,25 +41,40 @@ async function request<T>(
 
   const isUpload = options.body instanceof FormData;
   const timeoutMs = isUpload ? UPLOAD_TIMEOUT_MS : JSON_TIMEOUT_MS;
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
-  let res: Response;
-  try {
-    res = await fetch(`${API_BASE}${path}`, {
-      ...options,
-      headers,
-      signal: controller.signal,
-    });
-  } catch (e: unknown) {
-    if (e instanceof Error && e.name === "AbortError") {
-      throw new Error(
-        "Сервер не ответил вовремя. Проверь, что API запущен и NEXT_PUBLIC_API_URL указывает на него."
-      );
+  let res: Response | null = null;
+  const networkErrors: string[] = [];
+  for (const base of API_BASES) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      res = await fetch(`${base}${path}`, {
+        ...options,
+        headers,
+        signal: controller.signal,
+      });
+      break;
+    } catch (e: unknown) {
+      if (e instanceof Error && e.name === "AbortError") {
+        throw new Error(
+          "Сервер не ответил вовремя. Проверь, что API запущен и NEXT_PUBLIC_API_URL указывает на него."
+        );
+      }
+      networkErrors.push(`${base}${path}`);
+      if (!apiRoot || base === "/api") {
+        throw new Error(
+          `Не удалось подключиться к API (${networkErrors.join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
+        );
+      }
+    } finally {
+      clearTimeout(timeoutId);
     }
-    throw e;
-  } finally {
-    clearTimeout(timeoutId);
+  }
+
+  if (!res) {
+    throw new Error(
+      `Не удалось подключиться к API (${networkErrors.join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
+    );
   }
 
   const isAuthEndpoint = path.startsWith("/auth/login") || path.startsWith("/auth/register");

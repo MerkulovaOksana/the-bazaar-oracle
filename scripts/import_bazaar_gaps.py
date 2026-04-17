@@ -67,20 +67,33 @@ def card_paths_from_search_url(url: str) -> list[str]:
 
 
 def discover_monster_paths() -> list[str]:
+    # /search?c=monsters returns a mixed SSR bundle (monsters + items + skills)
+    # because bazaardb filters client-side. We rely on the caller to subtract
+    # item/skill paginated sets for accurate monster detection.
     return card_paths_from_search_url(f"{BASE}/search?c=monsters")
 
 
+def _paginate_category(category: str, *, max_pages: int = 400) -> set[str]:
+    """Walk /search?c=<category>&page=N until a page yields no new cards."""
+    seen: set[str] = set()
+    for page in range(1, max_pages + 1):
+        url = f"{BASE}/search?c={category}&page={page}"
+        try:
+            batch = set(card_paths_from_search_url(url))
+        except Exception:
+            break
+        new = batch - seen
+        if not new:
+            break
+        seen |= batch
+        time.sleep(0.15)
+    return seen
+
+
 def discover_item_and_skill_paths() -> tuple[set[str], set[str]]:
-    items: set[str] = set()
-    skills: set[str] = set()
-    chars = "abcdefghijklmnopqrstuvwxyz0123456789"
-    for ch in chars:
-        q = urllib.parse.quote(ch)
-        for c, bucket in (("items", items), ("skills", skills)):
-            url = f"{BASE}/search?q={q}&c={c}"
-            for p in card_paths_from_search_url(url):
-                bucket.add(p)
-            time.sleep(0.12)
+    """Full bazaardb coverage via per-category pagination."""
+    items = _paginate_category("items")
+    skills = _paginate_category("skills")
     return items, skills
 
 
@@ -177,11 +190,18 @@ def main() -> None:
 
     print("Discovering Bazaar card URLs…")
     m_paths = sorted(set(discover_monster_paths()))
-    print(f"  monsters bucket: {len(m_paths)} unique paths")
+    print(f"  monsters bucket (raw): {len(m_paths)} unique paths")
     it_paths, sk_paths = discover_item_and_skill_paths()
     print(f"  items bucket: {len(it_paths)}, skills bucket: {len(sk_paths)}")
 
+    # bazaardb /search?c=monsters page SSR includes all cards (filtering happens
+    # client-side). Treat a path as a real monster only if it did NOT surface
+    # via item/skill a-z scan.
     skill_set = set(sk_paths)
+    non_monster_paths = it_paths | skill_set
+    filtered_m_paths = [p for p in m_paths if p not in non_monster_paths]
+    print(f"  monsters bucket (filtered): {len(filtered_m_paths)} unique paths")
+    m_paths = filtered_m_paths
 
     def allow_more() -> bool:
         return args.limit <= 0 or new_count < args.limit
