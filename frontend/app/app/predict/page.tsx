@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/lib/auth-context";
 import { api } from "@/lib/api";
@@ -38,6 +38,9 @@ interface CatalogItem {
   id: string;
   name: string;
   desc: string;
+  /** Bazaar DB tooltip-style summary when enrichment has been run */
+  bazaar_desc?: string;
+  image_url?: string;
   category: string;
   tier: string;
   size: string;
@@ -61,6 +64,7 @@ interface Monster {
   day: number;
   tier: string;
   image: string;
+  bazaar_desc?: string;
   item_count: number;
 }
 
@@ -103,7 +107,43 @@ const CATEGORY_ICONS: Record<string, string> = {
   apparel: "\ud83d\udee1\ufe0f",
   property: "\ud83c\udff0",
   tool: "\ud83d\udd27",
+  skill: "\ud83d\udcdc",
 };
+
+/** Every whitespace-separated token must appear somewhere in the joined fields (case-insensitive). */
+function matchesCatalogSearch(query: string, parts: (string | number | undefined)[]): boolean {
+  const q = query.trim().toLowerCase();
+  if (!q) return true;
+  const hay = parts
+    .filter((p) => p !== undefined && p !== "")
+    .map((p) => String(p).toLowerCase())
+    .join(" ");
+  return q
+    .split(/\s+/)
+    .filter(Boolean)
+    .every((word) => hay.includes(word));
+}
+
+/**
+ * Plain text for cards — Cargo/wikitext often has [[File:...]], '''bold''', {{templates}}.
+ * Runs on every render so old cached API responses still look OK after deploy.
+ */
+function stripWikiMarkupForUi(s: string): string {
+  if (!s) return "";
+  let t = s;
+  t = t.replace(/\[\[File:\s*[\s\S]*?\]\]/gi, " ");
+  t = t.replace(/\[\[(?:[^\]|]*\|)*([^\]|]+)\]\]/g, "$1");
+  t = t.replace(/\[\[[^\]]+\]\]/g, " ");
+  t = t.replace(/\{\{[^}]+\}\}/g, " ");
+  t = t.replace(/'''([^']*)'''/g, "$1");
+  t = t.replace(/''([^']*)''/g, "$1");
+  t = t.replace(/"{2,}(\d+)"{2,}/g, "$1");
+  t = t.replace(/"{2,}/g, " ");
+  t = t.replace(/'{2,}(\d+)'{2,}/g, "$1");
+  t = t.replace(/<[^>]+>/g, " ");
+  t = t.replace(/\s+/g, " ").trim();
+  return t;
+}
 
 function ItemCard({
   item,
@@ -116,6 +156,7 @@ function ItemCard({
 }) {
   const tier = TIER_STYLES[item.tier] || TIER_STYLES.bronze;
   const icon = CATEGORY_ICONS[item.category] || "\u2728";
+  const blurb = stripWikiMarkupForUi(item.bazaar_desc || item.desc);
 
   return (
     <button
@@ -133,7 +174,21 @@ function ItemCard({
       )}
 
       <div className="flex items-start gap-2">
-        <span className="text-xl mt-0.5 shrink-0">{icon}</span>
+        {item.image_url ? (
+          <div className="w-11 h-11 rounded-md overflow-hidden border border-white/10 bg-bazaar-bg shrink-0 mt-0.5">
+            <img
+              src={item.image_url}
+              alt=""
+              className="w-full h-full object-cover"
+              loading="lazy"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = "none";
+              }}
+            />
+          </div>
+        ) : (
+          <span className="text-xl mt-0.5 shrink-0">{icon}</span>
+        )}
         <div className="min-w-0">
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="font-semibold text-sm text-bazaar-warm truncate">
@@ -143,7 +198,7 @@ function ItemCard({
               {item.tier}
             </span>
           </div>
-          <p className="text-xs text-bazaar-muted mt-0.5 leading-snug">{item.desc}</p>
+          <p className="text-xs text-bazaar-muted mt-0.5 leading-snug line-clamp-4">{blurb}</p>
           <div className="flex items-center gap-2 mt-1.5 flex-wrap">
             <span className="text-[11px] text-bazaar-accent font-mono">
               {(item.cooldown_ms / 1000).toFixed(1)}s
@@ -244,6 +299,8 @@ export default function PredictPage() {
   const [selectedMonster, setSelectedMonster] = useState("");
   const [playerHp, setPlayerHp] = useState(500);
   const [itemFilter, setItemFilter] = useState<string>("all");
+  const [itemSearch, setItemSearch] = useState("");
+  const [monsterSearch, setMonsterSearch] = useState("");
 
   useEffect(() => {
     if (authLoading) return;
@@ -306,10 +363,64 @@ export default function PredictPage() {
     );
   };
 
-  const categories = ["all", ...Array.from(new Set(catalog.map((i) => i.category)))];
-  const filteredItems = itemFilter === "all" ? catalog : catalog.filter((i) => i.category === itemFilter);
+  const categories = useMemo(
+    () => ["all", ...Array.from(new Set(catalog.map((i) => i.category)))],
+    [catalog]
+  );
+
+  const filteredItems = useMemo(() => {
+    const byCat =
+      itemFilter === "all"
+        ? catalog
+        : catalog.filter((i) => i.category === itemFilter);
+    if (!itemSearch.trim()) return byCat;
+    return byCat.filter((i) =>
+      matchesCatalogSearch(itemSearch, [
+        i.id,
+        i.name,
+        i.desc,
+        i.bazaar_desc,
+        i.category,
+        i.tier,
+        i.size,
+      ])
+    );
+  }, [catalog, itemFilter, itemSearch]);
+
+  const filteredMonsters = useMemo(() => {
+    if (!monsterSearch.trim()) return monsters;
+    return monsters.filter((m) =>
+      matchesCatalogSearch(monsterSearch, [
+        m.id,
+        m.name,
+        m.tier,
+        m.hp,
+        m.day,
+        m.bazaar_desc,
+      ])
+    );
+  }, [monsters, monsterSearch]);
 
   const selectedMonsterData = monsters.find((m) => m.id === selectedMonster);
+
+  if (authLoading) {
+    return (
+      <div className="min-h-screen max-w-7xl mx-auto px-4 py-24 flex flex-col items-center justify-center text-center">
+        <div className="text-4xl mb-4 animate-pulse" aria-hidden>
+          🔮
+        </div>
+        <p className="text-bazaar-muted text-sm">Проверяем сессию…</p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen max-w-7xl mx-auto px-4 py-24 flex flex-col items-center justify-center text-center">
+        <p className="text-bazaar-muted text-sm">Перенаправление на страницу входа…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen max-w-7xl mx-auto px-4 py-8">
@@ -462,14 +573,46 @@ export default function PredictPage() {
 
               {/* Item catalog */}
               <div className="bg-card-gradient rounded-xl border border-bazaar-accent/15 p-5">
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-3 gap-2">
                   <h3 className="text-base font-semibold text-bazaar-warm">
                     Выбери предметы
                   </h3>
-                  <span className="text-xs text-bazaar-muted">
+                  <span className="text-xs text-bazaar-muted shrink-0">
                     {selectedItems.length}/10 выбрано
                   </span>
                 </div>
+
+                <div className="relative mb-3">
+                  <span
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-bazaar-muted pointer-events-none text-sm"
+                    aria-hidden
+                  >
+                    🔍
+                  </span>
+                  <input
+                    type="search"
+                    value={itemSearch}
+                    onChange={(e) => setItemSearch(e.target.value)}
+                    placeholder="Поиск: название, id, описание…"
+                    autoComplete="off"
+                    className="w-full rounded-lg border border-bazaar-accent/20 bg-bazaar-bg py-2 pl-9 pr-9 text-sm text-bazaar-warm placeholder:text-bazaar-muted/55 focus:outline-none focus:ring-1 focus:ring-bazaar-accent/40"
+                  />
+                  {itemSearch ? (
+                    <button
+                      type="button"
+                      onClick={() => setItemSearch("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 text-bazaar-muted hover:text-bazaar-warm text-lg leading-none px-1"
+                      aria-label="Очистить поиск"
+                    >
+                      ×
+                    </button>
+                  ) : null}
+                </div>
+                {itemSearch.trim() ? (
+                  <p className="text-[11px] text-bazaar-muted mb-2">
+                    Найдено: {filteredItems.length}
+                  </p>
+                ) : null}
 
                 {/* Category filter */}
                 <div className="flex gap-1.5 mb-4 flex-wrap">
@@ -490,14 +633,20 @@ export default function PredictPage() {
 
                 {/* Items grid */}
                 <div className="grid sm:grid-cols-2 gap-2 max-h-[400px] overflow-y-auto pr-1 custom-scrollbar">
-                  {filteredItems.map((item) => (
-                    <ItemCard
-                      key={item.id}
-                      item={item}
-                      selected={selectedItems.includes(item.id)}
-                      onClick={() => toggleItem(item.id)}
-                    />
-                  ))}
+                  {filteredItems.length === 0 ? (
+                    <p className="col-span-full text-center text-sm text-bazaar-muted py-10">
+                      Ничего не найдено — измени запрос или фильтр категории
+                    </p>
+                  ) : (
+                    filteredItems.map((item) => (
+                      <ItemCard
+                        key={item.id}
+                        item={item}
+                        selected={selectedItems.includes(item.id)}
+                        onClick={() => toggleItem(item.id)}
+                      />
+                    ))
+                  )}
                 </div>
               </div>
 
@@ -506,15 +655,56 @@ export default function PredictPage() {
                 <h3 className="text-base font-semibold text-bazaar-warm mb-3">
                   Выбери монстра
                 </h3>
+                <label className="block text-xs font-medium text-bazaar-muted mb-1.5">
+                  Поиск монстров
+                </label>
+                <div className="relative mb-3">
+                  <span
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-bazaar-accent pointer-events-none text-sm"
+                    aria-hidden
+                  >
+                    🔍
+                  </span>
+                  <input
+                    type="search"
+                    value={monsterSearch}
+                    onChange={(e) => setMonsterSearch(e.target.value)}
+                    placeholder="Имя, id или номер дня…"
+                    autoComplete="off"
+                    aria-label="Поиск монстров"
+                    className="w-full min-h-[44px] rounded-lg border-2 border-bazaar-accent/35 bg-bazaar-surface py-2.5 pl-10 pr-10 text-sm text-bazaar-warm placeholder:text-bazaar-muted/70 shadow-inner shadow-black/20 focus:outline-none focus:border-bazaar-accent focus:ring-2 focus:ring-bazaar-accent/25"
+                  />
+                  {monsterSearch ? (
+                    <button
+                      type="button"
+                      onClick={() => setMonsterSearch("")}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 text-bazaar-muted hover:text-bazaar-warm text-lg leading-none px-1"
+                      aria-label="Очистить поиск"
+                    >
+                      ×
+                    </button>
+                  ) : null}
+                </div>
+                {monsterSearch.trim() ? (
+                  <p className="text-[11px] text-bazaar-muted mb-2">
+                    Найдено: {filteredMonsters.length}
+                  </p>
+                ) : null}
                 <div className="grid sm:grid-cols-2 gap-2 max-h-[300px] overflow-y-auto pr-1">
-                  {monsters.map((m) => (
-                    <MonsterCard
-                      key={m.id}
-                      monster={m}
-                      selected={selectedMonster === m.id}
-                      onClick={() => setSelectedMonster(m.id)}
-                    />
-                  ))}
+                  {filteredMonsters.length === 0 ? (
+                    <p className="col-span-full text-center text-sm text-bazaar-muted py-8">
+                      Ничего не найдено — измени запрос
+                    </p>
+                  ) : (
+                    filteredMonsters.map((m) => (
+                      <MonsterCard
+                        key={m.id}
+                        monster={m}
+                        selected={selectedMonster === m.id}
+                        onClick={() => setSelectedMonster(m.id)}
+                      />
+                    ))
+                  )}
                 </div>
               </div>
 

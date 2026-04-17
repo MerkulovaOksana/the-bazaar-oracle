@@ -121,6 +121,27 @@ def wiki_type_to_category(type_str: str) -> str:
     return "property"
 
 
+def wiki_effects_to_plain_text(effects: str, max_len: int = 300) -> str:
+    """Strip wikitext/HTML from Cargo `effects` for UI descriptions."""
+    if not effects:
+        return ""
+    s = effects
+    s = re.sub(r"\[\[File:\s*[^\]]*\]\]", " ", s, flags=re.IGNORECASE | re.DOTALL)
+    s = re.sub(r"\[\[(?:[^\]|]*\|)*([^\]|]+)\]\]", r"\1", s)
+    s = re.sub(r"\[\[[^\]]+\]\]", " ", s)
+    s = re.sub(r"\{\{[^}]+\}\}", " ", s)
+    s = re.sub(r"'''([^']*)'''", r"\1", s)
+    s = re.sub(r"''([^']*)''", r"\1", s)
+    s = re.sub(r'"{2,}(\d+)"{2,}', r"\1", s)
+    s = re.sub(r"'{2,}(\d+)'{2,}", r"\1", s)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = re.sub(r"&(?:nbsp|#x?[0-9a-f]+|[a-z]+);", " ", s, flags=re.I)
+    s = re.sub(r"\s+", " ", s).strip()
+    if len(s) > max_len:
+        s = s[: max_len - 1] + "…"
+    return s
+
+
 def wiki_size_to_size(size_str: str) -> str:
     s = (size_str or "").lower()
     if "medium" in s:
@@ -140,7 +161,7 @@ def parse_cooldown_ms(cooldown_raw: str) -> int:
         return 0
 
 
-def item_row_to_sim(row: dict) -> dict:
+def item_row_to_sim(row: dict, *, force_category: str | None = None) -> dict:
     name = row.get("_pageName") or row.get("title", {}).get("_pageName")
     effects = row.get("effects") or ""
     tier = normalize_tier(row.get("starting tier") or row.get("starting_tier") or "")
@@ -183,15 +204,22 @@ def item_row_to_sim(row: dict) -> dict:
     if cd_ms > 0 and damage <= 0 and ("weapon" in type_str.lower() or "damage" in type_str.lower()):
         damage = float(15 + tier_idx * 12)
 
-    desc_plain = re.sub(r"<[^>]+>", " ", effects)
-    desc_plain = re.sub(r"\s+", " ", desc_plain).strip()[:220]
+    # Skills table has no cooldown column; if we parsed combat numbers, assume a default cadence
+    if force_category == "skill" and cd_ms <= 0 and (damage > 0 or healing > 0 or shield_amount > 0):
+        cd_ms = 6000
+
+    desc_plain = wiki_effects_to_plain_text(effects)
+    if not desc_plain:
+        desc_plain = f"{name} ({tier})"
+
+    cat = force_category if force_category else wiki_type_to_category(type_str)
 
     return {
         "name": name,
         "desc": desc_plain or f"{name} ({tier})",
-        "category": wiki_type_to_category(type_str),
+        "category": cat,
         "tier": tier,
-        "size": wiki_size_to_size(row.get("size") or ""),
+        "size": wiki_size_to_size(row.get("size") or ("Small" if force_category == "skill" else "")),
         "cooldown_ms": cd_ms,
         "multicast": multicast,
         "damage": damage,
@@ -223,6 +251,30 @@ def fetch_all_cargo_items() -> list[dict]:
         params = {
             "action": "cargoquery",
             "tables": "items",
+            "fields": fields,
+            "limit": "500",
+            "format": "json",
+        }
+        if offset:
+            params["offset"] = str(offset)
+        data = api_get(params)
+        batch = data.get("cargoquery", [])
+        rows.extend(batch)
+        if len(batch) < 500:
+            break
+        offset += 500
+        time.sleep(0.15)
+    return rows
+
+
+def fetch_all_cargo_skills() -> list[dict]:
+    rows: list[dict] = []
+    offset = 0
+    fields = "_pageName,effects,type,starting_tier=starting tier"
+    while True:
+        params = {
+            "action": "cargoquery",
+            "tables": "skills",
             "fields": fields,
             "limit": "500",
             "format": "json",
@@ -343,7 +395,28 @@ def main():
         sim = item_row_to_sim(row if "_pageName" in row else row.get("title", {}))
         items_out[iid] = sim
 
-    print(f"Items: {len(items_out)}")
+    items_only_count = len(items_out)
+    print(f"Cargo items: {items_only_count}")
+
+    print("Fetching skills from Cargo...")
+    raw_skills = fetch_all_cargo_skills()
+    skills_merged = 0
+    for row in raw_skills:
+        inner = row.get("title", row) if isinstance(row.get("title"), dict) else row
+        title = inner.get("_pageName")
+        if not title:
+            continue
+        base_id = page_to_id(title)
+        iid = base_id
+        if iid in items_out:
+            iid = f"{base_id}__skill"
+        if iid in items_out:
+            iid = f"{base_id}__skill_{skills_merged}"
+        sim = item_row_to_sim(inner, force_category="skill")
+        items_out[iid] = sim
+        skills_merged += 1
+
+    print(f"Skills merged: {skills_merged}; total catalog entries: {len(items_out)}")
 
     print("Fetching monsters...")
     monster_titles = fetch_category_monsters()
@@ -365,9 +438,15 @@ def main():
 
     payload = {
         "meta": {
-            "source": "thebazaar.wiki.gg Cargo + Category:Monsters",
-            "items_count": len(items_out),
+            "source": "thebazaar.wiki.gg Cargo (items+skills) + Category:Monsters",
+            "items_count": items_only_count,
+            "skills_count": skills_merged,
+            "catalog_item_ids": len(items_out),
             "monsters_count": len(monsters_out),
+            "external_reference": (
+                "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; "
+                "this file is limited to public wiki Cargo + monster pages."
+            ),
         },
         "items": items_out,
         "monsters": monsters_out,

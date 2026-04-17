@@ -40,21 +40,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("token");
-    const savedName = localStorage.getItem("username");
-    const savedId = localStorage.getItem("userId");
 
     if (!saved) {
       setIsLoading(false);
       return;
     }
 
-    setToken(saved);
-    setUsername(savedName);
-    setUserId(savedId ? parseInt(savedId) : null);
-
+    // Do not mark the user as logged in until /auth/me succeeds — avoids a stale
+    // header + predict redirect loop when the token is expired or the API is unreachable.
     api
       .getMe()
       .then((data) => {
+        setToken(saved);
         setUsername(data.username);
         setUserId(data.user_id);
         localStorage.setItem("username", data.username);

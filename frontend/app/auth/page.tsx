@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth-context";
@@ -44,8 +44,14 @@ export default function AuthPage() {
   const [showConfirm, setShowConfirm] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const { login, register } = useAuth();
+  const { login, register, isAuthenticated, isLoading: authLoading } = useAuth();
   const router = useRouter();
+
+  useEffect(() => {
+    if (!authLoading && isAuthenticated) {
+      router.replace("/app/predict");
+    }
+  }, [authLoading, isAuthenticated, router]);
 
   const isRegister = tab === "register";
   const strength = useMemo(() => getPasswordStrength(password), [password]);
@@ -93,6 +99,14 @@ export default function AuthPage() {
     setPassword("");
     setConfirmPassword("");
   };
+
+  if (authLoading || isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4 py-8">
+        <p className="text-bazaar-muted text-sm">Загрузка…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-8">

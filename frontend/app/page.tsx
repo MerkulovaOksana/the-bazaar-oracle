@@ -55,7 +55,7 @@ const heroes = [
 const stats = [
   { value: "7", label: "героев", icon: "⚔️" },
   { value: "100+", label: "монстров", icon: "🐉" },
-  { value: "630+", label: "предметов", icon: "🛡️" },
+  { value: "940+", label: "предметов и скиллов", icon: "🛡️" },
   { value: "GPT-4", label: "Vision", icon: "🔮" },
 ];
 

@@ -2,6 +2,9 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL
   ? `${process.env.NEXT_PUBLIC_API_URL}/api`
   : "/api";
 
+const JSON_TIMEOUT_MS = 30_000;
+const UPLOAD_TIMEOUT_MS = 120_000;
+
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
   return localStorage.getItem("token");
@@ -30,10 +33,28 @@ async function request<T>(
     headers["Content-Type"] = "application/json";
   }
 
-  const res = await fetch(`${API_BASE}${path}`, {
-    ...options,
-    headers,
-  });
+  const isUpload = options.body instanceof FormData;
+  const timeoutMs = isUpload ? UPLOAD_TIMEOUT_MS : JSON_TIMEOUT_MS;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  let res: Response;
+  try {
+    res = await fetch(`${API_BASE}${path}`, {
+      ...options,
+      headers,
+      signal: controller.signal,
+    });
+  } catch (e: unknown) {
+    if (e instanceof Error && e.name === "AbortError") {
+      throw new Error(
+        "Сервер не ответил вовремя. Проверь, что API запущен и NEXT_PUBLIC_API_URL указывает на него."
+      );
+    }
+    throw e;
+  } finally {
+    clearTimeout(timeoutId);
+  }
 
   const isAuthEndpoint = path.startsWith("/auth/login") || path.startsWith("/auth/register");
 

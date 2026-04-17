@@ -108,6 +108,25 @@ export default function ChatPage() {
     setRecording(false);
   };
 
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="text-4xl mb-4 animate-pulse" aria-hidden>
+          🔮
+        </div>
+        <p className="text-bazaar-muted text-sm">Проверяем сессию…</p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <p className="text-bazaar-muted text-sm">Перенаправление на страницу входа…</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen max-w-3xl mx-auto px-4 py-8 flex flex-col">
       <h1 className="text-3xl font-bold mb-4 text-bazaar-warm">RAG-Ассистент</h1>

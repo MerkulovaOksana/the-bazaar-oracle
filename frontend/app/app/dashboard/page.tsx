@@ -30,6 +30,25 @@ export default function DashboardPage() {
       .finally(() => setLoading(false));
   }, [isAuthenticated, authLoading, router]);
 
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="text-4xl mb-4 animate-pulse" aria-hidden>
+          🔮
+        </div>
+        <p className="text-bazaar-muted text-sm">Проверяем сессию…</p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <p className="text-bazaar-muted text-sm">Перенаправление на страницу входа…</p>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
