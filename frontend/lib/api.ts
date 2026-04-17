@@ -35,7 +35,9 @@ async function request<T>(
     headers,
   });
 
-  if (res.status === 401 && onUnauthorized) {
+  const isAuthEndpoint = path.startsWith("/auth/login") || path.startsWith("/auth/register");
+
+  if (res.status === 401 && onUnauthorized && !isAuthEndpoint) {
     onUnauthorized();
     throw new Error("Сессия истекла, войдите заново");
   }
