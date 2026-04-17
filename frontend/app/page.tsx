@@ -54,8 +54,8 @@ const heroes = [
 
 const stats = [
   { value: "7", label: "героев", icon: "⚔️" },
-  { value: "10+", label: "монстров", icon: "🐉" },
-  { value: "50+", label: "предметов", icon: "🛡️" },
+  { value: "100+", label: "монстров", icon: "🐉" },
+  { value: "630+", label: "предметов", icon: "🛡️" },
   { value: "GPT-4", label: "Vision", icon: "🔮" },
 ];
 
@@ -325,11 +325,11 @@ export default function LandingPage() {
             {/* Items row */}
             <div className="flex justify-center gap-2 mb-5 flex-wrap">
               {[
-                { name: "Sword", icon: "⚔️" },
-                { name: "Buckler", icon: "🛡️" },
-                { name: "Fire Staff", icon: "🔥" },
-                { name: "Healing Potion", icon: "💚" },
-                { name: "Speed Boots", icon: "👢" },
+                { name: "Old Sword", icon: "⚔️" },
+                { name: "Hatchet", icon: "🪓" },
+                { name: "Inferno Staff", icon: "🔥" },
+                { name: "Health Potion", icon: "💚" },
+                { name: "Haste Boots", icon: "👢" },
               ].map((item) => (
                 <div
                   key={item.name}

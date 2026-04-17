@@ -37,6 +37,26 @@ TIER_EMOJI = {
     "legendary": "\U0001f7e3",
 }
 
+TELEGRAM_CHUNK = 3800
+
+
+def _split_text_chunks(text: str, limit: int = TELEGRAM_CHUNK) -> list[str]:
+    lines = text.split("\n")
+    chunks: list[str] = []
+    cur: list[str] = []
+    n = 0
+    for line in lines:
+        add = len(line) + (1 if cur else 0)
+        if cur and n + add > limit:
+            chunks.append("\n".join(cur))
+            cur = []
+            n = 0
+        cur.append(line)
+        n += add
+    if cur:
+        chunks.append("\n".join(cur))
+    return chunks
+
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
@@ -58,7 +78,7 @@ async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "*1\ufe0f\u20e3 \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442:* \u041f\u0440\u043e\u0441\u0442\u043e \u043e\u0442\u043f\u0440\u0430\u0432\u044c \u0444\u043e\u0442\u043e \u044d\u043a\u0440\u0430\u043d\u0430 \u0431\u043e\u044f.\n"
         "GPT-4 Vision \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0435\u0442 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b \u0438 \u0441\u0438\u043c\u0443\u043b\u0438\u0440\u0443\u0435\u0442 \u0431\u043e\u0439.\n\n"
         "*2\ufe0f\u20e3 \u0412\u0440\u0443\u0447\u043d\u0443\u044e:*\n"
-        "`/predict sword,twin_daggers vs pyro`\n\n"
+        "`/predict old_sword,hatchet vs boarrior`\n\n"
         "*\u0421\u043f\u0438\u0441\u043a\u0438:*\n"
         "/monsters \u2014 \u0432\u0441\u0435 \u043c\u043e\u043d\u0441\u0442\u0440\u044b \u0441 HP \u0438 \u0434\u043d\u044f\u043c\u0438\n"
         "/items \u2014 \u0432\u0441\u0435 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b \u0441 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f\u043c\u0438\n\n"
@@ -68,16 +88,21 @@ async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def monsters_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    text = "\U0001f409 *\u041c\u043e\u043d\u0441\u0442\u0440\u044b The Bazaar:*\n\n"
-    for m_id, m in MONSTERS.items():
+    lines = [
+        f"\U0001f409 \u041c\u043e\u043d\u0441\u0442\u0440\u044b The Bazaar ({len(MONSTERS)}):",
+        "",
+    ]
+    for m_id, m in sorted(MONSTERS.items(), key=lambda x: x[1]["name"]):
         tier_emoji = TIER_EMOJI.get(m.get("tier", ""), "")
         day = m.get("day", "?")
-        text += (
-            f"{tier_emoji} *{m['name']}* \u2014 {m['hp']} HP\n"
-            f"    Day {day} \u2022 {m.get('tier', '').title()} \u2022 `{m_id}`\n\n"
+        lines.append(
+            f"{tier_emoji} {m['name']} \u2014 {m['hp']} HP, day {day}, {m.get('tier', '')} | `{m_id}`"
         )
-    text += "\u2139\ufe0f \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439 ID \u0434\u043b\u044f /predict"
-    await update.message.reply_text(text, parse_mode="Markdown")
+    lines.append("")
+    lines.append("\u2139\ufe0f ID \u0434\u043b\u044f /predict")
+    text = "\n".join(lines)
+    for chunk in _split_text_chunks(text):
+        await update.message.reply_text(chunk)
 
 
 async def items_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -96,17 +121,21 @@ async def items_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "tool": "\U0001f527 \u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b",
     }
 
-    text = "\U0001f4e6 *\u041f\u0440\u0435\u0434\u043c\u0435\u0442\u044b:*\n\n"
-    for cat, items in categories.items():
-        text += f"*{cat_names.get(cat, cat)}*\n"
-        for item_id, item in items:
+    lines = [
+        f"\U0001f4e6 \u041f\u0440\u0435\u0434\u043c\u0435\u0442\u044b ({len(ITEMS_CATALOG)}):",
+        "",
+    ]
+    for cat, items in sorted(categories.items()):
+        lines.append(f"=== {cat_names.get(cat, cat)} ({len(items)}) ===")
+        for item_id, item in sorted(items, key=lambda x: x[1]["name"]):
             tier_emoji = TIER_EMOJI.get(item.get("tier", ""), "")
-            text += f"{tier_emoji} `{item_id}` \u2014 {item['name']}\n"
-            text += f"    _{item.get('desc', '')}_\n"
-        text += "\n"
+            lines.append(f"{tier_emoji} `{item_id}` \u2014 {item['name']}")
+        lines.append("")
 
-    text += "\u2139\ufe0f \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439 ID \u0434\u043b\u044f /predict"
-    await update.message.reply_text(text, parse_mode="Markdown")
+    lines.append("\u2139\ufe0f ID \u0434\u043b\u044f /predict \u2022 \u043f\u043e\u043b\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u043e\u0447\u043a\u0438 \u2014 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435")
+    text = "\n".join(lines)
+    for chunk in _split_text_chunks(text):
+        await update.message.reply_text(chunk)
 
 
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -193,9 +222,9 @@ async def predict_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "\u2694\ufe0f *\u0420\u0443\u0447\u043d\u043e\u0435 \u043f\u0440\u0435\u0434\u0441\u043a\u0430\u0437\u0430\u043d\u0438\u0435*\n\n"
             "\u0424\u043e\u0440\u043c\u0430\u0442: `/predict item1,item2 vs monster_id`\n\n"
             "\u041f\u0440\u0438\u043c\u0435\u0440\u044b:\n"
-            "`/predict sword,twin_daggers vs pyro`\n"
-            "`/predict flame_blade,aegis_barrier vs dragon`\n"
-            "`/predict apocalypse_blade,holy_grail vs zookeeper`\n\n"
+            "`/predict old_sword,hatchet vs boarrior`\n"
+            "`/predict cinders,lighter vs pyro`\n"
+            "`/predict dragon_wing,fire_claw vs dragon`\n\n"
             "\U0001f4cb /monsters \u2014 \u0441\u043f\u0438\u0441\u043e\u043a \u043c\u043e\u043d\u0441\u0442\u0440\u043e\u0432\n"
             "\U0001f4cb /items \u2014 \u0441\u043f\u0438\u0441\u043e\u043a \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432",
             parse_mode="Markdown",

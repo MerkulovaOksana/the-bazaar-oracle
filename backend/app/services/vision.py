@@ -5,6 +5,7 @@ Extracts player items, monster info, and HP from a game screenshot.
 
 import base64
 import json
+import re
 from typing import Optional
 
 from openai import AsyncOpenAI
@@ -37,7 +38,8 @@ Return a JSON object with this exact structure:
   "notes": "any additional observations"
 }
 
-If you cannot identify specific items, describe them as best you can (e.g. "unknown_sword", "healing_item").
+Use exact English item names as on the cards (Title Case), e.g. "Old Sword", "Dragon Wing", "Health Potion".
+If you cannot identify an item, use a short description; avoid inventing fake proper names.
 Focus on accuracy — it's better to say "unknown" than to guess wrong."""
 
 
@@ -78,8 +80,14 @@ async def parse_screenshot(image_bytes: bytes, mime_type: str = "image/png") -> 
     return json.loads(raw.strip())
 
 
+def _name_to_slug(s: str) -> str:
+    s = s.strip().lower()
+    s = re.sub(r"[^a-z0-9]+", "_", s)
+    return s.strip("_")
+
+
 def match_items_to_catalog(parsed_items: list[str], catalog: dict) -> list[str]:
-    """Fuzzy-match parsed item names to catalog IDs."""
+    """Match parsed item names to catalog IDs (wiki / Bazaar DB style names)."""
     matched = []
     catalog_names = {v["name"].lower(): k for k, v in catalog.items()}
 
@@ -87,18 +95,30 @@ def match_items_to_catalog(parsed_items: list[str], catalog: dict) -> list[str]:
         name_lower = item_name.lower().strip()
         if name_lower in catalog_names:
             matched.append(catalog_names[name_lower])
-        else:
-            # Try partial match
-            best_match = None
-            best_score = 0
+            continue
+
+        slug = _name_to_slug(item_name)
+        if slug and slug in catalog:
+            matched.append(slug)
+            continue
+
+        best_match = None
+        best_score = 0
+        for cat_name, cat_id in catalog_names.items():
+            common = len(set(name_lower.split()) & set(cat_name.split()))
+            if common > best_score:
+                best_score = common
+                best_match = cat_id
+        if best_match and best_score > 0:
+            matched.append(best_match)
+        elif slug:
+            substr_match = None
             for cat_name, cat_id in catalog_names.items():
-                common = len(set(name_lower.split()) & set(cat_name.split()))
-                if common > best_score:
-                    best_score = common
-                    best_match = cat_id
-            if best_match and best_score > 0:
-                matched.append(best_match)
-            else:
-                matched.append("sword")  # generic fallback when vision name is not in catalog
+                if name_lower in cat_name or cat_name in name_lower:
+                    substr_match = cat_id
+                    break
+            matched.append(substr_match or "old_sword")
+        else:
+            matched.append("old_sword")
 
     return matched
