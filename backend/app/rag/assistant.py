@@ -69,6 +69,7 @@ async def chat_with_rag(
 ) -> str:
     """Process a user question using RAG."""
     client = AsyncOpenAI(api_key=settings.openai_api_key)
+    primary_model = (settings.openai_model or "").strip() or "gpt-4o-mini"
 
     messages = [
         {
@@ -81,12 +82,24 @@ async def chat_with_rag(
         messages.extend(conversation_history[-10:])
 
     messages.append({"role": "user", "content": user_message})
+    model_candidates = [primary_model]
+    if primary_model != "gpt-4o-mini":
+        model_candidates.append("gpt-4o-mini")
 
-    response = await client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=messages,
-        max_tokens=800,
-        temperature=0.3,
-    )
+    last_error: Exception | None = None
+    for model_name in model_candidates:
+        try:
+            response = await client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                max_tokens=800,
+                temperature=0.3,
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            last_error = e
+            continue
 
-    return response.choices[0].message.content
+    if last_error:
+        raise last_error
+    raise RuntimeError("RAG assistant failed without explicit error")

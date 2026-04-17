@@ -85,8 +85,15 @@ async function request<T>(
   }
 
   if (!res.ok) {
-    const error = await res.json().catch(() => ({ detail: res.statusText }));
-    throw new Error(error.detail || "Request failed");
+    const error = await res
+      .json()
+      .catch(() => ({ detail: res.statusText || `HTTP ${res.status}` }));
+    const detail =
+      (typeof error?.detail === "string" && error.detail) ||
+      (typeof error?.error?.message === "string" && error.error.message) ||
+      res.statusText ||
+      `HTTP ${res.status}`;
+    throw new Error(detail);
   }
 
   return res.json();

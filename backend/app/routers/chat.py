@@ -1,4 +1,6 @@
-from fastapi import APIRouter, Depends, UploadFile, File
+import logging
+
+from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -9,6 +11,7 @@ from ..rag.assistant import chat_with_rag
 from ..services.speech import transcribe_audio
 
 router = APIRouter(prefix="/chat", tags=["chat"])
+logger = logging.getLogger(__name__)
 
 
 class ChatRequest(BaseModel):
@@ -27,7 +30,12 @@ async def send_message(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ):
-    reply = await chat_with_rag(req.message, req.history)
+    try:
+        reply = await chat_with_rag(req.message, req.history)
+    except Exception as e:
+        logger.exception("Chat message failed")
+        detail = str(e) or "AI service error"
+        raise HTTPException(status_code=502, detail=f"AI provider error: {detail}") from e
 
     db.add(ChatMessage(user_id=user.id, role="user", content=req.message, input_type="text"))
     db.add(ChatMessage(user_id=user.id, role="assistant", content=reply, input_type="text"))
@@ -43,10 +51,14 @@ async def send_voice(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ):
-    audio_bytes = await file.read()
-    transcript = await transcribe_audio(audio_bytes, file.filename or "audio.webm")
-
-    reply = await chat_with_rag(transcript)
+    try:
+        audio_bytes = await file.read()
+        transcript = await transcribe_audio(audio_bytes, file.filename or "audio.webm")
+        reply = await chat_with_rag(transcript)
+    except Exception as e:
+        logger.exception("Chat voice failed")
+        detail = str(e) or "AI service error"
+        raise HTTPException(status_code=502, detail=f"AI provider error: {detail}") from e
 
     db.add(ChatMessage(user_id=user.id, role="user", content=transcript, input_type="voice"))
     db.add(ChatMessage(user_id=user.id, role="assistant", content=reply, input_type="text"))
