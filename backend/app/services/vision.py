@@ -99,6 +99,6 @@ def match_items_to_catalog(parsed_items: list[str], catalog: dict) -> list[str]:
             if best_match and best_score > 0:
                 matched.append(best_match)
             else:
-                matched.append("iron_sword")  # fallback
+                matched.append("sword")  # generic fallback when vision name is not in catalog
 
     return matched
