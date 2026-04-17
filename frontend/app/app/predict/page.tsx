@@ -131,6 +131,7 @@ function matchesCatalogSearch(query: string, parts: (string | number | undefined
 function stripWikiMarkupForUi(s: string): string {
   if (!s) return "";
   let t = s;
+  // `[[File:...]]` must match through final `]]` (params may contain `]` before that).
   t = t.replace(/\[\[File:\s*[\s\S]*?\]\]/gi, " ");
   t = t.replace(/\[\[(?:[^\]|]*\|)*([^\]|]+)\]\]/g, "$1");
   t = t.replace(/\[\[[^\]]+\]\]/g, " ");

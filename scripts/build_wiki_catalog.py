@@ -126,7 +126,8 @@ def wiki_effects_to_plain_text(effects: str, max_len: int = 300) -> str:
     if not effects:
         return ""
     s = effects
-    s = re.sub(r"\[\[File:\s*[^\]]*\]\]", " ", s, flags=re.IGNORECASE | re.DOTALL)
+    # Links end with `]]`; do not use [^\]]* — pipe segments can contain `]` before final `]]`.
+    s = re.sub(r"\[\[File:\s*[\s\S]*?\]\]", " ", s, flags=re.IGNORECASE)
     s = re.sub(r"\[\[(?:[^\]|]*\|)*([^\]|]+)\]\]", r"\1", s)
     s = re.sub(r"\[\[[^\]]+\]\]", " ", s)
     s = re.sub(r"\{\{[^}]+\}\}", " ", s)
