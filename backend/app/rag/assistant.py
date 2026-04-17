@@ -25,18 +25,44 @@ def _load_knowledge() -> str:
     # Add items catalog as knowledge
     items_text = "# Items Catalog\n\n"
     for item_id, item in ITEMS_CATALOG.items():
-        effects_str = ", ".join(
-            f"{e['type']}={e['value']}" for e in item["effects"]
-        )
+        # Some bazaar-only stub entries may not have normalized "effects" yet.
+        effects = item.get("effects") if isinstance(item, dict) else None
+        if isinstance(effects, list) and effects:
+            effects_str = ", ".join(
+                f"{e.get('type', 'unknown')}={e.get('value', 0)}" for e in effects
+            )
+        else:
+            fallback_bits = []
+            for k in (
+                "damage",
+                "healing",
+                "shield_amount",
+                "crit_chance",
+                "applies_burn",
+                "applies_poison",
+                "applies_haste",
+                "applies_freeze",
+            ):
+                v = item.get(k, 0)
+                if isinstance(v, (int, float)) and v:
+                    fallback_bits.append(f"{k}={v}")
+            effects_str = ", ".join(fallback_bits) if fallback_bits else "none"
+        name = item.get("name", item_id)
+        tier = item.get("tier", "unknown")
+        cooldown_ms = item.get("cooldown_ms", "?")
+        multicast = item.get("multicast", "?")
         items_text += (
-            f"- **{item['name']}** ({item['tier']}): "
-            f"CD={item['cooldown_ms']}ms, multicast={item['multicast']}, "
+            f"- **{name}** ({tier}): "
+            f"CD={cooldown_ms}ms, multicast={multicast}, "
             f"effects: {effects_str}\n"
         )
 
     items_text += "\n# Monsters\n\n"
     for m_id, m in MONSTERS.items():
-        items_text += f"- **{m['name']}**: HP={m['hp']}, items: {', '.join(m['items'])}\n"
+        m_name = m.get("name", m_id)
+        m_hp = m.get("hp", "?")
+        m_items = m.get("items", [])
+        items_text += f"- **{m_name}**: HP={m_hp}, items: {', '.join(m_items)}\n"
 
     texts.append(items_text)
     return "\n\n---\n\n".join(texts)
