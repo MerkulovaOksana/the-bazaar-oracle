@@ -44,15 +44,22 @@ async function request<T>(
 
   let res: Response | null = null;
   const networkErrors: string[] = [];
+  const responseErrors: string[] = [];
   for (const base of API_BASES) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
     try {
-      res = await fetch(`${base}${path}`, {
+      const candidateUrl = `${base}${path}`;
+      const candidateRes = await fetch(candidateUrl, {
         ...options,
         headers,
         signal: controller.signal,
       });
+      if (!candidateRes.ok && candidateRes.status === 404 && base !== "/api") {
+        responseErrors.push(`${candidateUrl} -> HTTP 404`);
+        continue;
+      }
+      res = candidateRes;
       break;
     } catch (e: unknown) {
       if (e instanceof Error && e.name === "AbortError") {
@@ -73,7 +80,7 @@ async function request<T>(
 
   if (!res) {
     throw new Error(
-      `Не удалось подключиться к API (${networkErrors.join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
+      `Не удалось подключиться к API (${[...networkErrors, ...responseErrors].join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
     );
   }
 
