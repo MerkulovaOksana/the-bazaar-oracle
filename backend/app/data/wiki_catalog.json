@@ -6,8 +6,8 @@
     "catalog_item_ids": 947,
     "monsters_count": 101,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-04-18T13:53:33.899025+00:00",
-    "bazaar_gap_last_run_new_items": 480,
+    "bazaar_gap_import_at": "2026-04-18T14:14:24.037314+00:00",
+    "bazaar_gap_last_run_new_items": 0,
     "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
@@ -34337,6 +34337,292 @@
       "bazaar_desc": "Weather Machine: See 13 enchantments, 4 hidden abilities. Offered by 18 merchants. Obtained from 2 sources. Every 5.0 sec.: [2/3/4] items start Flying Freeze an item on each Player's board for [1/2/3] second(s) Slow all items for [1/2/3] second(s) Patch 13.3.",
       "source": "bazaar_only",
       "bazaar_card_path": "/card/101khfz9qzd8gcgdw7tkxly9ktj/Weather-Machine"
+    },
+    "banannibal": {
+      "name": "Banannibal",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/8424c04ebd4564e9c93dcc71a160c323408fd13e@256.webp/encounter?v=6&sig=UFr%2FVp6qCaTvNQOGA7qZjQ0R6jY%3D",
+      "items": [],
+      "bazaar_desc": "Banannibal. Day 1 Monster. Skills: Healthy Jolt. Items: Med Kit, Bluenanas, Duct Tape. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/4k4n5d9g1c9ydpt7c1gy7wg72q/Banannibal"
+    },
+    "hoverbike_hooligan": {
+      "name": "Hoverbike Hooligan",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/c0cd568d84089117d13cd1f4307220416fd3cc44@256.webp/encounter?v=6&sig=JfIthEz8XIoQeNFMJ9lEfNnqQJQ%3D",
+      "items": [],
+      "bazaar_desc": "Hoverbike Hooligan. Day 3 Monster. Skills: Gunner. Items: Gunpowder, Laser Pistol, SMG, Bolas, Weakpoint Detector, Grappling Hook, Eagle Talisman. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/8w81pgsxz9pfx2l7t82mnwdcty/Hoverbike-Hooligan"
+    },
+    "mutant_baker": {
+      "name": "Mutant Baker",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/c450387f54576333caf4ee36b97439583dbb857e@256.webp/encounter?v=6&sig=Vt7gvpPACut5jkinkQUs0afFQXA%3D",
+      "items": [],
+      "bazaar_desc": "Mutant Baker. Day 3 Monster. Skills: The Right Tool. Items: Venomous Dose, Butter, Bread Knife, Bread, Knife Sharpener, Rolling Pin. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/zthxv7p15xl69xz1cjtqfj9ctq/Mutant-Baker"
+    },
+    "wild_boar": {
+      "name": "Wild Boar",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/dd882138ef6a04a64c1becb3b67c41d747f1d2e1@256.webp/encounter?v=6&sig=3m3KF2LvAmYpUnArhCrfIKxfVQc%3D",
+      "items": [],
+      "bazaar_desc": "Wild Boar. Day 4 Monster. Skills: Feeding Frenzy. Items: Wildroot Amulet, Blueberry Pie, Wild Boar, Basket, Truffles. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/nw61bbz6c05mpkdqlfgvvkdbfh/Wild-Boar"
+    },
+    "worry_wart": {
+      "name": "Worry Wart",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/af109b3482d3d6080b1f0f51eade1fe1569a3fb3@256.webp/encounter?v=6&sig=10%2BeTEh%2B9EkMpDJ9KOw2rPKgA64%3D",
+      "items": [],
+      "bazaar_desc": "Worry Wart. Day 4 Monster. Skills: Slippery Fella. Items: Extract, Drowsdrop, Worry Wart, Warpaint, Frog Hollow, Extract. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/dv1tc6l7cpbl84nc23knw1tsbj/Worry-Wart"
+    },
+    "sandwich_artist": {
+      "name": "Sandwich Artist",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/294053c39753e9a19a47c661db4a8a6d76496f2d@256.webp/encounter?v=6&sig=5080Z%2FtH4Bno1LTAc9ULmG6wTL0%3D",
+      "items": [],
+      "bazaar_desc": "Sandwich Artist. Day 6 Monster. Skills: Regenerative. Items: Bread, Salt, Butter, Giant Sub, Spice Rack, Baked Potato. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/16g2vt95jy8s5zqppmhv3zd2cy3/Sandwich-Artist"
+    },
+    "unibou": {
+      "name": "Unibou",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/0c5717028202906d0acae34c0d7fdbfd5129f45f@256.webp/encounter?v=6&sig=BRLFqdTnuXOUROUmDY85MvV0poA%3D",
+      "items": [],
+      "bazaar_desc": "Unibou. Day 7 Monster. Skills: Lone Charge. Items: Unibou, Karst, Succulents, Bushel, Honey Jar, Snow Wisp. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/s8kh75vqmqd4y23l1nqcp1z8bx/Unibou"
+    },
+    "wildman": {
+      "name": "Wildman",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/93b0aa3c5fa751f594d61aa3b2681e57bc54f2b7@256.webp/encounter?v=6&sig=ywoEQAb0S8ZM1fLbJqfoqKmYnWk%3D",
+      "items": [],
+      "bazaar_desc": "Wildman. Day 7 Monster. Skills: Frontier Living. Items: Pelt, Battle Axe, Bear Mask, Hunting Knife, Bagpipes, Warpaint, Resistance Bands. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/qnvnmv94932s695cx96nspzg8b/Wildman"
+    },
+    "cloudtop_officer": {
+      "name": "Cloudtop Officer",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/66105f07fa02e8ef8dec5f4f5b5f4d50333fd382@256.webp/encounter?v=6&sig=MG2ZiCwKvkNCuet%2FPSteEgNOJTk%3D",
+      "items": [],
+      "bazaar_desc": "Cloudtop Officer. Day 8 Monster. Skills: Bombing Run. Items: Air-Pressure Rifle, Altimeter, Battle Balloon, Propeller, Tethers, Flycycle. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/lybpqhnqybwz2j3yfjn0jv28f7/Cloudtop-Officer"
+    },
+    "stew": {
+      "name": "Stew",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/51bf0e6c6b874a2a5ecf9220bb836fa56f738116@256.webp/encounter?v=6&sig=iYFUQRP6hHuhr6HJqEIf%2BQIpP3M%3D",
+      "items": [],
+      "bazaar_desc": "Stew. Day 8 Monster. Skills: Anything to Win. Items: Curry, Black Pepper, Oven Mitts, Cauldron, Pickled Peppers, Hot Sauce, Scorchpepper. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/ctxqs29ks0m2vd4j7xzxw5c1mc/Stew"
+    },
+    "wolverine": {
+      "name": "Wolverine",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/b0649f6220f1a906fc05704f8bbc41f2ca4e42c3@256.webp/encounter?v=6&sig=xQaIWr%2B5O%2FTkqhqcB%2BNc3a1pz%2Fk%3D",
+      "items": [],
+      "bazaar_desc": "Wolverine. Day 8 Monster. Skills: Ferocious Bite. Items: Pelt, Eagle Sigil, Wolverine, Beast Call, Wolf, Fang, Warpaint, Claws. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/16dqkzq5y8bgp9bz98qyzys13pn/Wolverine"
+    },
+    "anaconda": {
+      "name": "Anaconda",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/8268da6391f6030110c3472a6a82585a2c9bb5e3@256.webp/encounter?v=6&sig=%2BQwCrxAvpjF6HXcA2Ai7N5WGsmI%3D",
+      "items": [],
+      "bazaar_desc": "Anaconda. Day 9 Monster. Skills: Honed In. Items: Anaconda, Hidden Lake, Fang, Fang, Assault Sigil. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/nwqwn46mmqg427fbwzb0ll5fqv/Anaconda"
+    },
+    "foundation_revenant": {
+      "name": "Foundation Revenant",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/69431932b218bd74e3c3eae02ca8493403222eb4@256.webp/encounter?v=6&sig=UrFDzZZvKh8Yl7SzA6CDVYukkIs%3D",
+      "items": [],
+      "bazaar_desc": "Foundation Revenant. Day 9 Monster. Skills: Exposing Toxins, Purifying Flame. Items: Soul Ring, Emerald, Ouroboros Statue, Shadowed Cloak, Basilisk Fang, Ectoplasm, Thurible, Bandages. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/19k4kjdfqfy1mtcyjjk6cf5l8tg/Foundation-Revenant"
+    },
+    "infernal_dreadnought": {
+      "name": "Infernal Dreadnought",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/9e6405a6b7e1eaf8f1b425fbad7918eb16c36f0a@256.webp/encounter?v=6&sig=jPEbDyhn74KbmzsFlzow5SPJb8g%3D",
+      "items": [],
+      "bazaar_desc": "Infernal Dreadnought. Day 10 Monster. Skills: Pyromania. Items: Skyliner, Jetpack, Solar Drone, Balloon Engine, Launch Tower. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/9fllk70yzkcm16zk9ktbspvk1v/Infernal-Dreadnought"
+    },
+    "test_subject_alpha": {
+      "name": "Test Subject Alpha",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/94bdf346ff36287b82cd79ea17156f1a3e2f5367@256.webp/encounter?v=6&sig=BYLuF%2B3A2m3W2BfKRqjenYwFOT8%3D",
+      "items": [],
+      "bazaar_desc": "Test Subject Alpha. Day 10 Monster. Skills: Toxic Fuel, Vital Reserve. Items: Venomous Dose, Fungal Spores, Rapid Injection System, Barbed Claws, Test Subject Alpha, Infused Bracers. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/19s5lnpq8bk0vx217qdwkc96npp/Test-Subject-Alpha"
+    },
+    "tortuga": {
+      "name": "Tortuga",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/e6252cd36d2d7dd4d069ec108746708734bddcc1@256.webp/encounter?v=6&sig=WqLhS7g3OutQeMR0CA2YF8zftpU%3D",
+      "items": [],
+      "bazaar_desc": "Tortuga. Day 10 Monster. Skills: Friendzone, Warm Hugs. Items: Tortuga, Pesky Pete, Zoarcid, Catfish, Pufferfish, Jellyfish, Old Saltclaw. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/6t8zjf9zn2g6blq35hvns10nbm/Tortuga"
+    },
+    "dooltron": {
+      "name": "Dooltron",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/de8de1dce704fae015ed3c650d6e54c89342a01d@256.webp/encounter?v=6&sig=I%2B%2Bj03z7kiNxLh1f5ba4%2Btpgp3w%3D",
+      "items": [],
+      "bazaar_desc": "Dooltron. Day 10 Monster. Skills: Nanobot Construction, Electrified Hull. Items: BLU-B33TL3, GRN-W4SP, BLK-SP1D3R, RED-F1R3FLY, YLW-M4NT1S, Z-Sword, Dooltron. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/5ymcgq60b9xfn41lzmtkghf1pj/Dooltron"
+    },
+    "rex_spex": {
+      "name": "Rex Spex",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/ab651e8fd43544f25f134981d3c0ca1d91304e9f@256.webp/encounter?v=6&sig=KizG6ExpKrPGS49kdXGrPTAnWn4%3D",
+      "items": [],
+      "bazaar_desc": "Rex Spex. Day 10 Monster. Skills: Healthy Friendship, Static Acceleration. Items: Dinosawer, Rex Spex, YLW-M4NT1S, Dino Disguise, Zoarcid, Race Carl. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/6847znsxmgnn97n3f93625gkhq/Rex-Spex"
+    },
+    "gibbus": {
+      "name": "Gibbus",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/756fa578b23c904276ac036bc0ace07b88188d69@256.webp/encounter?v=6&sig=gNV%2FiJd2anklz9tOp0QFP4dzU9E%3D",
+      "items": [],
+      "bazaar_desc": "Gibbus. Day 10 Monster. Skills: Wax and Wane. Items: Moon Orb, Shot Glasses, Earrings, Weather Machine, Solar Drone, Steam Hose, Thrusters. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/smn5wn7wmtv4mcj74yv7d0m6nk/Gibbus"
+    },
+    "eight_arm_davvy": {
+      "name": "Eight Arm Davvy",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/7e823251072d1a197e880531b4c67c20de7180a3@256.webp/encounter?v=6&sig=ms2v9egdOMbcERkDLr%2FgAgsjw4E%3D",
+      "items": [],
+      "bazaar_desc": "Eight Arm Davvy. Day 10+ Monster. Skills: Arms Race, Hyper Focus, Strength. Items: Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Octopus, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/sjxttmxjkqwx3wfbw099ynxgbb/Eight-Arm-Davvy"
+    },
+    "conspiracy_theorist": {
+      "name": "Conspiracy Theorist",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/568982e625f1cceaac35078655d982ea96075d4a@256.webp/encounter?v=6&sig=7nTehIqCFBV8jdFBc%2FZC5wFuWN0%3D",
+      "items": [],
+      "bazaar_desc": "Conspiracy Theorist. Crash Site Monster. Skills: Frontal Shielding, It's All Connected. Items: Tinfoil Hat, Globe, Sat-Comm, Wallace, Force Field. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/lnh7hllybzyykcbtzdj73z0xgy/Conspiracy-Theorist"
+    },
+    "augmented_hellbilly": {
+      "name": "Augmented Hellbilly",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/8df27bb03bff80dfba2b3c531cc8c5167ead49e1@256.webp/encounter?v=6&sig=s5X1qS%2FFE4nJLr%2BJ1f9kK1FTUIg%3D",
+      "items": [],
+      "bazaar_desc": "Augmented Hellbilly. Crash Site Monster. Skills: Strength, Retro-Tech. Items: Pitchfork, Ganjo, Bionic Arm, Lens, Tesla Coil, Battery. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/2jsbyc0qfx895gt16flddjm98h/Augmented-Hellbilly"
+    },
+    "caltrops_trap": {
+      "name": "Caltrops Trap",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/55331bf83c5b300414bffcdcd5400c368e253fd1@256.webp/encounter?v=6&sig=5wMN9CorKi7ALaSAcjLJpzObJcw%3D",
+      "items": [],
+      "bazaar_desc": "Caltrops Trap. Fiery Door Monster. Skills: . Items: Caltrops, Caltrops, Lockbox, Caltrops, Caltrops. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/sl3c6s8l3s411k8v1zf7yv6gyy/Caltrops-Trap"
+    },
+    "the_vessel": {
+      "name": "The Vessel",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/e55e240cfb475aa8e52a36cd18e78bf9cacf540f@256.webp/encounter?v=6&sig=HoiChsri1YVYgKKzPN3hB95SJCQ%3D",
+      "items": [],
+      "bazaar_desc": "The Vessel. Crash Site Monster. Skills: Energy Transference. Items: Boosted Saucer, Warp Drive, Tractor Beam, Abducted Cow, Learning Crystal, Galactic Translator. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/dclnh6gj2b9yz84xmlpx9gg9ln/The-Vessel"
+    },
+    "aleppa_tantius": {
+      "name": "Aleppa Tantius",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/642521afc14eac9349811869d96db21877a65ad9@256.webp/encounter?v=6&sig=lJPUlxlw8ilLWCuDfCEhyn2R2Kc%3D",
+      "items": [],
+      "bazaar_desc": "Aleppa Tantius. Family Reunion Monster. Skills: Scramble Fighters. Items: Security Drone, Tantius Carrier, Rocket Drone, Caracara, Jetpack, Lightning Butterfly. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/z35yyk9m4y950ggvxdkb20kt1n/Aleppa-Tantius"
+    },
+    "bounty_hunter": {
+      "name": "Bounty Hunter",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z13.0/e4779527fb80e116fbcc65e3375710a2041b92d0@256.webp/encounter?v=6&sig=a%2B%2Bajw3DeevDxYH7NIYri5ddNKA%3D",
+      "items": [],
+      "bazaar_desc": "Bounty Hunter. Encounter Monster. Skills: Ambush. Items: Revolver, Thrown Net, Revolver, Cutlass, Wanted Poster, Flashbang, Broken Shackles. Patch 13.3.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/2bt0kdnjmxzzjf2hs805shhdhj/Bounty-Hunter"
     }
   }
 }

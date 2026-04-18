@@ -40,6 +40,7 @@ CARD_HREF_RE = re.compile(r'href="(/card/[^"]+)"')
 OG_IMAGE_RE = re.compile(r'<meta\s+property="og:image"\s+content="([^"]+)"', re.I)
 OG_DESC_RE = re.compile(r'<meta\s+property="og:description"\s+content="([^"]*)"', re.I)
 OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]*)"', re.I)
+TITLE_TAG_RE = re.compile(r'<title>([^<]+)</title>', re.I)
 
 
 def http_get(url: str) -> str:
@@ -105,20 +106,41 @@ def clean_card_title(title: str) -> str:
     return t
 
 
-def parse_card(path: str) -> tuple[str | None, str | None, str | None, str | None]:
-    """Returns (title, image, description, error)."""
+def parse_card(path: str) -> tuple[str | None, str | None, str | None, str | None, str | None]:
+    """Returns (title, image, description, card_type, error).
+    card_type is 'monster', 'item', 'skill', or None.
+    Type is detected from the HTML <title> tag (og:title omits the type suffix)."""
     url = BASE + path
     try:
         page = http_get(url)
     except Exception as e:
-        return None, None, None, str(e)
+        return None, None, None, None, str(e)
     tm = OG_TITLE_RE.search(page)
     im = OG_IMAGE_RE.search(page)
     dm = OG_DESC_RE.search(page)
-    title = clean_card_title(html_module.unescape(tm.group(1).strip())) if tm else None
+    raw_og = html_module.unescape(tm.group(1).strip()) if tm else ""
+    title = clean_card_title(raw_og) if raw_og else None
     image = html_module.unescape(im.group(1).strip()) if im else None
     desc = html_module.unescape(dm.group(1).strip()) if dm else None
-    return title, image, desc, None
+
+    card_type: str | None = None
+    tt = TITLE_TAG_RE.search(page)
+    if tt:
+        full_title = html_module.unescape(tt.group(1).strip())
+        if " - Monster - " in full_title:
+            card_type = "monster"
+            if not title:
+                title = full_title.split(" - Monster - ")[0].strip()
+        elif " - Skill - " in full_title:
+            card_type = "skill"
+            if not title:
+                title = full_title.split(" - Skill - ")[0].strip()
+        elif " - Item - " in full_title:
+            card_type = "item"
+            if not title:
+                title = full_title.split(" - Item - ")[0].strip()
+
+    return title, image, desc, card_type, None
 
 
 def slug_to_name(slug: str) -> str:
@@ -188,46 +210,59 @@ def main() -> None:
     added_monsters: list[str] = []
     new_count = 0
 
-    print("Discovering Bazaar card URLs…")
-    m_paths = sorted(set(discover_monster_paths()))
-    print(f"  monsters bucket (raw): {len(m_paths)} unique paths")
+    print("Discovering Bazaar card URLs...")
+    m_paths_raw = sorted(set(discover_monster_paths()))
+    print(f"  monsters bucket (raw SSR): {len(m_paths_raw)} unique paths")
     it_paths, sk_paths = discover_item_and_skill_paths()
     print(f"  items bucket: {len(it_paths)}, skills bucket: {len(sk_paths)}")
 
-    # bazaardb /search?c=monsters page SSR includes all cards (filtering happens
-    # client-side). Treat a path as a real monster only if it did NOT surface
-    # via item/skill a-z scan.
     skill_set = set(sk_paths)
-    non_monster_paths = it_paths | skill_set
-    filtered_m_paths = [p for p in m_paths if p not in non_monster_paths]
-    print(f"  monsters bucket (filtered): {len(filtered_m_paths)} unique paths")
-    m_paths = filtered_m_paths
+
+    # Collect all unique paths from every source for monster-type probing.
+    all_paths = set(m_paths_raw) | it_paths | skill_set
 
     def allow_more() -> bool:
         return args.limit <= 0 or new_count < args.limit
 
-    # --- Monsters first ---
-    for path in m_paths:
+    # --- Monsters: probe unknown paths from the raw SSR bucket ---
+    # Since /search?c=monsters SSR mixes all types, we must fetch each
+    # unknown card and check og:title for " - Monster - ".
+    candidate_monster_paths = [
+        p for p in m_paths_raw
+        if page_to_id(slug_to_name(p.rstrip("/").rsplit("/", 1)[-1])) not in monsters
+    ]
+    print(f"  monster candidates to probe: {len(candidate_monster_paths)}")
+
+    for path in candidate_monster_paths:
         if not allow_more():
             break
         slug = path.rstrip("/").rsplit("/", 1)[-1]
-        title, image, desc, err = parse_card(path)
+        name_guess = slug_to_name(slug)
+        mid = page_to_id(name_guess)
+        if mid in monsters:
+            continue
+
+        title, image, desc, card_type, err = parse_card(path)
         if err:
             print(f"  skip card {path}: {err}")
             time.sleep(0.25)
             continue
-        name = title or slug_to_name(slug)
+
+        name = title or name_guess
         mid = page_to_id(name)
-        if mid in monsters:
+
+        if mid in monsters or mid in items:
             time.sleep(0.15)
             continue
-        if not desc:
-            desc = name
-        print(f"  + monster {mid} ({name})")
-        if not args.dry_run:
-            monsters[mid] = stub_monster(name, image, desc, path)
-        added_monsters.append(mid)
-        new_count += 1
+
+        if card_type == "monster":
+            if not desc:
+                desc = name
+            print(f"  + monster {mid} ({name})")
+            if not args.dry_run:
+                monsters[mid] = stub_monster(name, image, desc, path)
+            added_monsters.append(mid)
+            new_count += 1
         time.sleep(0.3)
 
     # --- Items & skills (skip paths already seen as monsters id? still check items dict) ---
@@ -246,23 +281,30 @@ def main() -> None:
         if not allow_more():
             break
         slug = path.rstrip("/").rsplit("/", 1)[-1]
-        title, image, desc, err = parse_card(path)
+        title, image, desc, card_type, err = parse_card(path)
         if err:
             print(f"  skip card {path}: {err}")
             time.sleep(0.25)
             continue
         name = title or slug_to_name(slug)
-        cat = "skill" if path in skill_set else "property"
-        iid = page_to_id(name)
-        if iid in items or iid in monsters:
+        eid = page_to_id(name)
+        if eid in items or eid in monsters:
             time.sleep(0.15)
             continue
         if not desc:
             desc = name
-        print(f"  + item {iid} ({name}) [{cat}]")
-        if not args.dry_run:
-            items[iid] = stub_item(name, cat, image, desc, path)
-        added_items.append(iid)
+
+        if card_type == "monster":
+            print(f"  + monster {eid} ({name})")
+            if not args.dry_run:
+                monsters[eid] = stub_monster(name, image, desc, path)
+            added_monsters.append(eid)
+        else:
+            cat = "skill" if (path in skill_set or card_type == "skill") else "property"
+            print(f"  + item {eid} ({name}) [{cat}]")
+            if not args.dry_run:
+                items[eid] = stub_item(name, cat, image, desc, path)
+            added_items.append(eid)
         new_count += 1
         time.sleep(0.3)
 
