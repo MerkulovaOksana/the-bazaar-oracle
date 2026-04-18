@@ -8,8 +8,10 @@ function normalizeApiRoot(rawUrl?: string): string | null {
 const apiRoot = normalizeApiRoot(process.env.NEXT_PUBLIC_API_URL);
 const API_BASES = apiRoot ? [`${apiRoot}/api`, "/api"] : ["/api"];
 
-const JSON_TIMEOUT_MS = 30_000;
+const JSON_TIMEOUT_MS = 60_000;
 const UPLOAD_TIMEOUT_MS = 120_000;
+const MAX_RETRIES = 2;
+const RETRY_DELAY_MS = 1_500;
 
 function getToken(): string | null {
   if (typeof window === "undefined") return null;
@@ -43,45 +45,55 @@ async function request<T>(
   const timeoutMs = isUpload ? UPLOAD_TIMEOUT_MS : JSON_TIMEOUT_MS;
 
   let res: Response | null = null;
-  const networkErrors: string[] = [];
-  const responseErrors: string[] = [];
-  for (const base of API_BASES) {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-    try {
-      const candidateUrl = `${base}${path}`;
-      const candidateRes = await fetch(candidateUrl, {
-        ...options,
-        headers,
-        signal: controller.signal,
-      });
-      if (!candidateRes.ok && candidateRes.status === 404 && base !== "/api") {
-        responseErrors.push(`${candidateUrl} -> HTTP 404`);
-        continue;
-      }
-      res = candidateRes;
-      break;
-    } catch (e: unknown) {
-      if (e instanceof Error && e.name === "AbortError") {
-        throw new Error(
-          "Сервер не ответил вовремя. Проверь, что API запущен и NEXT_PUBLIC_API_URL указывает на него."
-        );
-      }
-      networkErrors.push(`${base}${path}`);
-      if (!apiRoot || base === "/api") {
-        throw new Error(
-          `Не удалось подключиться к API (${networkErrors.join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
-        );
-      }
-    } finally {
-      clearTimeout(timeoutId);
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    if (attempt > 0) {
+      await new Promise((r) => setTimeout(r, RETRY_DELAY_MS * attempt));
     }
+
+    const networkErrors: string[] = [];
+    const responseErrors: string[] = [];
+
+    for (const base of API_BASES) {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        const candidateUrl = `${base}${path}`;
+        const candidateRes = await fetch(candidateUrl, {
+          ...options,
+          headers,
+          signal: controller.signal,
+        });
+        if (!candidateRes.ok && candidateRes.status === 404 && base !== "/api") {
+          responseErrors.push(`${candidateUrl} -> HTTP 404`);
+          continue;
+        }
+        res = candidateRes;
+        break;
+      } catch (e: unknown) {
+        if (e instanceof Error && e.name === "AbortError") {
+          lastError = new Error(
+            "Сервер просыпается... Подожди немного и попробуй снова."
+          );
+          break;
+        }
+        networkErrors.push(`${base}${path}`);
+        if (!apiRoot || base === "/api") {
+          lastError = new Error(
+            `Не удалось подключиться к API. Сервер может просыпаться — попробуй через несколько секунд.`
+          );
+        }
+      } finally {
+        clearTimeout(timeoutId);
+      }
+    }
+
+    if (res) break;
   }
 
   if (!res) {
-    throw new Error(
-      `Не удалось подключиться к API (${[...networkErrors, ...responseErrors].join(", ")}). Проверь CORS/HTTPS и NEXT_PUBLIC_API_URL.`
-    );
+    throw lastError || new Error("Не удалось подключиться к API.");
   }
 
   const isAuthEndpoint = path.startsWith("/auth/login") || path.startsWith("/auth/register");
