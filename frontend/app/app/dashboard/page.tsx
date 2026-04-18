@@ -36,7 +36,10 @@ export default function DashboardPage() {
         <div className="text-4xl mb-4 animate-pulse" aria-hidden>
           🔮
         </div>
-        <p className="text-bazaar-muted text-sm">Проверяем сессию…</p>
+        <p className="text-bazaar-muted text-sm mb-2">Подключаемся к серверу...</p>
+        <p className="text-bazaar-muted/60 text-xs max-w-xs">
+          Бесплатный сервер может просыпаться до 30 секунд после неактивности
+        </p>
       </div>
     );
   }

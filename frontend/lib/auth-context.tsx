@@ -3,6 +3,13 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from "react";
 import { api, setOnUnauthorized } from "./api";
 
+let _healthPinged = false;
+function pingHealth() {
+  if (_healthPinged) return;
+  _healthPinged = true;
+  fetch("/api/health", { method: "GET" }).catch(() => {});
+}
+
 interface AuthState {
   token: string | null;
   username: string | null;
@@ -39,6 +46,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
+    pingHealth();
+
     const saved = localStorage.getItem("token");
 
     if (!saved) {
@@ -46,8 +55,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return;
     }
 
-    // Do not mark the user as logged in until /auth/me succeeds — avoids a stale
-    // header + predict redirect loop when the token is expired or the API is unreachable.
+    // Optimistic: show cached username immediately while we verify the token.
+    const cachedUser = localStorage.getItem("username");
+    const cachedId = localStorage.getItem("userId");
+    if (cachedUser) {
+      setToken(saved);
+      setUsername(cachedUser);
+      setUserId(cachedId ? Number(cachedId) : null);
+    }
+
     api
       .getMe()
       .then((data) => {
