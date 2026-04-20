@@ -102,8 +102,16 @@ export default function AuthPage() {
 
   if (authLoading || isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center px-4 py-8">
-        <p className="text-bazaar-muted text-sm">Загрузка…</p>
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+        <div className="text-4xl mb-4 animate-pulse" aria-hidden>🔮</div>
+        <p className="text-bazaar-muted text-sm mb-2">
+          {isAuthenticated ? "Перенаправление..." : "Подключаемся к серверу..."}
+        </p>
+        {!isAuthenticated && (
+          <p className="text-bazaar-muted/60 text-xs max-w-xs text-center">
+            Бесплатный сервер может просыпаться до 30 секунд после неактивности
+          </p>
+        )}
       </div>
     );
   }

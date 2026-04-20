@@ -71,10 +71,10 @@ export default function DashboardPage() {
     : [];
 
   return (
-    <div className="min-h-screen max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-bazaar-warm">Дашборд</h1>
+    <div className="min-h-screen max-w-6xl mx-auto px-3 md:px-4 py-6 md:py-8">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-bazaar-warm">Дашборд</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 mb-6 md:mb-8">
         {statCards.map((s) => (
           <div
             key={s.label}
@@ -168,8 +168,8 @@ export default function DashboardPage() {
                   8
                 );
                 return (
-                  <div key={step.step} className="flex items-center gap-4">
-                    <span className="text-sm w-36 text-bazaar-muted">
+                  <div key={step.step} className="flex items-center gap-2 md:gap-4">
+                    <span className="text-xs md:text-sm w-20 md:w-36 text-bazaar-muted truncate shrink-0">
                       {step.step}
                     </span>
                     <div className="flex-1 h-8 bg-bazaar-bg rounded-lg overflow-hidden relative">

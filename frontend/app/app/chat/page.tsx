@@ -131,13 +131,13 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="min-h-screen max-w-3xl mx-auto px-4 py-8 flex flex-col">
-      <h1 className="text-3xl font-bold mb-4 text-bazaar-warm">RAG-Ассистент</h1>
-      <p className="text-sm text-bazaar-muted mb-6">
+    <div className="min-h-screen max-w-3xl mx-auto px-3 md:px-4 py-6 md:py-8 flex flex-col">
+      <h1 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4 text-bazaar-warm">RAG-Ассистент</h1>
+      <p className="text-xs md:text-sm text-bazaar-muted mb-4 md:mb-6">
         Спроси о механиках The Bazaar, предметах, монстрах или стратегиях.
       </p>
 
-      <div className="flex-1 bg-card-gradient rounded-xl border border-bazaar-accent/15 p-4 mb-4 overflow-y-auto max-h-[60vh] space-y-4">
+      <div className="flex-1 bg-card-gradient rounded-xl border border-bazaar-accent/15 p-3 md:p-4 mb-4 overflow-y-auto max-h-[55vh] md:max-h-[60vh] space-y-4">
         {messages.length === 0 && (
           <div className="text-center text-bazaar-muted py-12">
             <div className="text-4xl mb-3">🤖</div>
@@ -195,7 +195,7 @@ export default function ChatPage() {
       <div className="flex gap-2">
         <button
           onClick={recording ? stopRecording : startRecording}
-          className={`px-4 rounded-xl border transition ${
+          className={`px-3 md:px-4 rounded-xl border transition shrink-0 ${
             recording
               ? "bg-bazaar-red/20 border-bazaar-red text-bazaar-red animate-pulse"
               : "bg-bazaar-card border-bazaar-accent/20 text-bazaar-muted hover:text-bazaar-warm"
@@ -209,16 +209,17 @@ export default function ChatPage() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendText()}
-          placeholder="Спроси о механиках, предметах, стратегиях..."
-          className="flex-1 bg-bazaar-card border border-bazaar-accent/20 rounded-xl px-4 py-2.5 text-bazaar-text focus:outline-none focus:border-bazaar-accent transition"
+          placeholder="Спроси о механиках..."
+          className="flex-1 min-w-0 bg-bazaar-card border border-bazaar-accent/20 rounded-xl px-3 md:px-4 py-2.5 text-sm md:text-base text-bazaar-text focus:outline-none focus:border-bazaar-accent transition"
           disabled={loading}
         />
         <button
           onClick={sendText}
           disabled={loading || !input.trim()}
-          className="bg-gold-gradient hover:brightness-110 disabled:opacity-50 text-bazaar-bg font-semibold px-6 rounded-xl transition"
+          className="bg-gold-gradient hover:brightness-110 disabled:opacity-50 text-bazaar-bg font-semibold px-4 md:px-6 rounded-xl transition shrink-0 text-sm md:text-base"
         >
-          Отправить
+          <span className="hidden sm:inline">Отправить</span>
+          <span className="sm:hidden">→</span>
         </button>
       </div>
     </div>

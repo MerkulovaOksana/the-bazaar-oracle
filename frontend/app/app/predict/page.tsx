@@ -430,15 +430,15 @@ export default function PredictPage() {
   }
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
-        <h1 className="text-3xl font-bold text-bazaar-warm">
+    <div className="min-h-screen max-w-7xl mx-auto px-3 md:px-4 py-6 md:py-8">
+      <div className="flex items-center justify-between mb-4 md:mb-6 flex-wrap gap-3">
+        <h1 className="text-2xl md:text-3xl font-bold text-bazaar-warm">
           Предсказание боя
         </h1>
         <div className="flex gap-2">
           <button
             onClick={() => setMode("manual")}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition ${
+            className={`px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-xs md:text-sm font-medium transition ${
               mode === "manual"
                 ? "bg-bazaar-accent text-bazaar-bg shadow-lg shadow-bazaar-accent/20"
                 : "bg-bazaar-card text-bazaar-muted border border-bazaar-accent/20 hover:border-bazaar-accent/40"
@@ -448,13 +448,13 @@ export default function PredictPage() {
           </button>
           <button
             onClick={() => setMode("screenshot")}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition ${
+            className={`px-3 md:px-5 py-2 md:py-2.5 rounded-lg text-xs md:text-sm font-medium transition ${
               mode === "screenshot"
                 ? "bg-bazaar-accent text-bazaar-bg shadow-lg shadow-bazaar-accent/20"
                 : "bg-bazaar-card text-bazaar-muted border border-bazaar-accent/20 hover:border-bazaar-accent/40"
             }`}
           >
-            Загрузить скриншот
+            Скриншот
           </button>
         </div>
       </div>

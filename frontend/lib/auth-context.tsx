@@ -7,7 +7,11 @@ let _healthPinged = false;
 function pingHealth() {
   if (_healthPinged) return;
   _healthPinged = true;
-  fetch("/api/health", { method: "GET" }).catch(() => {});
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL?.replace(/\/+$/, "");
+  const targets = apiUrl ? [`${apiUrl}/api/health`, "/api/health"] : ["/api/health"];
+  for (const url of targets) {
+    fetch(url, { method: "GET", mode: "no-cors" }).catch(() => {});
+  }
 }
 
 interface AuthState {

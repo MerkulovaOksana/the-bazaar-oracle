@@ -142,7 +142,7 @@ export default function LandingPage() {
           </div>
 
           {/* Title with enhanced styling */}
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-1 gradient-text text-glow leading-tight">
+          <h1 className="text-4xl md:text-7xl font-extrabold mb-1 gradient-text text-glow leading-tight">
             Oracle
           </h1>
           <p className="text-sm md:text-base text-bazaar-accent font-medium mb-4 tracking-[0.3em] uppercase">
@@ -161,16 +161,16 @@ export default function LandingPage() {
           </p>
 
           {/* CTA buttons */}
-          <div className="flex gap-4 flex-wrap justify-center mb-8">
+          <div className="flex gap-3 md:gap-4 flex-wrap justify-center mb-8 w-full">
             <Link
               href="/auth"
-              className="bg-gold-gradient hover:brightness-110 text-bazaar-bg font-bold px-8 py-3.5 rounded-xl text-lg transition shadow-lg shadow-bazaar-accent/30 hover:shadow-xl hover:shadow-bazaar-accent/40 hover:scale-[1.02] active:scale-[0.98]"
+              className="bg-gold-gradient hover:brightness-110 text-bazaar-bg font-bold px-6 md:px-8 py-3 md:py-3.5 rounded-xl text-base md:text-lg transition shadow-lg shadow-bazaar-accent/30 hover:shadow-xl hover:shadow-bazaar-accent/40 hover:scale-[1.02] active:scale-[0.98]"
             >
               Попробовать бесплатно
             </Link>
             <a
               href="#how-it-works"
-              className="border-2 border-bazaar-accent/40 hover:border-bazaar-accent text-bazaar-warm px-8 py-3.5 rounded-xl text-lg transition hover:bg-bazaar-accent/5"
+              className="border-2 border-bazaar-accent/40 hover:border-bazaar-accent text-bazaar-warm px-6 md:px-8 py-3 md:py-3.5 rounded-xl text-base md:text-lg transition hover:bg-bazaar-accent/5"
             >
               Как это работает
             </a>
@@ -270,12 +270,12 @@ export default function LandingPage() {
               Пример предсказания
             </p>
 
-            <div className="flex items-center justify-center gap-6 md:gap-16 mb-6">
+            <div className="flex items-center justify-center gap-4 md:gap-16 mb-6">
               {/* Player */}
               <div className="flex flex-col items-center">
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-bazaar-green/20 blur-xl scale-125" />
-                  <div className="relative w-18 h-18 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-bazaar-green shadow-lg shadow-bazaar-green/30">
+                  <div className="relative w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-bazaar-green shadow-lg shadow-bazaar-green/30">
                     <img
                       src="https://thebazaar.wiki.gg/images/thumb/a/a1/Bazaar-avatar-vanessa.jpg/200px-Bazaar-avatar-vanessa.jpg"
                       alt="Vanessa"
@@ -304,7 +304,7 @@ export default function LandingPage() {
               <div className="flex flex-col items-center">
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-bazaar-red/20 blur-xl scale-125" />
-                  <div className="relative w-18 h-18 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-bazaar-red shadow-lg shadow-bazaar-red/30">
+                  <div className="relative w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-bazaar-red shadow-lg shadow-bazaar-red/30">
                     <img
                       src="https://thebazaar.wiki.gg/images/Monster_Dragon_Portrait.png"
                       alt="Dragon"
@@ -343,7 +343,7 @@ export default function LandingPage() {
 
             {/* Result */}
             <div className="text-center">
-              <div className="inline-block bg-bazaar-red/15 border border-bazaar-red/30 text-bazaar-red font-bold px-6 md:px-8 py-3 rounded-xl text-lg md:text-xl relative overflow-hidden">
+              <div className="inline-block bg-bazaar-red/15 border border-bazaar-red/30 text-bazaar-red font-bold px-4 md:px-8 py-3 rounded-xl text-sm md:text-xl relative overflow-hidden max-w-full">
                 <div className="absolute inset-0 bg-gradient-to-r from-bazaar-red/5 via-bazaar-red/10 to-bazaar-red/5 animate-pulse" />
                 <span className="relative">ПОРАЖЕНИЕ — Dragon слишком силён!</span>
               </div>
@@ -358,11 +358,11 @@ export default function LandingPage() {
       {/* ===== HOW IT WORKS ===== */}
       <section id="how-it-works" className="max-w-5xl mx-auto px-4 py-16">
         <div className="flex items-center justify-center gap-3 mb-2">
-          <div className="h-px w-16 bg-gradient-to-r from-transparent to-bazaar-accent/30" />
-          <h2 className="text-2xl md:text-3xl font-bold text-bazaar-warm whitespace-nowrap">
+          <div className="h-px w-8 md:w-16 bg-gradient-to-r from-transparent to-bazaar-accent/30 shrink-0" />
+          <h2 className="text-xl md:text-3xl font-bold text-bazaar-warm whitespace-nowrap">
             Как это работает
           </h2>
-          <div className="h-px w-16 bg-gradient-to-l from-transparent to-bazaar-accent/30" />
+          <div className="h-px w-8 md:w-16 bg-gradient-to-l from-transparent to-bazaar-accent/30 shrink-0" />
         </div>
         <p className="text-center text-bazaar-muted mb-10">
           Три шага до предсказания
@@ -415,21 +415,21 @@ export default function LandingPage() {
           <img
             src="https://playthebazaar.com/images/pagebreak_brown.webp"
             alt=""
-            className="w-24 opacity-40 rotate-180"
+            className="w-16 md:w-24 opacity-40 rotate-180 shrink-0"
           />
-          <h2 className="text-2xl md:text-3xl font-bold text-bazaar-warm whitespace-nowrap">
+          <h2 className="text-xl md:text-3xl font-bold text-bazaar-warm whitespace-nowrap">
             Возможности
           </h2>
           <img
             src="https://playthebazaar.com/images/pagebreak_brown.webp"
             alt=""
-            className="w-24 opacity-40"
+            className="w-16 md:w-24 opacity-40 shrink-0"
           />
         </div>
         <p className="text-center text-bazaar-muted mb-10">
           Полный набор инструментов для PvE
         </p>
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
           {features.map((f) => {
             const inner = (
               <>
@@ -470,7 +470,7 @@ export default function LandingPage() {
 
       {/* ===== CTA ===== */}
       <section className="max-w-3xl mx-auto px-4 pb-20 text-center">
-        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-10 relative overflow-hidden">
+        <div className="bg-card-gradient rounded-2xl border border-bazaar-accent/20 p-6 md:p-10 relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-bazaar-accent/30 to-transparent" />
           <div className="absolute -top-10 -left-10 w-32 h-32 bg-bazaar-purple/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-bazaar-accent/10 rounded-full blur-3xl" />
