@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-04-23T08:20:58.195040+00:00",
+    "fetched_at": "2026-04-24T08:25:37.721429+00:00",
     "wiki_catalog_items": 1527,
     "wiki_catalog_monsters": 129
   },
@@ -4226,6 +4226,619 @@
       "image_url": "https://i.bazaardb.gg/v1/z13.0/32040391c2643a9d6a695c82d0d37404f9ba62fb@256.webp/circle?v=6&sig=OPya1tdzRenc72Rm5rxPUAVIo%2BI%3D",
       "bazaar_desc": "Purifying Flame: See 1 hidden ability. Obtained from 1 source. Passive: When you Regen, a Burn item gains [+1/+2/+3] Burn for the fight. Patch 13.3.",
       "card_path": "/card/q8bk1m4yy8c2djdpb69n8qx71k/Purifying-Flame"
+    },
+    "pyromania": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b2972ef3685998db62565d4fe19f91f010ae215c@256.webp/circle?v=6&sig=NVSsC%2BcMbet2CD7KsenJfnYK120%3D",
+      "bazaar_desc": "Pyromania: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Large item, Burn [10/20/30]. Patch 13.3.",
+      "card_path": "/card/gpvb10dszg8ydgd0fw1xwqjq9j/Pyromania"
+    },
+    "quality_over_quantity": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ee62e7754965ccbe339c90b49db6f6556c58d4b9@256.webp/circle?v=6&sig=4%2B6JEPMm5OriHpIM%2BMlJiWMAy20%3D",
+      "bazaar_desc": "Quality over Quantity: See 2 hidden abilities. Offered by 5 skill trainers. Passive: If you have exactly one Weapon, it has Lifesteal and [5%/10%] Crit Chance. Patch 13.3.",
+      "card_path": "/card/vm2f0sq0xww6ml0527gsvnsh6h/Quality-over-Quantity"
+    },
+    "quick_defenses": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1cb134d9dbab886681201181d8bb770ee920e49f@256.webp/circle?v=6&sig=ya4Z4dKdpTVXlEF%2Fujm8HqkfRuQ%3D",
+      "bazaar_desc": "Quick Defenses: See 1 hidden ability. Offered by 4 skill trainers. Passive: Your Shield items' Cooldowns are reduced by [5%/10%]. Patch 13.3.",
+      "card_path": "/card/k9tml06fxqp95ky5g9f0f8vlzd/Quick-Defenses"
+    },
+    "quick_freeze": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8c4de83dc8b0a177590d353b53dc3e009aacf0a5@256.webp/circle?v=6&sig=w8QNVfVD7z4UmJLApOijwRJm424%3D",
+      "bazaar_desc": "Quick Freeze: See 2 hidden abilities. Offered by 6 skill trainers. Passive: The first time you Haste each fight, Freeze an item for [2/3/4] second(s). Patch 13.3.",
+      "card_path": "/card/ykh81g17bt90dmpdhdqc5t4nnl/Quick-Freeze"
+    },
+    "quick_ignition": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f18f40be6d295417c3dc5b6a6093b19002d884f3@256.webp/circle?v=6&sig=wPTFaLnrKwMD8riaQ2np2ZeKwhM%3D",
+      "bazaar_desc": "Quick Ignition: See 2 hidden abilities. Offered by 6 skill trainers. Passive: The first time you use an item each fight, Haste [1/2/3] Burn item(s) for 2 second(s). Patch 13.3.",
+      "card_path": "/card/jmn3ljlvjn47n87yxvd6yvhm5t/Quick-Ignition"
+    },
+    "rapid_relief": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/43369bad2fd5cac1b554f1a5e0a69b73c6ca0ea3@256.webp/circle?v=6&sig=nVp8IdCMtiGDtoXqg7WoBLwvi%2Fk%3D",
+      "bazaar_desc": "Rapid Relief: See 1 hidden ability. Offered by 6 skill trainers. Passive: While your enemy has more Health than you, your Heal and Regen items' Cooldowns are reduced by [5%/10%/15%]. Patch 13.3.",
+      "card_path": "/card/zc9ywk4s6cx3vdssm3jqwh3sp/Rapid-Relief"
+    },
+    "ravenous": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/07549c4db4cf2e9b04a3c3d29dc105997a83cc02@256.webp/circle?v=6&sig=u6wrmKI3qwqdPV2%2BKM9Kw7jfWtY%3D",
+      "bazaar_desc": "Ravenous: See 2 hidden abilities. Obtained from 1 source. Passive: The first time you fall below half Health each fight, destroy an item for the fight. Patch 13.3.",
+      "card_path": "/card/qxj0z78cgsm9qmxmzp5lpg564d/Ravenous"
+    },
+    "re_tooled": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/cee8453ac45e8a913ce685384e265f0b97dbe1c7@256.webp/circle?v=6&sig=wgUWP2Dlv%2BD7qbP0%2FakNwW4g%2FYI%3D",
+      "bazaar_desc": "Re-Tooled: See 1 hidden ability. Offered by 2 skill trainers. Passive: Your leftmost Tool has +1 Multicast. Patch 13.3.",
+      "card_path": "/card/12v3ghf9xgplnjb1wmq6f6nqzp1/Re-Tooled"
+    },
+    "reaching_the_summit": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/63b64c7993cde10b1bb041f23a1d917a9d982739@256.webp/circle?v=6&sig=8K5W6LxapG8WlP6%2BRBHnrsuOyRE%3D",
+      "bazaar_desc": "Reaching the Summit: See 1 hidden ability. Offered by 5 skill trainers. Obtained from 2 sources. Passive: When you Freeze, your items gain [+3%/+6%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/pnpf32n8ff7nkywp1pmmb9jt84/Reaching-the-Summit"
+    },
+    "rear_shielding": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a07c44aeed89591ecbd062e92d4647c34552c73e@256.webp/circle?v=6&sig=dl%2BEpayFk3Pfg5gPy%2FYtQfukzQ8%3D",
+      "bazaar_desc": "Rear Shielding: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your rightmost Shield item has [+10/+20/+30/+40] Shield. Patch 13.3.",
+      "card_path": "/card/sqnd5mvpltd73h3fg2d60b0cwj/Rear-Shielding"
+    },
+    "red_envelope": {
+      "error": "no matching card in search results"
+    },
+    "reel_em_in": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/194b3f525d72dce910e884a1297d91238e20472f@256.webp/circle?v=6&sig=p8EebdBLD04SkoGHUKBthwxAbJY%3D",
+      "bazaar_desc": "Reel 'Em In: See 2 hidden abilities. Offered by 3 skill trainers. Passive: The first time an enemy falls below half Health each fight, your items' Cooldowns are halved for the fight. Patch 13.3.",
+      "card_path": "/card/q9sc3z48cvmmvb9b56j0v5v4y4/Reel-'Em-In"
+    },
+    "regenerative": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/62aef87abef2e185b2b53fc9543f385d5948b442@256.webp/circle?v=6&sig=1u9I7QY206u6nFstZsexO5%2BtPh4%3D",
+      "bazaar_desc": "Regenerative: See 1 hidden ability. Offered by 5 skill trainers. Obtained from 2 sources. Passive: You have [+10/+20/+30] Regen. Patch 13.3.",
+      "card_path": "/card/vbhd4bg4n4vk8d5g2vzy7ltskv/Regenerative"
+    },
+    "reinforced_steel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/af247cba6ea03b31bcffd2b0da9c5d79645a035a@256.webp/circle?v=6&sig=a9Sm76L%2Ba%2FG5GbTrBf28NcF0968%3D",
+      "bazaar_desc": "Reinforced Steel: See 2 hidden abilities. Offered by 6 skill trainers. Passive: When you use a Property, your Weapons gain [+5/+10/+15] Damage and your Shield items gain [+5/+10/+15] Shield for the fight. Patch 13.3.",
+      "card_path": "/card/9m7dxlx8kw2ydkvg5f1c4551nq/Reinforced-Steel"
+    },
+    "relax_bro": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/5bf747f9b5883d3f89d4f25c8581b4dea214325c@256.webp/circle?v=6&sig=55P2kgG6me2T4pm4%2Fenh2bw9mno%3D",
+      "bazaar_desc": "Relax Bro: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Small item, Regen [3/4]. Patch 13.3.",
+      "card_path": "/card/f6q04ctnkfxhs8vmmv6813y957/Relax-Bro"
+    },
+    "renovation": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b65658e542c735df65b61e041a3701523d487ef9@256.webp/circle?v=6&sig=8PrwgCNvYgolSM%2BfniXBA1tL1o0%3D",
+      "bazaar_desc": "Renovation: See 1 hidden ability. Offered by 3 skill trainers. Passive: When you level up, upgrade a Property. Patch 13.3.",
+      "card_path": "/card/171m5sm59jhsh48fsl16m4483zy/Renovation"
+    },
+    "reserve_shield": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/98d5fa468f7c00fcf75c30f51209ec8bb54300c4@256.webp/circle?v=6&sig=Zvz9sC1IRl%2FhkFYJ881DyRQOB%2BM%3D",
+      "bazaar_desc": "Reserve Shield: See 4 hidden abilities. Offered by 7 skill trainers. Passive: The first time you use a Large item each fight, Shield equal to [10%/20%/30%] of your Max Health. Patch 13.3.",
+      "card_path": "/card/z3vp4150npt0jkk1bjm9p2zms9/Reserve-Shield"
+    },
+    "retaliatory_toxins": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a6d75038c80d130b31401ee3a53e1a76c9211e63@256.webp/circle?v=6&sig=6Z4w%2Ba5d1R9Gf1xzY5KA%2BQMx%2BHQ%3D",
+      "bazaar_desc": "Retaliatory Toxins: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [5/10] times an enemy uses an item each fight, Poison 5. Patch 13.3.",
+      "card_path": "/card/33xp5gft3m246nqbggqdsxj1pm/Retaliatory-Toxins"
+    },
+    "retool": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/acde8142986e42de5a6c5dde2775262c40e9c9ef@256.webp/circle?v=6&sig=fv5T7jc7vgwA6m8wj2lEwXd%2Fqt8%3D",
+      "bazaar_desc": "Retool: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Tool, Reload an adjacent item. (BazaarDB automated finding: This reloads a random item instead of an item adjacent to the Tool. Confirm with Deep Mechanics.) Patch 13.3.",
+      "card_path": "/card/19dgvfdnghjqkpxtymwbhcps47p/Retool"
+    },
+    "rigged": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f5c6d386f1e9b018254b1b0e518b5e66741f82c0@256.webp/circle?v=6&sig=9glDfBRgbDAe1ZPUze%2B75cDxaWE%3D",
+      "bazaar_desc": "Rigged: See 2 hidden abilities. Obtained from 1 source. Passive: The first time you use an item each fight, Haste your items for [1/2/3] second(s). Patch 13.3.",
+      "card_path": "/card/dv0l4ggc5t6wkdhz5vh8ksbz6q/Rigged"
+    },
+    "right_eye": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/14e15e805ac756fa0a15e5f2e7ae7fcc1eee102b@256.webp/circle?v=6&sig=c11Brz3EMBTTqEcfbHrwlLmDP%2Fg%3D",
+      "bazaar_desc": "Right Eye: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your rightmost item has [+8%/+16%/+24%/+32%] Crit Chance. Patch 13.3.",
+      "card_path": "/card/1865v8vb5yb1dtwbs74phyd75d0/Right-Eye"
+    },
+    "right_handed": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/52fb508fbe2fdf58a220658850e23b2dbec09a5f@256.webp/circle?v=6&sig=EiYpyBi6zKvXSf6qrDKqWbEXcaI%3D",
+      "bazaar_desc": "Right-Handed: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 3 sources. Passive: Your rightmost Weapon has [+10/+20/+30/+40] Damage. Patch 13.3.",
+      "card_path": "/card/3wl0wt8729h4cfsq1sj56ftlw7/Right-Handed"
+    },
+    "righty_tighty": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8aca6eea2efe2a88f39cffd7bbcdbd66cee6069b@256.webp/circle?v=6&sig=nzG0EXXBxQ7BU1pwdNFKnm11Qdo%3D",
+      "bazaar_desc": "Righty Tighty: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [3/6/9] times you use your rightmost item each fight, Charge a Slow item 1 second(s). Patch 13.3.",
+      "card_path": "/card/yd7y9wwzhz45lj6811fctl22vv/Righty-Tighty"
+    },
+    "rush": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8a70cde64fa8d647cbe48526dcc40523abde0d81@256.webp/circle?v=6&sig=pjg%2BbFXbFJnUgmWqUrxQ28TncbA%3D",
+      "bazaar_desc": "Rush: See 2 hidden abilities. Obtained from 1 source. Passive: The first time you use an item, Haste a Weapon [3/4/5/6] seconds. Patch 13.3.",
+      "card_path": "/card/13hptxyjk7xvw17cklwknt2ymk4/Rush"
+    },
+    "rust": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/48d5fec4f1d80c56b9fba5f57eec10d9282b206d@256.webp/circle?v=6&sig=zr7wO6ldfNnKFqPYvVIBX2MACro%3D",
+      "bazaar_desc": "Rust: See 2 hidden abilities. Obtained from 1 source. Passive: The first time you use an item each fight, Slow an item for [3/4/5/6] second(s). Patch 13.3.",
+      "card_path": "/card/wpvqkjhkswjk972zf4nm22hzyk/Rust"
+    },
+    "sabotage": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8056d479c4d66ca86eceff68528f2b72a57b702d@256.webp/circle?v=6&sig=LHzZO4Zb%2BUsIT5vgyBmsnm7PhOs%3D",
+      "bazaar_desc": "Sabotage: See 3 hidden abilities. Offered by 4 skill trainers. Obtained from 1 source. Passive: The first [5/10] times you use a Tool each fight, Slow an item for 1 second(s). Patch 13.3.",
+      "card_path": "/card/19pwcxmfy02xyftpy0fsmlnkgf1/Sabotage"
+    },
+    "searing_flames": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f05cbf9348e1a36830536fb97b5d774a34f874ff@256.webp/circle?v=6&sig=6UxYZQxmjfVHxAzd8tdSgrQawAM%3D",
+      "bazaar_desc": "Searing Flames: See 1 hidden ability. Offered by 6 skill trainers. Passive: When one of your Burn items is Hasted, it gains [1/2/3] Burn for the fight. Patch 13.3.",
+      "card_path": "/card/f1j5fj072ct1cvvhhcb0btkml1/Searing-Flames"
+    },
+    "second_wind": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/06a4427e0fcbf77665cb3d51637db20781a7078f@256.webp/circle?v=6&sig=Ogp8QHHjRM3mGRlO2d%2BVj1lE5xs%3D",
+      "bazaar_desc": "Second Wind: See 4 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use a Large item each fight, Heal equal to [20%/40%/60%] of your Max Health. Patch 13.3.",
+      "card_path": "/card/ct9pwwv420chs1jc902vgpv4fl/Second-Wind"
+    },
+    "sharp_corners": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f92519a6d87351b6ee5d775a392f8231857c39b4@256.webp/circle?v=6&sig=TQSEuDSbc8F7ZgQ2I1Uu5INVY7o%3D",
+      "bazaar_desc": "Sharp Corners: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Shield, your Weapons gain [+2/+4/+6] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/17q8gpbk0nkp48jkd4zgmtl91pw/Sharp-Corners"
+    },
+    "sharpened_steel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c00d837b062e629801ed88cdb0948e0a936538c8@256.webp/circle?v=6&sig=wWu4LtjyBJvazf%2BjKgNupMPQDO8%3D",
+      "bazaar_desc": "Sharpened Steel: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Weapon, adjacent items gain [3%/6%/9%/12%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/n86gyhv73wm81hpspxgwtm3lxv/Sharpened-Steel"
+    },
+    "sharpshooter": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ab9063ea9125d337897a903e3b4bdbe294fade14@256.webp/circle?v=6&sig=yrOcuyC2v6k06xvanlbywQIv64U%3D",
+      "bazaar_desc": "Sharpshooter: See 3 hidden abilities. Offered by 4 skill trainers. Passive: Your leftmost and rightmost Weapons have +10% Crit Chance. Passive: If you only have one Weapon, it deals double Crit Damage. Patch 13.3.",
+      "card_path": "/card/8vdw7zcf0d2qfbsm39vdzldm21/Sharpshooter"
+    },
+    "shatter": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3f3bf01b9ba2adf01a6a449b283c8478d460b95c@256.webp/circle?v=6&sig=gxiAul2YHa%2BNziclIcZhGh84ndU%3D",
+      "bazaar_desc": "Shatter: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Freeze, your Weapons gain [+5/+10/+15] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/yvm89gm8y7fsf52bkyh63hcs23/Shatter"
+    },
+    "shield_bash": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b8c116282eb8f52392a1d967293981c86293921d@256.webp/circle?v=6&sig=RbdMaOXBRtu5xGIt63WBpJWZN30%3D",
+      "bazaar_desc": "Shield Bash: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [4/8] times an enemy uses a non-Weapon item each fight, Charge a Weapon 1 second(s). Patch 13.3.",
+      "card_path": "/card/kbfqhbw8n55pty7fjckb4jj10g/Shield-Bash"
+    },
+    "shored_up": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/16b7492b83e4700ed35a06edcccbc506bbd1cd80@256.webp/circle?v=6&sig=TRnIc84xXDflkZVO8Ycz3RrbBkw%3D",
+      "bazaar_desc": "Shored Up: See 2 hidden abilities. Obtained from 1 source. Passive: When you Heal or gain Regen, Charge a Shield item 1 second(s). Patch 13.3.",
+      "card_path": "/card/mbvdtq6z8npjfzs3pyhlszp8jb/Shored-Up"
+    },
+    "sick_burn": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/833a29dd57bb9007c6e918475459ed55fe4051f5@256.webp/circle?v=6&sig=1hwLKMCnWlJTPMwMD0WqGY8iQWQ%3D",
+      "bazaar_desc": "Sick Burn: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [4/8] times you Poison each fight, Charge a Burn item 1 second(s). Patch 13.3.",
+      "card_path": "/card/13gdm00ssq2j3tzlwys6lnqqhw8/Sick-Burn"
+    },
+    "siphoned_shielding": {
+      "error": "no matching card in search results"
+    },
+    "slow_and_steady": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d2a0e7ccf7368450b6c618b40b2fd687494ca3e7@256.webp/circle?v=6&sig=NkR1qG9OFC%2B4sFKbyq6XII4Btok%3D",
+      "bazaar_desc": "Slow and Steady: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Slow, your Weapons gain [2/4/6] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/hb62593mxxnlmbs82ybl8v1hw1/Slow-and-Steady"
+    },
+    "slow_burn": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4ddbe81e462fc279c2ff71f6c5a32c6f2556eea9@256.webp/circle?v=6&sig=cViixcesVKbv%2B6%2FMXbteHfKS3fo%3D",
+      "bazaar_desc": "Slow Burn: See 3 hidden abilities. Offered by 6 skill trainers. Obtained from 1 source. Passive: The first [4/8] times you Slow each fight, Charge a Burn item 1 second(s). Patch 13.3.",
+      "card_path": "/card/126s8kpz3b17xvydwlk0gn6z7x5/Slow-Burn"
+    },
+    "slowed_targets": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/edf95b60f02025c735ce0ccfb6359bdc564ccbba@256.webp/circle?v=6&sig=gbEUiMWGmfbUyKeOHBLqzcsACZs%3D",
+      "bazaar_desc": "Slowed Targets: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 1 source. Passive: When you Slow, your items gain [+1%/+2%/+3%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/35g2j4wdv4ctj6ys3pzc4vwz7f/Slowed-Targets"
+    },
+    "small_refresh": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ff42d8c6e3d7c197cde151e1f3186ec98bde7f8c@256.webp/circle?v=6&sig=J7qYopagCuXsH1RKNyUntWruJ%2BE%3D",
+      "bazaar_desc": "Small Refresh: See 3 hidden abilities. Obtained from 1 source. Passive: The first [3/6/9/12] times you use a Small item each fight, Heal 50. Patch 13.3.",
+      "card_path": "/card/pvnhlg8fzvlj6vg5tq7nkl3n3w/Small-Refresh"
+    },
+    "snowstorm": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/87cef47147155adefaf1f3bb4139eb1697cce3e4@256.webp/circle?v=6&sig=oBcLQrWWJWzak86NDYitRAA56DE%3D",
+      "bazaar_desc": "Snowstorm: See 1 hidden ability. Obtained from 1 source. Passive: When you Freeze, a Weapon gains [+10/+20/+30/+40] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/16by6p7k347y27tfh4zjzs9yn4h/Snowstorm"
+    },
+    "sparring_partner_skill": {
+      "error": "no matching card in search results"
+    },
+    "specialist": {
+      "error": "no matching card in search results"
+    },
+    "static_acceleration": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/943d50dc61417c4a6a1c3078a233e3be7310659d@256.webp/circle?v=6&sig=xwo5fjoD560yTCg0ZX8VehZAyQM%3D",
+      "bazaar_desc": "Static Acceleration: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 1 source. Passive: When you Haste, your items gain [+1%/+2%/+3%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/7zhj95dq4lz9f570cx3tkyf8pg/Static-Acceleration"
+    },
+    "staying_power": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fa7bace08a0ba1d23915d5325c0f82132079c056@256.webp/circle?v=6&sig=hGsPBeNH1%2FHzj%2FGIe7nm7NDnEyk%3D",
+      "bazaar_desc": "Staying Power: See 1 hidden ability. Offered by 5 skill trainers. Passive: When you use a Weapon or Tool, your Heal items gain [+4/+8/+12] Heal for the fight. Patch 13.3.",
+      "card_path": "/card/jmtkqtxxmc7ttcb3kfk8b0wq0b/Staying-Power"
+    },
+    "steelstorm": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d03920e2c511d9fab783443883c19640d49bdce0@256.webp/circle?v=6&sig=rEgIot%2B%2FALjvT5JRVGs68yCtooE%3D",
+      "bazaar_desc": "Steelstorm: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your Weapons have [+4/+6/+8] Damage for each Weapon you have. Patch 13.3.",
+      "card_path": "/card/15t5tl2c6xdv227hb00ygys2j1t/Steelstorm"
+    },
+    "stocked": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/df76d76640120434039af7d2501134634d6a848b@256.webp/circle?v=6&sig=nxjwWo%2F3xdDGq1zCtTW7pHdxpFU%3D",
+      "bazaar_desc": "Stocked: See 1 hidden ability. Offered by 5 skill trainers. Passive: Your Potions have [+1/+2/+3] Ammo. Patch 13.3.",
+      "card_path": "/card/11pttdqc35zf8n6ls03glm6gljt/Stocked"
+    },
+    "stop_that": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e5cccf4b95737e67d09fab2134b28e9974ecf748@256.webp/circle?v=6&sig=YiBX5DuY6h0q4THlpmFm9V6pvMA%3D",
+      "bazaar_desc": "Stop That!: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you fall below half Health each fight, Slow all enemy items for [1/2/3] second(s). Patch 13.3.",
+      "card_path": "/card/v2sfxmk7k82jb89bhb839nsjnq/Stop-That!"
+    },
+    "streamline_weapon": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b70365f681bee63d5c2d146808f548f84d9796a9@256.webp/circle?v=6&sig=%2FiQx%2BYNzn%2B5tdDJpJ1OWpaVnyao%3D",
+      "bazaar_desc": "Streamline Weapon: See 1 hidden ability. Offered by 6 skill trainers. Passive: When one of your Weapons is Hasted, it gains [+5/+10/+15] Damage. Patch 13.3.",
+      "card_path": "/card/9msh7j2t9tpjs9lwcmy54g6p3k/Streamline-Weapon"
+    },
+    "strength": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/63ecb0d003abf600af5b166d58a3b6c347c860af@256.webp/circle?v=6&sig=J76k%2FWd2d0VKX7Hu6oC02FXlgxA%3D",
+      "bazaar_desc": "Strength: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 10 sources. Passive: Your Weapons deal [+5/+10/+15/+20] Damage. Patch 13.3.",
+      "card_path": "/card/19gtzndjjyb09p434w6vzwxvcbd/Strength"
+    },
+    "strong_arm": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/013eaa5e05ef7e411448525583afe5ea2b5073fa@256.webp/circle?v=6&sig=HH%2FVZ2BNg22BdyctTTtaC9fV5ls%3D",
+      "bazaar_desc": "Strong Arm: See 2 hidden abilities. Offered by 6 skill trainers. Passive: Your Weapons have + Damage equal to [1/2/3] times your Income. Patch 13.3.",
+      "card_path": "/card/7ts69s464zyh8h8qdv24g3tcwb/Strong-Arm"
+    },
+    "stunning_strike": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b13702536adff7848e96d093ba3422037f11ee59@256.webp/circle?v=6&sig=2DUWVRJUHNFEQHrCaRYXqkDqhUs%3D",
+      "bazaar_desc": "Stunning Strike: See 2 hidden abilities. Offered by 6 skill trainers. Passive: The first time you Crit each fight, Freeze an item for [3/4/5] second(s). Patch 13.3.",
+      "card_path": "/card/4sbtw1jj1g1kxbc54q9y94y726/Stunning-Strike"
+    },
+    "submerged": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/be53ebfbae58e4e03250a7296faa1313d92bbedc@256.webp/circle?v=6&sig=f8c99UMHUgvafXeySf4PRAMHVjY%3D",
+      "bazaar_desc": "Submerged: See 2 hidden abilities. Offered by 6 skill trainers. Passive: Your Weapons have [+3/+6/+9] Damage for each Aquatic item you have. Passive: Your Shield items have [+3/+6/+9] Shield for each Aquatic item you have. Patch 13.3.",
+      "card_path": "/card/82kt734914q32kw6gqw078dkfs/Submerged"
+    },
+    "tall_buildings": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d467f8167f6a93e3b93509daa4e8c1961d4ea5cb@256.webp/circle?v=6&sig=w3UxPNqN4NIRTgmx4xHk93OJc74%3D",
+      "bazaar_desc": "Tall Buildings: See 3 hidden abilities. Offered by 4 skill trainers. Passive: The first [5/10] times you use a Property each fight, Haste items adjacent to it 1 second(s). Patch 13.3.",
+      "card_path": "/card/1297sfsgn4mkdqfh3nby035wmgv/Tall-Buildings"
+    },
+    "tempering": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7bfa1a49717498fd201b0593558598168e65cb11@256.webp/circle?v=6&sig=G3ACslNSGNJU47JsoSBO5uW%2BpBs%3D",
+      "bazaar_desc": "Tempering: See 1 hidden ability. Offered by 5 skill trainers. Passive: When you use a Weapon, it gains [+3/+6/+9] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/32ww56d7fyldfb1dhs9fm71fzj/Tempering"
+    },
+    "temporal_strike": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/88e57275178c372ff34f72fb895effa85c6f4ab6@256.webp/circle?v=6&sig=6sCUNkJsmlZxOUkg%2F7%2BWOPkicUA%3D",
+      "bazaar_desc": "Temporal Strike: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [4/8] times you Slow each fight, Charge a Weapon 1 second(s). Patch 13.3.",
+      "card_path": "/card/4s0w3c52gw8j9xjdxjs1kwxlhf/Temporal-Strike"
+    },
+    "the_best_defense": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/de903e1ce832e626d6e5ca2f524513d32465009d@256.webp/circle?v=6&sig=NltprEeccIgSufZzWMIVcSog3CA%3D",
+      "bazaar_desc": "The Best Defense: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you use a Weapon, Weapons adjacent to it gain [+3/+6/+9] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/7s6tl0k5csggvzm85w12pnlcq3/The-Best-Defense"
+    },
+    "the_right_tool": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/23d0f28471df7a80d8900ad13ce6272c56fec033@256.webp/circle?v=6&sig=Q09tXAPzJNn8c9PzJnWX%2FFUphoU%3D",
+      "bazaar_desc": "The Right Tool: See 1 hidden ability. Obtained from 1 source. Passive: Your non-Tool items have [+5%/+10%/+15%] Crit Chance for each Tool you have. Patch 13.3.",
+      "card_path": "/card/c6ydlftzv0lg9v473ms6xl1cd3/The-Right-Tool"
+    },
+    "thick_hide": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/cb30ade84d81cf43eda25b32600267637f99157b@256.webp/circle?v=6&sig=x0k7rJlqXUXpAnE7a6xKDdOv5KM%3D",
+      "bazaar_desc": "Thick Hide: See 1 hidden ability. Obtained from 1 source. Passive: When you Slow, Charge an item 1 second. Patch 13.3.",
+      "card_path": "/card/m7kydmbhfp9mtbh25z5kcmjn6h/Thick-Hide"
+    },
+    "thirsty": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/778b5ed3cbeadfd7ec1b3a4f206ba1ce68f76f6c@256.webp/circle?v=6&sig=RUL5I%2FxVKaUijhnnKQ8ke1h9FKg%3D",
+      "bazaar_desc": "Thirsty: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [4/8/12] times you use a Potion each fight, Regen 10. Patch 13.3.",
+      "card_path": "/card/p7swj9qfv0tb4k8b4q57ykph6y/Thirsty"
+    },
+    "time_to_tinker": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/78855f2934caa57473e4b616270e7dff79de1390@256.webp/circle?v=6&sig=r0SYWy1Rylf%2BtnnyDOMDBAsjWsE%3D",
+      "bazaar_desc": "Time to Tinker: See 3 hidden abilities. Obtained from 2 sources. Passive: The first [3/6/9/12] times you Haste each fight, Shield 50. Patch 13.3.",
+      "card_path": "/card/ys6ly8t666sy9t6yv12jvln1x0/Time-to-Tinker"
+    },
+    "tiny_dancer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9c5208bdc4e5548cf116730c258cc42bb58b1e5e@256.webp/circle?v=6&sig=SWBWcy9LYneNMaOPs8ADiYkc8tA%3D",
+      "bazaar_desc": "Tiny Dancer: See 2 hidden abilities. Offered by 3 skill trainers. Passive: If you have at least 7 items, your items' Cooldowns are reduced by [5%/10%]. Patch 13.3.",
+      "card_path": "/card/8hb7h89zb8l79tc46635qvpmyf/Tiny-Dancer"
+    },
+    "titanium_casing": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4405565ecad94d89139a7ebd99e8706dc1966fb4@256.webp/circle?v=6&sig=u6wXF%2BasiCIL83WRTD87wfSf0gI%3D",
+      "bazaar_desc": "Titanium Casing: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you use a Core, your Shield items gain [5/10/15] Shield for the fight. Patch 13.3.",
+      "card_path": "/card/t7b6jvq8g3jsgxtdlvvxfdgy4q/Titanium-Casing"
+    },
+    "tools_of_the_trade": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e574178218db100bdbc6eb440ed961f50e78611b@256.webp/circle?v=6&sig=itwKiYKpVkCVCOtcnbS3BdKtL0k%3D",
+      "bazaar_desc": "Tools of the Trade: See 3 hidden abilities. Offered by 4 skill trainers. Passive: The first [5/10] times you use a Tool each fight, Haste a Tool for 1 second(s). Patch 13.3.",
+      "card_path": "/card/jzdj61b6wx776st4v52n3pffnm/Tools-of-the-Trade"
+    },
+    "toughness": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/62ee8d8b02805bb8e558bfc8c684232129dfbf57@256.webp/circle?v=6&sig=7RYGS1JZUTH41ZTYxghNzsHT8Nc%3D",
+      "bazaar_desc": "Toughness: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 2 sources. Passive: Your Shield items have [+5/+10/+15/+20] Shield. Patch 13.3.",
+      "card_path": "/card/6ftzs1pfdj3t4qgx9h53d6pwk0/Toughness"
+    },
+    "toxic": {
+      "error": "no matching card in search results"
+    },
+    "toxic_exposure": {
+      "error": "no matching card in search results"
+    },
+    "toxic_flame": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8c85970c4cecad5ac1423f3fadc23b7501a9f0e4@256.webp/circle?v=6&sig=0nL58y9iVaXh8ggmsr7xmWy8VcI%3D",
+      "bazaar_desc": "Toxic Flame: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Burn, your Poison items gain [+1/+2/+3] Poison for the fight. Patch 13.3.",
+      "card_path": "/card/11z839nwskp42nm8t0fqc726v8m/Toxic-Flame"
+    },
+    "toxic_friendship": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7981fd1fc8c10ba0dba42229a19f6aadc2225aad@256.webp/circle?v=6&sig=uC%2BodEjmoriCWUv0HuW7i6VPWuY%3D",
+      "bazaar_desc": "Toxic Friendship: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Friend, Poison [2/4]. Patch 13.3.",
+      "card_path": "/card/fmmh1hvf1y3hctpsvgdqmxfzbb/Toxic-Friendship"
+    },
+    "toxic_fuel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/edd509790bcf4570714aa37ffd9a0545a7612585@256.webp/circle?v=6&sig=09Znqdoj579r2fVtiJ2FTex6PV0%3D",
+      "bazaar_desc": "Toxic Fuel: See 2 hidden abilities. Obtained from 1 source. Passive: While you are Poisoned, your items' Cooldowns are reduced by [3%/6%]. Passive: While your enemy is Poisoned, their items' Cooldowns are increased by [3%/6%]. Patch 13.3.",
+      "card_path": "/card/fgy49d2p69mlh7ylbq5lndd69g/Toxic-Fuel"
+    },
+    "toxic_shield": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c16f5d22bf90d34858bdc25f5b56f0f2da66814a@256.webp/circle?v=6&sig=QK78qis55mgiclhc3J2D7DZCt7o%3D",
+      "bazaar_desc": "Toxic Shield: See 4 hidden abilities. Offered by 6 skill trainers. Passive: The first time you fall below half Health each fight, Shield equal to [2/3/4] times the Poison on your enemy. Patch 13.3.",
+      "card_path": "/card/wlnwvc3pbszqw2tzwvxksy0d9s/Toxic-Shield"
+    },
+    "toxic_weapons": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0db9ff30c053c42ee8707f087517692c25b79be3@256.webp/circle?v=6&sig=biy%2BBtHOvDvIlVaRBEBrDmMoUOs%3D",
+      "bazaar_desc": "Toxic Weapons: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your Poison items have [+2/+3/+4] Poison for each Weapon you have. Patch 13.3.",
+      "card_path": "/card/51fn9pl6wvf0szn2w16jz546gm/Toxic-Weapons"
+    },
+    "toxin_injector": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/816adfc2a86ffb3f0fa56f46ba5019e11d1189a9@256.webp/circle?v=6&sig=yqy%2FPRct3m6UWbMHP%2F6Z4WISRBA%3D",
+      "bazaar_desc": "Toxin Injector: See 2 hidden abilities. Offered by 6 skill trainers. Passive: The first time you use an item each fight, Haste [1/2/3] Poison item(s) for 2 second(s). Patch 13.3.",
+      "card_path": "/card/bg6c1wkfy3lh403zd84k4p20ys/Toxin-Injector"
+    },
+    "tracer_fire": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7911ccbcb7a0f5b8180384dca89f03edb57d7c9f@256.webp/circle?v=6&sig=7R1Dd9xLrYaqk7r5%2BdMR1iTgH6I%3D",
+      "bazaar_desc": "Tracer Fire: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 2 sources. Passive: When you Burn, your items gain [+1%/+2%/+3%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/l6xgwy6ftvdf81y8t3jjm90w3c/Tracer-Fire"
+    },
+    "trader": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7ca85cf43dc71438a214d163994e55c3cd0cfffe@256.webp/circle?v=6&sig=%2FMF%2BEmnvLEslBwnay1X8FoBcN0A%3D",
+      "bazaar_desc": "Trader: See 1 hidden ability. Offered by 4 skill trainers. Obtained from 1 source. Passive: Your items have [+1/+2] value. Patch 13.3.",
+      "card_path": "/card/tl2wm2zw5n1gyfnqs5j7bfqqkt/Trader"
+    },
+    "trained": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d4b044e45a8a5a5ab3cc14e3eed9e2ebe967f292@256.webp/circle?v=6&sig=iJW8v%2FTGGBach1GZzN4ead%2FNT8o%3D",
+      "bazaar_desc": "Trained: See 1 hidden ability. Obtained from 3 sources. Passive: When you Slow, a Weapon gains [+5/+10/+15/+20] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/t6xxfztpwl843cb9qwl90bk91/Trained"
+    },
+    "trickle_down_economics": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/489e5432f14446e001089a4dcc04ab9cb5eccbb4@256.webp/circle?v=6&sig=yK1Wv71TRs8sV5SKCF6k2gS2TLI%3D",
+      "bazaar_desc": "Trickle Down Economics: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Large item, Haste your other items for [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/hlw5q8nmvb8c2y441c0hz7bch8/Trickle-Down-Economics"
+    },
+    "unwavering": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/97f57785e691f124c61e36f51ff836e62d6ad9df@256.webp/circle?v=6&sig=iBe%2B3w5RpQF6CoBKmW0%2FWOyu0uU%3D",
+      "bazaar_desc": "Unwavering: See 1 hidden ability. Obtained from 1 source. Passive: When you use an item, Shield [20/40]. Patch 13.3.",
+      "card_path": "/card/fj0l9n6dm7cqjx4591d2nxyj0v/Unwavering"
+    },
+    "valley_fever": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7127dfda857d044eec012669b8fd6ad18795705c@256.webp/circle?v=6&sig=K7VD4d2dLcuWSvB%2FTi8hGZmP7gA%3D",
+      "bazaar_desc": "Valley Fever: See 1 hidden ability. Passive: At the start of each fight, Burn yourself 2. Patch 13.3.",
+      "card_path": "/card/nnblxb34k1lnvyb0hzf1tqbzs1/Valley-Fever"
+    },
+    "vengeance": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1b9133723fa24595c4bebd90caadd6ac2f53d448@256.webp/circle?v=6&sig=XiyF8T%2Fpse6C7OuViedcp98Yax4%3D",
+      "bazaar_desc": "Vengeance: See 2 hidden abilities. Obtained from 1 source. Passive: Your leftmost and rightmost items' Cooldowns are reduced by [5%/10%/15%]. Patch 13.3.",
+      "card_path": "/card/tq2dfpb81nkddpy889g3q2s0qm/Vengeance"
+    },
+    "venomous_blade": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/070ad8d19c7d3e27498ae4f404d39aaf6c343f57@256.webp/circle?v=6&sig=CwDd8%2FZ8PEHBQbt93DxpG26OPXY%3D",
+      "bazaar_desc": "Venomous Blade: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [4/8] times you use a Weapon each fight, Charge a Poison item 1 second(s). Patch 13.3.",
+      "card_path": "/card/15sm47w7n5bcqyvfxywz1w06wpj/Venomous-Blade"
+    },
+    "venomous_vitality": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e58dd131e3a875023d621ad9e99719aa90a3a5d1@256.webp/circle?v=6&sig=9ZCNs5tR4rvGCvJawxY3esFMa7w%3D",
+      "bazaar_desc": "Venomous Vitality: See 2 hidden abilities. Offered by 4 skill trainers. Passive: You have +Regen equal to half the Poison on an enemy. Patch 13.3.",
+      "card_path": "/card/kg1jfjsv23slgxj8xwvn6143s4/Venomous-Vitality"
+    },
+    "vital_renewal": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/096486d3ba70e18de8630c40e4432d2dcbe80c98@256.webp/circle?v=6&sig=lS7GECdlNb2C0Fnuu%2FY7E8pqvkU%3D",
+      "bazaar_desc": "Vital Renewal: See 4 hidden abilities. Offered by 9 skill trainers. Passive: When you Slow, Freeze, Poison or Burn with an item, a Regen item gains [1/2] Regen. Patch 13.3.",
+      "card_path": "/card/18v4c1df2dwg2qnd9l26fp87hk4/Vital-Renewal"
+    },
+    "vital_reserve": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/37e3a295f4a62251c7da7d12913172dae1eb9645@256.webp/circle?v=6&sig=mBdpLKdYxzoWC9nnN3263MUp3%2FI%3D",
+      "bazaar_desc": "Vital Reserve: See 1 hidden ability. Offered by 6 skill trainers. Obtained from 1 source. Passive: Your rightmost Regen item has [+2/+4/+6/+8] Regen. Patch 13.3.",
+      "card_path": "/card/ym885qx4j3198gpkfxj38x80c3/Vital-Reserve"
+    },
+    "void_energy": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0d0d481bbe47578b5b07e47ddcb33b087f970185@256.webp/circle?v=6&sig=L6K5RYZBmwGZFzjQEOeOV1o4cUk%3D",
+      "bazaar_desc": "Void Energy: See 1 hidden ability. Obtained from 1 source. Passive: When you Burn, Charge a Shield item 1 second(s). Patch 13.3.",
+      "card_path": "/card/18sy5mq1zfjp1wpdf089ds6zzn5/Void-Energy"
+    },
+    "void_rage": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b81f832f4a85c9a812d43c1a5a2e307404518753@256.webp/circle?v=6&sig=cs85G3E561lwaY2N9BVA1NfIOXc%3D",
+      "bazaar_desc": "Void Rage: See 1 hidden ability. Obtained from 1 source. Passive: When you Burn, Haste an item for 1 second. Patch 13.3.",
+      "card_path": "/card/98qyc4h5d008sm03xt8c7gw120/Void-Rage"
+    },
+    "void_render": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9b8f07acf779bd815677215da4e5519987e6aaac@256.webp/circle?v=6&sig=Cd2817HYEO9kFg9F0C2e%2Biti68U%3D",
+      "bazaar_desc": "Void Render: See 2 hidden abilities. Obtained from 1 source. Passive: When you destroy an item, your items gain [+100/+200] Damage and [+10/+20] Burn for the fight. Patch 13.3.",
+      "card_path": "/card/l3b255ft744cy69677vltb2qlx/Void-Render"
+    },
+    "wake_up_call": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1f19a7fca2894e719403fb3d0c520a917b5e0e67@256.webp/circle?v=6&sig=mjCdMW3WasIXFfYM334hL%2BHq39A%3D",
+      "bazaar_desc": "Wake-Up Call: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Small item, Haste a Burn, Poison or Freeze item for 1 second. Patch 13.3.",
+      "card_path": "/card/ggqshnf6vs806gd31t3y91fc1g/Wake-Up-Call"
+    },
+    "walk_in_clinic": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4b82c3613a192e3ad32fce9df5638d4d7af880b2@256.webp/circle?v=6&sig=f3uoiBXJfezf0w6qG68Jl%2FW4RNQ%3D",
+      "bazaar_desc": "Walk-in Clinic: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your leftmost Regen item has [+2/+4/+6/+8] Regen. Patch 13.3.",
+      "card_path": "/card/hydslcx09p3h48vw742dng7sn7/Walk-in-Clinic"
+    },
+    "warm_hugs": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/789479d25365e434c66a0bb5d48d592067e36e18@256.webp/circle?v=6&sig=2c9hERf3TcJJxfuBrJhGmYvEBgI%3D",
+      "bazaar_desc": "Warm Hugs: See 3 hidden abilities. Offered by 5 skill trainers. Obtained from 1 source. Passive: The first [4/8/12] times you use a Friend each fight, Burn 5. Patch 13.3.",
+      "card_path": "/card/4md3cx722msyzsxx3929pzjgnn/Warm-Hugs"
+    },
+    "waters_of_infinity": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d959a5c17a9ce719b42dfbfb26b59612b0709cba@256.webp/circle?v=6&sig=2AdeUj4n%2BKSnyiLaj41XZ8a7Q%2FE%3D",
+      "bazaar_desc": "Waters of Infinity: See 2 hidden abilities. Obtained from 2 sources. Passive: You have [+10/+20/+30] Regen for each non-Weapon item you have. Patch 13.3.",
+      "card_path": "/card/vzdlf0d9stt4b7wd2zq5038mmw/Waters-of-Infinity"
+    },
+    "well_oiled_machine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/98e7dfa49a828b8d4d8eed8a36b493f979aec07b@256.webp/circle?v=6&sig=qRHxlG%2F3xyZqFk7RFUOZb0wsTgs%3D",
+      "bazaar_desc": "Well-Oiled Machine: See 2 hidden abilities. Offered by 3 skill trainers. Passive: When you use a Core, reduce an item's Cooldown by 5% for the fight. Patch 13.3.",
+      "card_path": "/card/9h95mzc6wmm51tt4cl0jdd6f9l/Well-Oiled-Machine"
+    },
+    "workin_hard": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/12459fb4c8d67aa2ffc7f4ee23adb5be1116682b@256.webp/circle?v=6&sig=aytwl9BKvxrozMQWJ1KbBL84Y7M%3D",
+      "bazaar_desc": "Workin' Hard: See 3 hidden abilities. Offered by 4 skill trainers. Passive: The first [4/8] times you Haste each fight, Charge a Tool 1 second. Patch 13.3.",
+      "card_path": "/card/lljnz0s32c9fct4cx1bjydf0v2/Workin'-Hard"
+    },
+    "rolling_boil": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b05079d093105a90688acf01b291399a9b037b27@256.webp/circle?v=6&sig=5o%2BzqT4p7vS1TNbGZZC3n8rXV0I%3D",
+      "bazaar_desc": "Rolling Boil: See 1 hidden ability. Offered by 4 skill trainers. Passive: Your Heated items have their cooldowns reduced by [5%/10%]. Patch 13.3.",
+      "card_path": "/card/10xbj1kvm1tb89kflckz1dpnc7j/Rolling-Boil"
+    },
+    "castle_doctrine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a5d114cef2100a0356e3cc039384e7b089f1908e@256.webp/circle?v=6&sig=ECM5OE3QnN0Z%2BiKcZAcToN3wqHA%3D",
+      "bazaar_desc": "Castle Doctrine: See 2 hidden abilities. Offered by 4 skill trainers. Passive: The first time any item is used each fight, for each Property you have, gain [10/20] Rage. Patch 13.3.",
+      "card_path": "/card/11828zct4vn87llgpq9b51fhk40/Castle-Doctrine"
+    },
+    "adrenaline_rush": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/bef57be134870dfc87d66e24fd96ea1656de8343@256.webp/circle?v=6&sig=hhVvAgq%2FO%2BsgNBFM4NnjhBWS1lo%3D",
+      "bazaar_desc": "Adrenaline Rush: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Enrage, Charge your Weapons [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/11c57573lfbq0yyc6cp5lt6hwtc/Adrenaline-Rush"
+    },
+    "healthy_friendship": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e4e9f9f5a47239be63df639d795a20c7750ecd19@256.webp/circle?v=6&sig=qBz03Zsko6Rl0xcp1%2BdirSuzMpI%3D",
+      "bazaar_desc": "Healthy Friendship: See 1 hidden ability. Obtained from 1 source. Passive: When you use a Friend, Regen [2/4]. Patch 13.3.",
+      "card_path": "/card/11wv6q0v61psnbcx1d9k4sywdw4/Healthy-Friendship"
+    },
+    "reserve_collection": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/62d3fc7c5a668f6818d8352155bb32d8ad8006b5@256.webp/circle?v=6&sig=UVpNUTl9wzBe2kNAnJWPrN5vZe0%3D",
+      "bazaar_desc": "Reserve Collection: See 2 hidden abilities. Offered by 3 skill trainers. Passive: The first time you fall below half Health each fight, use your Relics. Patch 13.3.",
+      "card_path": "/card/123f7xv516wm8qjwtldy6k35ktk/Reserve-Collection"
+    },
+    "truffleholic": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ac2e8edb7db6ce5eed21a28a2c40200cf4d1b446@256.webp/circle?v=6&sig=F9AbCmH7E%2Fst2X1hRtCNkRqOTdk%3D",
+      "bazaar_desc": "Truffleholic: See 1 hidden ability. Offered by 4 skill trainers. Passive: When you sell a Property, get [1/2] Truffle(s). Patch 13.3.",
+      "card_path": "/card/127s0yhh4ql1kh5lzqlxpcmq53t/Truffleholic"
+    },
+    "above_the_clouds": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3d52fc7c5998946a3a8fde82e99292af4075ba6e@256.webp/circle?v=6&sig=7KtNJLsJARJPGLIHc1h3q34ecIw%3D",
+      "bazaar_desc": "Above the Clouds: See 1 hidden ability. Offered by 4 skill trainers. Passive: Your items have [+5%/+10%] Crit Chance for each Flying item you have. Patch 13.3.",
+      "card_path": "/card/12gtzc6tf43tsn3q7b5kb4qxkky/Above-the-Clouds"
+    },
+    "green_light": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/5dfd5af87ddc2a8acd100880a048377319282a1e@256.webp/circle?v=6&sig=%2BvDvhcC7%2FlbeSksLsx%2FtZhl7guA%3D",
+      "bazaar_desc": "Green Light: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use an item each fight, Haste your Drones and Vehicles for [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/130cjkzt18yxw96x718y2w2jn2d/Green-Light"
+    },
+    "pure_imagination": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/78a1258053f84d6e78f463002928ab4b2779f27e@256.webp/circle?v=6&sig=TvngWthObpoaXHHHm6%2Fr37%2Fd5bU%3D",
+      "bazaar_desc": "Pure Imagination: See 2 hidden abilities. Offered by 4 skill trainers. Passive: Your leftmost item is a Toy and has its cooldown reduced by [3%/6%]. Patch 13.3.",
+      "card_path": "/card/13194j5tj59y2qp468h8dqcc1yp/Pure-Imagination"
+    },
+    "pacifist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4967fc7c560227385552b1a5717ad66026dea86f@256.webp/circle?v=6&sig=ZLUrxlsqSQAckHqG9blHyHpxj2Y%3D",
+      "bazaar_desc": "Pacifist: See 1 hidden ability. Offered by 3 skill trainers. Passive: If you have no Weapons, your items' Cooldowns are reduced by [5%/10%]. Patch 13.3.",
+      "card_path": "/card/1391z0wh84v374y8q8ydh29mmm8/Pacifist"
+    },
+    "initial_rage": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/efdbbe3fdfd6917fda228f2ca89d2a80249e43d2@256.webp/circle?v=6&sig=sByaeNYQgZ7OPDKxZVsiUPaQNYI%3D",
+      "bazaar_desc": "Initial Rage: See 2 hidden abilities. Offered by 3 skill trainers. Passive: While you are Enraged, your leftmost item has its cooldown reduced by 1 second(s). Patch 13.3.",
+      "card_path": "/card/14248yqdfff8w1kh0kk200wp8nm/Initial-Rage"
+    },
+    "scramble_fighters": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4827a33e55f6f3254bfbdd3b580b32f28672608f@256.webp/circle?v=6&sig=jomLF5LfHsYXinkmCqiyQRPfjMs%3D",
+      "bazaar_desc": "Scramble Fighters: See 3 hidden abilities. Obtained from 1 source. Passive: The first time you use an item each fight, [1/2/3] item(s) start Flying. Passive: Your Flying Weapons have [+20/+30/+40] Damage. Patch 13.3.",
+      "card_path": "/card/14vt9n9yb6mscjdlj5x6h8qb9pn/Scramble-Fighters"
+    },
+    "peak_rage": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ed24a018e4fd41294461a832a46c476e5dcf1bcf@256.webp/circle?v=6&sig=OiMDK7ZRg%2BmBzEaO9mEz7xWEpqo%3D",
+      "bazaar_desc": "Peak Rage: See 1 hidden ability. Offered by 7 skill trainers. Passive: While you are Enraged, your items have [+20%/+30%/+40%/+50%] Crit Chance. Patch 13.3.",
+      "card_path": "/card/15mh9s55j1dfgtv4xnsz7djbjdp/Peak-Rage"
+    },
+    "debilitating_secrets": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b07a11a4c4997de4bdbfaaa9f87e653482883ea7@256.webp/circle?v=6&sig=Oqltkqo2L57gIHkgNU%2FOmXWq%2FRk%3D",
+      "bazaar_desc": "Debilitating Secrets: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [5/10] times you use a Relic each fight, Slow an item for 1 second. Patch 13.3.",
+      "card_path": "/card/1671h0yc691xdp0ckw825wvlpkx/Debilitating-Secrets"
+    },
+    "friendzone": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7ad7271d012890e303f03ac739990c37f8c494cb@256.webp/circle?v=6&sig=WceDuX2CKrArBzA9n9M83u7w8Lg%3D",
+      "bazaar_desc": "Friendzone: See 1 hidden ability. Obtained from 1 source. Passive: Your Friends' Cooldowns are reduced by [5%/10%]. Patch 13.3.",
+      "card_path": "/card/169k03vytfsxm37f820w4z7wblz/Friendzone"
+    },
+    "wolverine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/449c7da744aadaf0d07833d1d1c6b1de0e514cb6@256.webp/square?v=6&sig=gfGFVAVWdYA6EB7jMfzbIxCDrpw%3D",
+      "bazaar_desc": "Wolverine: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Obtained from 1 source. Every [9.0/8.0/7.0] sec.: Deal 10 Damage Passive: When you Haste, this gains [+10/+20/+30] Damage and +10 Crit chance for the fight. Patch 13.3.",
+      "card_path": "/card/sgjtzk4j56b2s518f1flmp8qtq/Wolverine"
+    },
+    "sandwich_artist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/294053c39753e9a19a47c661db4a8a6d76496f2d@256.webp/encounter?v=6&sig=5080Z%2FtH4Bno1LTAc9ULmG6wTL0%3D",
+      "bazaar_desc": "Sandwich Artist. Day 6 Monster. Skills: Regenerative. Items: Bread, Salt, Butter, Giant Sub, Spice Rack, Baked Potato. Patch 13.3.",
+      "card_path": "/card/16g2vt95jy8s5zqppmhv3zd2cy3/Sandwich-Artist"
+    },
+    "i_would_eat_that": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c4f2f3f9d629bcbd3850869a99429c960d31c026@256.webp/circle?v=6&sig=TmxSmx5eKVCx%2F%2Bis9uz%2BS0KdpxU%3D",
+      "bazaar_desc": "I Would Eat That: See 2 hidden abilities. Offered by 4 skill trainers. Passive: Your leftmost item is a Food and has its cooldown reduced by [3%/6%]. Patch 13.3.",
+      "card_path": "/card/16hqhdn33yjzsk1m21nhbchqxgf/I-Would-Eat-That"
+    },
+    "farm_to_table": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/887b98a5e8cfcba8a7a936d85df284aa941d4e62@256.webp/circle?v=6&sig=m%2BgyJNKcHlgLJDC2GPpCiOB5PYI%3D",
+      "bazaar_desc": "Farm to Table: See 2 hidden abilities. Offered by 6 skill trainers. Passive: You have [+50/+100/+150] Max Health for each Tool you have. Patch 13.3.",
+      "card_path": "/card/1777mk8bntzt535vv7x565cxhn3/Farm-to-Table"
+    },
+    "death_from_above": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b024c62182fa3b9dc33bbde924ddf0dd5fb2d46a@256.webp/circle?v=6&sig=GAUVR2Oz%2BZ5Pak8L7728GUE51p4%3D",
+      "bazaar_desc": "Death from Above: See 2 hidden abilities. Offered by 5 skill trainers. Passive: When you Enrage, [1/2/3] of your items start Flying, then Charge your Flying items 1 second. Patch 13.3.",
+      "card_path": "/card/17dyw8kql36n9mm9l4cgc9zsjww/Death-from-Above"
+    },
+    "everlasting_life": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0a784ac3bad3d18da61683970f0bdf8684826d07@256.webp/circle?v=6&sig=5oOjZjV8xG7C%2Be9bM5NdQFcS7HE%3D",
+      "bazaar_desc": "Everlasting Life: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [4/8/12] times you use a Heal or Regen item each fight, gain 50 Max Health for the fight. Patch 13.3.",
+      "card_path": "/card/17j83mhm55yzhjp24tlxm1f39gn/Everlasting-Life"
+    },
+    "ancient_flamekeeper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1e6dce60b24d18072a0d72bc5c9375f7b42d4e4d@256.webp/circle?v=6&sig=IkOoDo5qMRInqS7uk6FzPrNm61Q%3D",
+      "bazaar_desc": "Ancient Flamekeeper: See 3 hidden abilities. Offered by 6 skill trainers. Passive: The first [4/8/12] times you use a Relic each fight, Burn 5. Patch 13.3.",
+      "card_path": "/card/17kpc6dchd2dfnk2s78scx7h859/Ancient-Flamekeeper"
+    },
+    "frontier_living": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7a39a6f25c6bf94eb9e9ae0b1a192e49c981849d@256.webp/circle?v=6&sig=xQlrrhMwMKAc0xAreJN86ygoGCs%3D",
+      "bazaar_desc": "Frontier Living: See 1 hidden ability. Obtained from 1 source. Passive: At the start of each day, get a Rage item. Patch 13.3.",
+      "card_path": "/card/17w2153p571hm4dcs5m40p02qmj/Frontier-Living"
+    },
+    "bloodthirst": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4ba65e67d5b82a64fa44913b1b22e0d027a4246e@256.webp/circle?v=6&sig=ZJSmypVrtu7qd7TolKR8n32Og%2Bw%3D",
+      "bazaar_desc": "Bloodthirst: See 1 hidden ability. Offered by 7 skill trainers. Passive: Your Lifesteal Weapons have [+20/+30/+40/+50] Damage. Patch 13.3.",
+      "card_path": "/card/17zdpj6f2qdj7pfhf70kps1zl7l/Bloodthirst"
+    },
+    "barrel_roll": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/944c325938a7ab49d8ac4b953315a027a18670f3@256.webp/circle?v=6&sig=88rMa36R%2B5PoPBYXlpuZ5HCmAv8%3D",
+      "bazaar_desc": "Barrel Roll: See 1 hidden ability. Offered by 3 skill trainers. Passive: When you use a Flying item, adjacent items start Flying. Patch 13.3.",
+      "card_path": "/card/18n33ph0x369mqqz8893dnspw6k/Barrel-Roll"
+    },
+    "refreshing_treat": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/bfa68fc9cba28fdb6398ba9172df77d1ddffe977@256.webp/circle?v=6&sig=9WX2fT4JHwb7GrczvZsMi3MKhk0%3D",
+      "bazaar_desc": "Refreshing Treat: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [5/10] times you use a Chilled item each fight, Regen 10. Patch 13.3.",
+      "card_path": "/card/18nx7fx3d8h2cm999cjtjw0nvbg/Refreshing-Treat"
+    },
+    "inspirational_cooking": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/72cabb99519e663c145b9c6c4bf24502c9647a7d@256.webp/circle?v=6&sig=PNHNiE26S5jE5LLtoMJwmrHKX%2B4%3D",
+      "bazaar_desc": "Inspirational Cooking: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your Food have [+10%/+15%/+20%] Crit Chance. Patch 13.3.",
+      "card_path": "/card/18t4yjh6zgsy988cc0jg713zs4j/Inspirational-Cooking"
+    },
+    "favorite_toy": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4d25c1b512706dae95daf7f8e93e2a84b6086bd5@256.webp/circle?v=6&sig=%2B0O%2FyytUdUIbI5Psx5B13T4XPjI%3D",
+      "bazaar_desc": "Favorite Toy: See 4 hidden abilities. Offered by 7 skill trainers. Passive: Your leftmost Toy has [+20/+30/+40] Damage, Shield and Heal. Patch 13.3.",
+      "card_path": "/card/19dsfqzhps1gtsym2cx6bh4gdkf/Favorite-Toy"
+    },
+    "foundation_revenant": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/69431932b218bd74e3c3eae02ca8493403222eb4@256.webp/encounter?v=6&sig=UrFDzZZvKh8Yl7SzA6CDVYukkIs%3D",
+      "bazaar_desc": "Foundation Revenant. Day 9 Monster. Skills: Exposing Toxins, Purifying Flame. Items: Soul Ring, Emerald, Ouroboros Statue, Shadowed Cloak, Basilisk Fang, Ectoplasm, Thurible, Bandages. Patch 13.3.",
+      "card_path": "/card/19k4kjdfqfy1mtcyjjk6cf5l8tg/Foundation-Revenant"
+    },
+    "dirty_dishes": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/60bc244fd0087e00967a6a0f87d421b603ba9ab1@256.webp/circle?v=6&sig=xFOgMUzv3u6OZbY%2FbkdiImxt1Nc%3D",
+      "bazaar_desc": "Dirty Dishes: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [5/10] times you use a Food each fight, Slow an item for 1 second(s). Patch 13.3.",
+      "card_path": "/card/19v3ch341x0qmldcfvbxdh2nplq/Dirty-Dishes"
+    },
+    "feral_alliance": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/332b2c99d7dd10238682f8e565320e156ecd4201@256.webp/circle?v=6&sig=bz0Wtiw0nOI7id7YTlR59ACSY80%3D",
+      "bazaar_desc": "Feral Alliance: See 1 hidden ability. Offered by 5 skill trainers. Passive: When you Enrage, Charge your Friends [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/19ykqqk9tk2vh1npdpm19fvz8h9/Feral-Alliance"
+    },
+    "deadly_waters": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/bb7516918204e8e92a9285054db3b5e50135f001@256.webp/circle?v=6&sig=XF0Q2%2BQ2mXBQlcVILkWVhTC0zEQ%3D",
+      "bazaar_desc": "Deadly Waters: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your Aquatic Weapons deal [+10/+20/+30/+40] Damage. Patch 13.3.",
+      "card_path": "/card/1c10p1f20yqpl63s8fphg98c9l/Deadly-Waters"
     }
   },
   "monsters": {}
