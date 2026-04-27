@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-04-26T08:02:30.150654+00:00",
+    "fetched_at": "2026-04-27T08:51:34.794777+00:00",
     "wiki_catalog_items": 1527,
     "wiki_catalog_monsters": 129
   },
@@ -6008,6 +6008,586 @@
       "image_url": "https://i.bazaardb.gg/v1/z13.0/e4f13e332dd3e1d20d7532f3b8cb33b5061cf810@256.webp/wide?v=6&sig=rTAWAqeUBPTYndqOJXgEJa5QfJ8%3D",
       "bazaar_desc": "Massive Cleaver: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every [10.0/8.0] sec.: Deal Damage equal to 15% of your Max Health Passive: When you Crit, charge this 2 second. Patch 13.3.",
       "card_path": "/card/30l263k0d87wqdwkpqc9600093/Massive-Cleaver"
+    },
+    "carving_fork": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/027577be2677e724c3f0a203d5cd879b72c814b4@256.webp/tall?v=6&sig=bFQZwhVkcSfFlZHeu039qkqigQk%3D",
+      "bazaar_desc": "Carving Fork: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Deal [3/6/9/12] Damage Your Weapons gain [+3/+6/+9/+12] damage for the fight Patch 13.3.",
+      "card_path": "/card/32tmzspp88h8blp29xnm7q28ms/Carving-Fork"
+    },
+    "warpaint": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9c053d4b05f66cb20a9001eaf8559ca4db65e29d@256.webp/tall?v=6&sig=NyNP%2ByeyifazVufd3v4SiDvJ2Z0%3D",
+      "bazaar_desc": "Warpaint: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Obtained from 3 sources. Passive: When you use the item to the left of this, gain [8/10/12] Rage. Patch 13.3.",
+      "card_path": "/card/39z6qjnzfgmmqyjnwv84550wlq/Warpaint"
+    },
+    "delivery_drone": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/70368f98f21768e75b45c727cee2c31758ffe9bb@256.webp/square?v=6&sig=O297LNqO8IXRBDktN1YdtTMajSk%3D",
+      "bazaar_desc": "Delivery Drone: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 4.0 sec.: Charge another Flying item [1/1.5/2/2.5] seconds Passive: At the start of each day, get a Loot item. Patch 13.3.",
+      "card_path": "/card/3b2hmz9bqlm5728fxlx4bq74bh/Delivery-Drone"
+    },
+    "fogshroom": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/81f6a5c11387d4e92e390b2d8857c89af0cdffe5@256.webp/tall?v=6&sig=wWQlaZA5uz2NYtsayMr7OaZHNT4%3D",
+      "bazaar_desc": "Fogshroom: See 13 enchantments, 2 hidden abilities. Offered by 14 merchants. Every 4.0 sec.: Slow adjacent items for 1 second(s) If you are Enraged, Charge your other items [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/3dt9nlvw235w2cb50dcdnbmf8w/Fogshroom"
+    },
+    "void_disruptor": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9a8d5dd6b0ac6a50f2a5c945841ebbeb7049bd92@256.webp/square?v=6&sig=LSsombkqYPD0U23ysuADra0E19c%3D",
+      "bazaar_desc": "Void Disruptor: See 13 enchantments, 3 hidden abilities. Every 10.0 sec.: Destroy adjacent items for the fight Passive: When you destroy an item, Shield equal to 25% of your Max Health. Patch 13.3.",
+      "card_path": "/card/3h32xbwxzy57m9pm3jkb0k29k4/Void-Disruptor"
+    },
+    "oven": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/735c7fa997f145d2955275bb8cd032835f98c51d@256.webp/wide?v=6&sig=dbSIzjOM9ZQATP6CCoMusywdy3U%3D",
+      "bazaar_desc": "Oven: See 13 enchantments, 4 hidden abilities. Offered by 13 merchants. Every 6.0 sec.: Your Food gain Heated for 4 seconds. Passive: Your other Heated items have +1 Multicast. Patch 13.3.",
+      "card_path": "/card/3hdqm7cmcsgtslj3tc5d23fq42/Oven"
+    },
+    "tranquilizer_dart": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d6d5127c6a2b177f18276935181bdc2493db5ae7@256.webp/tall?v=6&sig=FlKhVXls6uPmFHM9ucdT6%2FoO%2F%2Fo%3D",
+      "bazaar_desc": "Tranquilizer Dart: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 4.0 sec.: Slow [1/2/3] item(s) for 2 second(s) Ammo: 3 Passive: This has +1 Multicast if your enemy has a Friend. Patch 13.3.",
+      "card_path": "/card/3hj73v395j9ggvfbxv8qxpjml0/Tranquilizer-Dart"
+    },
+    "jetbike": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3e3c3409c165c69129c18a32b2055dd0388e72ec@256.webp/wide?v=6&sig=NEKIB5XN3RHdggX2B23%2BUiV2Vwo%3D",
+      "bazaar_desc": "Jetbike: See 13 enchantments, 5 hidden abilities. Offered by 15 merchants. Every [7.0/6.0/5.0] sec.: Deal [200/400/800] Damage Passive: When you use an adjacent item, it and this start Flying Passive: When you use another Flying item, Charge this 1 second. Patch 13.3.",
+      "card_path": "/card/3jyd1l07fb8qwvjxbn3yp89spm/Jetbike"
+    },
+    "drafting_table": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7884d61cd3967827dc9e8ad28d98ecc378663962@256.webp/square?v=6&sig=N628gN3UcR2jIOOCzqVwlVRdLMg%3D",
+      "bazaar_desc": "Drafting Table: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Every [7.0/6.0/5.0] sec.: Charge your non-Tool items 1 second for each Tool you have Passive: At the start of each day, if you have 3 or more Tools, upgrade a lower tier Vehicle or Drone. Patch 13.3.",
+      "card_path": "/card/3mxppdxwwt48p46xzf5ztw5dj2/Drafting-Table"
+    },
+    "black_mamba": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2c3819bd84819138190a8c57f77b131c79b4e3da@256.webp/tall?v=6&sig=sutMUn4jvlZQRl2uI2QxUIcXE1g%3D",
+      "bazaar_desc": "Black Mamba: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 5.0 sec.: Poison 1 Passive: When you Enrage, your Poison items gain [+5/+10/+15/+20] Poison for the fight. Patch 13.3.",
+      "card_path": "/card/3p58cjqg4f689hcxknb08f1dpg/Black-Mamba"
+    },
+    "windbreaker": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fe57e0e0b714698823fef5660d072767c4566920@256.webp/square?v=6&sig=K4tQIxzjH33xariSKZYAHJ52qTE%3D",
+      "bazaar_desc": "Windbreaker: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Every 5.0 sec.: Shield 20 Passive: When your items start Flying, this gains [+20/+40/+60] Shield for the fight. Passive: While this is Flying, this has double Shield. Patch 13.3.",
+      "card_path": "/card/3qxhygmhzyzytlx2m05plnnk0g/Windbreaker"
+    },
+    "hydrogen_tank": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/559cfa501a817abf2d279aca3cce4ad40091ba05@256.webp/square?v=6&sig=o56FTn8IUJUQ%2BkBOrQ0rDUIkeHo%3D",
+      "bazaar_desc": "Hydrogen Tank: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 6.0 sec.: Haste adjacent items for [1/2/3] second(s) Passive: When you use an adjacent Vehicle, Charge this 2 seconds. Passive: When this is destroyed, Burn [100/150/200]. Patch 13.3.",
+      "card_path": "/card/3s7fx9zt1cqjs740kv3p1q6ttk/Hydrogen-Tank"
+    },
+    "cornucopia": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/76a0b1385729aa483be4e71cf17cee97a37fd6b5@256.webp/square?v=6&sig=nY9bLOmc2HDzB0GKJbDlPiPacBA%3D",
+      "bazaar_desc": "Cornucopia: See 13 enchantments, 2 hidden abilities. Offered by 14 merchants. Every 4.0 sec.: Heated: Charge your other Heated items [1/2] second(s). Chilled: Charge your other Chilled items [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/3tkt3sg561ltx8fnx8j29g02tx/Cornucopia"
+    },
+    "tinfoil_hat": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/581159d8b2f5e1317a17eaee1833ae97ada6766c@256.webp/square?v=6&sig=2AeYm6axZDf3riLoOGGNgDlUqiw%3D",
+      "bazaar_desc": "Tinfoil Hat: See 13 enchantments, 1 hidden ability. Obtained from 1 source. Passive: When an enemy uses an item, Shield 1. Patch 13.3.",
+      "card_path": "/card/404znxbz8d2cy0fghmwqxplsdx/Tinfoil-Hat"
+    },
+    "meat": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9a689bf24a7416b88d84bb541ddb11185f67a184@256.webp/tall?v=6&sig=7GObe4UQrfhRJ74PnIlwiWWX3n4%3D",
+      "bazaar_desc": "Meat: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every [6.0/5.0/4.0/3.0] sec.: Heal 50 Ammo: 3 Passive: When this runs out of Ammo, the Heal item to the right gains +1 Multicast for the fight. Patch 13.3.",
+      "card_path": "/card/41xyz6fgwj48w1mjcjtgn8sjtz/Meat"
+    },
+    "fortune_cookie": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/08d37b5870c6cca9546d2719da8f169812684851@256.webp/tall?v=6&sig=FxHnJDciWg4OTKSuyO0Hw6KLM2Q%3D",
+      "bazaar_desc": "Fortune Cookie: See 10 enchantments, Offered by 10 merchants. Patch 13.3.",
+      "card_path": "/card/42ktxz1f4x71b755cgj7vf4ng5/Fortune-Cookie"
+    },
+    "saffron": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a412b35fe2a75684989b8af63ecece7fcd5d26c3@256.webp/tall?v=6&sig=bx2YJ1cSsmAjfwC1417fLBtYZAI%3D",
+      "bazaar_desc": "Saffron: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 5.0 sec.: Shield [25/50] Adjacent items gain +Shield for the fight equal to this item's Shield. Patch 13.3.",
+      "card_path": "/card/443pmqm4gp2xjjb14k871k4639/Saffron"
+    },
+    "karst": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2129e2356ef6f70db99dcd9b01e31c93c103f0e4@256.webp/wide?v=6&sig=SomFWdLVy5MUPFjWD%2BvBSXKMbJc%3D",
+      "bazaar_desc": "Karst: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Obtained from 1 source. Passive: When you use a Friend or non-Weapon item, gain [6/8/10] Rage and Shield [15/30/45]. Passive: Your Enrage lasts half as long. Patch 13.3.",
+      "card_path": "/card/4cq3d5p9jh6b47ckysg322nnvj/Karst"
+    },
+    "laulau": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/139a3e78aff551742b4c0cc3558f9a73ef828dfb@256.webp/tall?v=6&sig=LoLRNtwNGhCBrTp4skH7cxIy1EE%3D",
+      "bazaar_desc": "LauLau: See 13 enchantments, 4 hidden abilities. Offered by 17 merchants. Every 5.0 sec.: Regen [3/6/9/12] Heated: Burn equal to this item's Regen Passive: Chilled: This has [+15%/+30%/+45%/+60%] Crit chance. Patch 13.3.",
+      "card_path": "/card/4jyskvn2nkdclkhmgh8w6sgbb5/LauLau"
+    },
+    "ionized_lightning": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b3de68749d4005c2707f39b97a981035606d289e@256.webp/tall?v=6&sig=B3ZwZMdftib8Dsy093FTSu1lsP4%3D",
+      "bazaar_desc": "Ionized Lightning: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Passive: Adjacent items have [+10%/+20%/+30%/+40%] Crit Chance. Passive: When this is transformed, Enchant it with Deadly if able. Patch 13.3.",
+      "card_path": "/card/4k313smt7npsg8wjnb6cmj3j16/Ionized-Lightning"
+    },
+    "frost_totem": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/098050a2c48af595b1a14a711f4cecbf36e89bf1@256.webp/square?v=6&sig=o3xJLgfpMB3nGoS8XruWDDB54us%3D",
+      "bazaar_desc": "Frost Totem: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Every [7.0/6.0/5.0] sec.: Freeze 1 item(s) for 1 second(s) Patch 13.3.",
+      "card_path": "/card/4kb2cvctvgvgnszxgj215p1hxy/Frost-Totem"
+    },
+    "gingerbread_house": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e94ea2b276c5053b60f41031d57077ac475f4d7b@256.webp/wide?v=6&sig=E1A%2BmF6rSyHvjL4CJPrpegejfQc%3D",
+      "bazaar_desc": "Gingerbread House: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Every 7.0 sec.: Heated: Burn equal to 10% of your Shield. Passive: At the start of each day, get a Gingerbread Man. Passive: When you use a Food or Tool, gain [40/80] Shield. Patch 13.3.",
+      "card_path": "/card/4lk8dwfz20f4ypht4qtskc99k1/Gingerbread-House"
+    },
+    "scalpel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f2635944da4567765f285d61bea3addb4ecdf18e@256.webp/tall?v=6&sig=u4FKIEeM6Uju0bUKADLt0hRlur0%3D",
+      "bazaar_desc": "Scalpel: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every 5.0 sec.: Deal Damage equal to this item's Crit Chance Crit Chance: 10% Passive: When you Crit, this gains [+10%/+15%/+20%/+25%] Crit chance for the fight. Patch 13.3.",
+      "card_path": "/card/4lxgsn25x8q3ny5c6hgmzsvcfq/Scalpel"
+    },
+    "wolf_mask": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b80768c6f1665567ffbf6e47dc4e9f15d45100cb@256.webp/square?v=6&sig=84mvxF88sNzQR6jTTXb5Z93xa%2Fk%3D",
+      "bazaar_desc": "Wolf Mask: See 13 enchantments, 5 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Passive: The first time any item is used each fight, gain 30 Rage. Passive: Adjacent items have [+15%/+20%/+25%] Crit Chance. Passive: When you Enrage, double the Crit Chance of adjacent items for the fight. Patch 13.3.",
+      "card_path": "/card/5fp6pzvst8xj7634qh15hyyd57/Wolf-Mask"
+    },
+    "replicator": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b1d6a636948df4367aa840d216e6809cade6492f@256.webp/square?v=6&sig=q7rp4dKwleR7UNEjqigBkW28u%2BE%3D",
+      "bazaar_desc": "Replicator: See 13 enchantments, 2 hidden abilities. Every 5.0 sec.: Charge adjacent items from another Hero 2 second(s). Passive: At the start of each day, get an item from another Hero. Patch 13.3.",
+      "card_path": "/card/5kyw072vcshzxyg8g9l4pc9z1b/Replicator"
+    },
+    "piggles_board": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ddf25521722e909846c5ee51ea12bd1481a22521@256.webp/square?v=6&sig=antDteCk6PYGBzWFcREdLuTwuZM%3D",
+      "bazaar_desc": "Piggles Board: See 13 enchantments, 1 hidden ability. Offered by 14 merchants. Obtained from 1 source. Passive: When you use a Toy, Charge another Toy [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/5lq2f7ny3zcd4ppzt86f5ww2k4/Piggles-Board"
+    },
+    "decanter": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c163fe663c337fc72445f77e6e7bc6bb7a1b8760@256.webp/tall?v=6&sig=DUbqrVYlLyUcEMSFKsYvCVbb6BE%3D",
+      "bazaar_desc": "Decanter: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 5.0 sec.: Charge a Food [2/3/4] second(s) Passive: Chilled: This item's cooldown is reduced by 1 second Patch 13.3.",
+      "card_path": "/card/5m2ccmpnc0jmg0f9ldw6xxzpds/Decanter"
+    },
+    "tent": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/89408c676cda3e9390a17a8498ef6124eb2ddf40@256.webp/square?v=6&sig=SqqGE58NGvoQinfkql2UIVnoeJw%3D",
+      "bazaar_desc": "Tent: See 13 enchantments, 5 hidden abilities. Offered by 18 merchants. Passive: When an adjacent item is Slowed, gain 5 Rage and Reload it. Passive: When you stop being Enraged, Shield equal to [20%/30%/40%] of your Max Health. Patch 13.3.",
+      "card_path": "/card/5nmzztt6gmk5vyx9pyjm7kn207/Tent"
+    },
+    "pancakes": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/37bb54afdf2ae44247fdfe1d358e593d2f50622a@256.webp/tall?v=6&sig=lngyJyQtiggUujlZRieDOlJmHh4%3D",
+      "bazaar_desc": "Pancakes: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every 4.0 sec.: Shield [5/10/20/40] Passive: Heated: This has +1 Multicast. Patch 13.3.",
+      "card_path": "/card/5p9jv38f4pg3w3g3hg44xqwwq1/Pancakes"
+    },
+    "snowshoes": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/889e537ecc0a16dd890046ce807f6598129f6612@256.webp/tall?v=6&sig=ynGYEReXmz9sSx3hQ62IPiPkUxI%3D",
+      "bazaar_desc": "Snowshoes: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Passive: When you use an adjacent item, gain [3/6/9] Rage. Passive: Adjacent items are affected by Freeze for half as long. Patch 13.3.",
+      "card_path": "/card/5sd12g4wb8y7451s1v4s1sj7pq/Snowshoes"
+    },
+    "radar_module": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/16fef56ef3795d8889a992c39cbf4861f95c97b2@256.webp/tall?v=6&sig=3Awa8msviSrVGgxZfxI31Y64My0%3D",
+      "bazaar_desc": "Radar Module: See 13 enchantments, 1 hidden ability. Offered by 16 merchants. Passive: When an enemy uses an item, items adjacent to this gain [4%/8%/12%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/5y75nq9vzmth7pv85p5jn04qch/Radar-Module"
+    },
+    "attachment_set": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/370ac7a65e12d37c6f275a91af6dc6240afdc5d5@256.webp/square?v=6&sig=o81GcIM1xdr3y7ibouexkBV%2BtSg%3D",
+      "bazaar_desc": "Attachment Set: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Passive: When you use a non-Weapon Tool, deal [25/50/100] Damage. Passive: When you use a Weapon Tool, Shield [25/50/100]. Patch 13.3.",
+      "card_path": "/card/5yw6gkc7l202g9878vvndbk7yy/Attachment-Set"
+    },
+    "froyo_cart": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/69ec9746606690d6d219c026f9be7fa4ed81ff28@256.webp/wide?v=6&sig=bWW2U69vK5SSKO0huJxfGeUcvso%3D",
+      "bazaar_desc": "Froyo Cart: See 13 enchantments, 3 hidden abilities. Offered by 13 merchants. Passive: Adjacent items are Chilled. Passive: When you use a Chilled item, Freeze an item for [0.5/1] second(s). Passive: At the start of each day, get a Sorbet. Patch 13.3.",
+      "card_path": "/card/61t86ts6ztmgvy9lnlc1zg4tn5/Froyo-Cart"
+    },
+    "double_bladed_knife": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/bba51321e5f904da1bbca49e10aa0e88862e4699@256.webp/tall?v=6&sig=UXOJKLMTL48juAVe0JFGlOTqKe0%3D",
+      "bazaar_desc": "Double-Bladed Knife: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Deal [5/10/20/40] Damage Passive: This has +100% Crit Chance while you are not Enraged. Patch 13.3.",
+      "card_path": "/card/63d762728019k1bx9lky5h138f/Double-Bladed-Knife"
+    },
+    "bagpipes": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2a06bac33a4636d5d7dd2327a7fd3fbc48123d6b@256.webp/square?v=6&sig=U%2FVnpn0e%2BgUFp1Lv7dX0u2aI0VM%3D",
+      "bazaar_desc": "Bagpipes: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 5.0 sec.: Heal [30/60/90/120] Gain 10 Rage Passive: When you Enrage, reduce this item's cooldown by half for the fight. Patch 13.3.",
+      "card_path": "/card/63mc0bxld6ng0mg6g3wjj8p37w/Bagpipes"
+    },
+    "chimeric_egg": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f04418c0107474bc1d2f5161c761ae56c5025bbc@256.webp/tall?v=6&sig=u7nDUKzdHrvi5gI9sDoNsYZDdxI%3D",
+      "bazaar_desc": "Chimeric Egg: See 10 enchantments, 6 hidden abilities. Offered by 1 merchant. Passive: At the start of each day, this gains +4 value. Passive: When you sell this, get an Enchanted Small Friend from any hero. Passive: When this item's value reaches [10/20/30/30] out of combat, upgrade it. Patch 13.3.",
+      "card_path": "/card/688xzv442smw5gp64y55jqz2bg/Chimeric-Egg"
+    },
+    "cloche_hat": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ec6f2b281050b68662becfb7c61d9b3b9942d4be@256.webp/square?v=6&sig=maHtBhwY56n4GAkylNC5ccT2S4U%3D",
+      "bazaar_desc": "Cloche Hat: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Passive: Your rerolls cost [1/2/3] less Gold for each Apparel you have. Patch 13.3.",
+      "card_path": "/card/6d8bfz41v2h0f22q6gkkwwh9n5/Cloche-Hat"
+    },
+    "crystal_growth_chamber": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/6808b2a210c6df16e74afb0171d8cf5dadbcaced@256.webp/encounter?v=6&sig=ya9tbqc4XydMnm0ECOunsY147qQ%3D",
+      "bazaar_desc": "Crystal Growth Chamber is a event in The Bazaar game. Tooltip: Enter the Crystal Growth Chamber | Patch 13.3.",
+      "card_path": "/card/6gfcdkz699sqjj592l38d449k3/Crystal-Growth-Chamber"
+    },
+    "darts": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ebd6d626fe361a08b6314d98d54cf6f523dd6f7b@256.webp/tall?v=6&sig=Zh9P5g31EgQC4FI6LKGw%2FXVazBA%3D",
+      "bazaar_desc": "Darts: See 13 enchantments, 6 hidden abilities. Offered by 16 merchants. Every 2.0 sec.: Deal [10/20/40/80] Damage Passive: This deals half Damage. Passive: Every 3rd hit this starts Flying and deals triple Damage. Patch 13.3.",
+      "card_path": "/card/6kc8d6zwz8js7dd9xpdmpttkj0/Darts"
+    },
+    "streaming_setup": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a83ad7044a43effb166aa3278157a775719d95ad@256.webp/square?v=6&sig=7ZQOG767F5%2F9WuMUY5zNx1J3vmA%3D",
+      "bazaar_desc": "Streaming Setup: See 12 enchantments, 4 hidden abilities. Offered by 19 merchants. Passive: Your Toys and Friends gain +Damage, Heal and Shield equal to their Value. Passive: When you use a Toy or Friend, it gains [2/4/6] Value for the fight. Patch 13.3.",
+      "card_path": "/card/6ksfssdmqjs3gl8h94d6wxfl84/Streaming-Setup"
+    },
+    "tanky_anky": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/366751b5c8978f602b0433c872e35eecde822246@256.webp/wide?v=6&sig=JNIYQ41FjNHlO0zTVe1pN5XmKZM%3D",
+      "bazaar_desc": "Tanky Anky: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every [7.0/6.0] sec.: Deal 200 Damage Passive: When your Dinosaurs or Relics deal Damage, Shield equal to its damage. Patch 13.3.",
+      "card_path": "/card/6nwtbkkhhh7yqtpk42wyc7cv3g/Tanky-Anky"
+    },
+    "stellar_swallowtail": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/533a7e9b2727e0293de58c832480105c4c340ea7@256.webp/wide?v=6&sig=tebbmQHdZ25eVLop%2BeCrT%2FKAxx4%3D",
+      "bazaar_desc": "Stellar Swallowtail: See 13 enchantments, 4 hidden abilities. Offered by 17 merchants. Every 5.0 sec.: Deal [120/240] Damage Shield [120/240] Passive: When another item is Hasted, Charge this 1 second. Passive: When you use a Flying item, Haste that item for [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/6szy9yk1p8tb1y8ytb7shlz0vk/Stellar-Swallowtail"
+    },
+    "yarrow_paste": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e85de7d7306054493813f1e4174256d5bcfd35e6@256.webp/tall?v=6&sig=oRu3TIHHROjHQNS32UFiUHGpLbg%3D",
+      "bazaar_desc": "Yarrow Paste: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Heal [10/20/40/80] Passive: When you Enrage, double this item's Heal for the fight. Patch 13.3.",
+      "card_path": "/card/6t7nxs18fbsgkcp02nwp5gqpd6/Yarrow-Paste"
+    },
+    "burn_scar": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/45ee41f9ad4bcf78ea231be0813a21636dff82c9@256.webp/square?v=6&sig=%2FOZezlZZuhKRFLjnFDT8aTE%2BDAw%3D",
+      "bazaar_desc": "Burn Scar: See 13 enchantments, 2 hidden abilities. Offered by 14 merchants. Passive: When you use a Friend or Burn item, Burn [3/6/9]. Passive: When you Enrage, your Burn items gain [+3/+6/+9] Burn for the fight. Patch 13.3.",
+      "card_path": "/card/72tcmvgtyfnq7h1g05g2hpxjt9/Burn-Scar"
+    },
+    "enervating_sigil": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/63df456dc7b96fa9f265cd64a38c5c86bd7af460@256.webp/square?v=6&sig=qjaOGA5DfWWV898fzuNj70Db%2BCk%3D",
+      "bazaar_desc": "Enervating Sigil: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Passive: When you Slow, gain [4/6/8] Rage. Passive: When you Enrage, Slow ALL items 3 seconds. Patch 13.3.",
+      "card_path": "/card/776yfcy5lkgg3fw0kbp9spkmj4/Enervating-Sigil"
+    },
+    "soulstone": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9058856d813fe96e09b5d9bc31afb3b4974f55be@256.webp/tall?v=6&sig=cz0UYeiaU9YRoyMFU43pbK6gh20%3D",
+      "bazaar_desc": "Soulstone: See 13 enchantments, 1 hidden ability. Offered by 17 merchants. Every 4.0 sec.: Regen [3/6/9] Patch 13.3.",
+      "card_path": "/card/77mqczhxk4szw94fdq1lx8hy7k/Soulstone"
+    },
+    "tantius_carrier": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e7178c7047dc9e22300c8a91aa2e6bde6d8a5dc5@256.webp/wide?v=6&sig=%2BTJMj8b9Xm1o%2FKuLsGKnYmNzjK8%3D",
+      "bazaar_desc": "Tantius Carrier: See 13 enchantments, 4 hidden abilities. Obtained from 1 source. Every 8.0 sec.: Deal 100 Damage Passive: When you use a Drone, this gains +50 Damage for the fight. Passive: Your other Vehicles are Drones. Passive: Adjacent Drones have +1 Multicast. Patch 13.3.",
+      "card_path": "/card/78nv607mszq0jmt0tdcsh46154/Tantius-Carrier"
+    },
+    "sky_anchor": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a9dae0bcebe02f48cb2ea199b63073d129f80557@256.webp/square?v=6&sig=M9LD0XfOd7UvwLcjmmhf1e4kOqM%3D",
+      "bazaar_desc": "Sky Anchor: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Every 6.0 sec.: Deal [75/150/300] Damage Adjacent items stop Flying Passive: When you Slow, Charge this 2 seconds. Patch 13.3.",
+      "card_path": "/card/7c01wstyd32h6hw1dqb9854y8t/Sky-Anchor"
+    },
+    "vampire_squid": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2640c9d35e8f3c7834c71c30eb850a71c22dbe6e@256.webp/tall?v=6&sig=haavrYC3wnoQ6auNO9Pr1sehyGk%3D",
+      "bazaar_desc": "Vampire Squid: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 5.0 sec.: Deal [15/30/60] Damage Passive: This has +damage equal to its Crit Chance. Passive: Lifesteal Patch 13.3.",
+      "card_path": "/card/7h4pmjwstznkkxl6vz69xn6s5p/Vampire-Squid"
+    },
+    "baked_potato": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dcdb2cb1b3f2f52d821422d7a4786ecda7ba15ae@256.webp/tall?v=6&sig=xgD3rxwHZAtYkwGDIbP61ZkF3bM%3D",
+      "bazaar_desc": "Baked Potato: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 4.0 sec.: Regen [1/2/3/4] Passive: Heated: This has +1 Multicast Patch 13.3.",
+      "card_path": "/card/7hvh448f1mxvkvqdvmcfgzjqmc/Baked-Potato"
+    },
+    "cutting_board": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c74ae2467496195ef2a45b38f3f3462a4e95cc1f@256.webp/square?v=6&sig=ymp4envBYzL4k7%2BSOe2k5o%2FRZKA%3D",
+      "bazaar_desc": "Cutting Board: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Charge a Food 1 second. Passive: When you use an adjacent Tool, Charge this 1 second and your Weapons gain [5/10/15] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/7jy774l0z0xngdgjyzj8qbhhqf/Cutting-Board"
+    },
+    "aurora_vista": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/410e4b2e295798df4b775831ff5535446b0eaf55@256.webp/wide?v=6&sig=FieWDoKNdfqgU8ROCLpyjUNCImc%3D",
+      "bazaar_desc": "Aurora Vista: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every [6.0/4.0] sec.: Heal 10 Crit Chance: 20% Passive: Your Heal items have +Heal equal to this item's Crit Chance. Passive: When you Heal, Shield equal to the amount Healed. Patch 13.3.",
+      "card_path": "/card/7m6nfyjq6ssq8lmtyjnxg2cmby/Aurora-Vista"
+    },
+    "basket": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d0df6b0bfaac629087b7e7ef33328532a08fdf79@256.webp/square?v=6&sig=7AlGAkzrjBA%2BkgNSINAx%2FvIX0pE%3D",
+      "bazaar_desc": "Basket: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Obtained from 1 source. Every [8.0/7.0/6.0/5.0] sec.: Shield 40 Regen equal to 10% of this item's Shield for the fight. Patch 13.3.",
+      "card_path": "/card/7mxqtyxdslpt9kzsj3j9jm7b4g/Basket"
+    },
+    "lowroller": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/6edbb3c8e135044bbd0e516291f64ffc47d3f74f@256.webp/square?v=6&sig=8%2BNkIWtw0CvMxGDtt9uRmvxAz7M%3D",
+      "bazaar_desc": "Lowroller: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 4.0 sec.: Haste [1/2/3] item(s) for 1 second(s) Passive: This has +1 Multicast for each adjacent Tool. Patch 13.3.",
+      "card_path": "/card/7nc44km48znl4txvlxmm3hk1jm/Lowroller"
+    },
+    "cruise_ship": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c7a70ec61c6fee937cc059e54befe63da15ab62b@256.webp/wide?v=6&sig=HPu1p8uJ1ConzyVJwSkD1VTCQiQ%3D",
+      "bazaar_desc": "Cruise Ship: See 13 enchantments, 4 hidden abilities. Offered by 17 merchants. Every 8.0 sec.: Burn [10/20/30] Shield [50/100/200] Slow this for 2 seconds Passive: When you Slow, Charge this 2 seconds. Patch 13.3.",
+      "card_path": "/card/7pjh8ybz1d515jn05sgpgdmdx6/Cruise-Ship"
+    },
+    "balloon_engine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8963483b4444f03a8068b9126d3d338bd0269618@256.webp/square?v=6&sig=%2BfZwgBoSp496iDobS4s%2BgZS30wE%3D",
+      "bazaar_desc": "Balloon Engine: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 5.0 sec.: An item starts Flying Passive: When your items start Flying, Burn [3/5/7/9]. Patch 13.3.",
+      "card_path": "/card/7ptchhjqv4z2szslcl4c1j11fy/Balloon-Engine"
+    },
+    "jumbo_wok": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7be1781faa815ce167b9714fe9d88cbbb3811b01@256.webp/wide?v=6&sig=DLCOxBb4mexfRPjLE8D0yDZTFjE%3D",
+      "bazaar_desc": "Jumbo Wok: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 3.0 sec.: Charge your other Heated items [1/2] second(s). Passive: Heated: When you Shield or gain Regen with another Food, Burn [6/9]. Patch 13.3.",
+      "card_path": "/card/7wxwl6s63v8dd5n82wwbdzck45/Jumbo-Wok"
+    },
+    "precision_calipers": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/25cb246c75e0d7fc256cc6767c3b3e10a3944aa8@256.webp/tall?v=6&sig=ZQa5npfgAQpaD89aaKuv2WiRcDU%3D",
+      "bazaar_desc": "Precision Calipers: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 7.0 sec.: Repair a Small item Haste all your other Small items for [1/2/3/4] seconds Patch 13.3.",
+      "card_path": "/card/80b4sdy2wcq703n3bdfx3mh1ks/Precision-Calipers"
+    },
+    "steam_washer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/75e2bdbd1d4fea3ddf4d5e498cfba4779f6cbc7e@256.webp/square?v=6&sig=3TMW7Fd4sk2p1s7H47HUdifLWdE%3D",
+      "bazaar_desc": "Steam Washer: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 6.0 sec.: Burn [8/12/16/20] Passive: When you use another Vehicle, Charge this 2 seconds. Patch 13.3.",
+      "card_path": "/card/81g97jxfydw6fcp16h3p81z376/Steam-Washer"
+    },
+    "mini_fridge": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3232b8eb7f87777c6af1122cda9646447f1b34a4@256.webp/square?v=6&sig=n7rOH9KYUOsrfyD3nc7Gxw9lZhA%3D",
+      "bazaar_desc": "Mini Fridge: See 13 enchantments, 2 hidden abilities. Offered by 14 merchants. Every 7.0 sec.: Freeze [2/3] item(s) for 1 second(s) Passive: Chilled: When you use an adjacent Food, Charge this 2 seconds. Patch 13.3.",
+      "card_path": "/card/87s3g9zh6b5ys282vlfk713hhk/Mini-Fridge"
+    },
+    "launch_pad": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7d4fc188686f1473cf814ad32982ef6ac8eece22@256.webp/square?v=6&sig=XfEBCqJlQkDu5XO4eqGpS3OZmf0%3D",
+      "bazaar_desc": "Launch Pad: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: An item starts Flying Passive: When you use a Friend or Flying item, Burn [6/12]. Patch 13.3.",
+      "card_path": "/card/8jbt1qnth12fc81992jh4fpqyh/Launch-Pad"
+    },
+    "cookies": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b9e1267a57115ec6deb4290ab4fb8bec90eb1599@256.webp/tall?v=6&sig=g5frBGkNFAPHtnjmiOkqjsnl3X0%3D",
+      "bazaar_desc": "Cookies: See 11 enchantments, 8 hidden abilities. Offered by 11 merchants. Every 2.0 sec.: Permanently gain [+4/+6/+8/+10] Max Health This permanently loses 1 Max Ammo. Ammo: 5 Passive: At the end of each fight, if this has no Ammo, permanently destroy it. (BazaarDB automated finding: This tooltip does not appear at Diamond tier, but the effect still happens. Confirm with Deep Mechanics.) Patch 13.3.",
+      "card_path": "/card/8jdvsm4cg36kcq90nq0kmg7pkp/Cookies"
+    },
+    "red_lantern": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/218db71ab5d16d4250aa64cfe3a16585d67d45e2@256.webp/tall?v=6&sig=yye5Z9U1i4Zmyi%2Frswm1x4kEnSE%3D",
+      "bazaar_desc": "Red Lantern: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Passive: Adjacent items have [+20%/+30%/+40%] Crit Chance. Passive: While this is Flying, this has double Crit Chance bonus. Patch 13.3.",
+      "card_path": "/card/8qcf95vlgnh0539cvdwxx7qyxj/Red-Lantern"
+    },
+    "bandoleer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fe07aaf8d493855bc2e99a03c490ca61ca54386b@256.webp/square?v=6&sig=yEXa1PKnP2YTEJZaOooUppGrN3U%3D",
+      "bazaar_desc": "Bandoleer: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Passive: When you use an ammo item, gain [9/12/15] Rage. Passive: When you Enrage and stop being Enraged, Reload all your items. Patch 13.3.",
+      "card_path": "/card/8qgz7jysczzz7pwnhp3mb4q5k1/Bandoleer"
+    },
+    "seafood_cracker": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/bd20417b3f621b7083e30c05d18788f79050a641@256.webp/tall?v=6&sig=B9h7WN%2BsGmnY9zZjShAyOm6MAFI%3D",
+      "bazaar_desc": "Seafood Cracker: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Deal [10/20/40/80] Damage Passive: If an enemy is Shielded, this deals triple Damage. Patch 13.3.",
+      "card_path": "/card/8w0xxxqcdc5sbj1nfg9wqy3hkn/Seafood-Cracker"
+    },
+    "cyber_sai": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b3bc664d32e182d12842af2747b63b0d690b74ab@256.webp/square?v=6&sig=DfJKEidGyOLc9l7%2FbDRCGIBtR%2Bk%3D",
+      "bazaar_desc": "Cyber-Sai: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 3.0 sec.: Deal [10/20/40] Damage Passive: When you Crit, your Weapons gains [+10/+20/+30] damage for the fight. Patch 13.3.",
+      "card_path": "/card/8x4my442h0tv2zhtlj3tvjbp7l/Cyber-Sai"
+    },
+    "hunter_s_axe": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/120c02e061a6aa65bf13f83af9d6890625a01fe0@256.webp/tall?v=6&sig=zm29sCqTxr8ATaztqSf09PWjPEQ%3D",
+      "bazaar_desc": "Hunter's Axe: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 5.0 sec.: Deal [10/20/40/80] Damage Passive: When you use an adjacent Tool or Friend, gain 4 Rage. Patch 13.3.",
+      "card_path": "/card/8xnw25wskczp7bx357dq048hs1/Hunter's-Axe"
+    },
+    "furs": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/5883285e0cce305330aef3c36faf8cba4bbb37b4@256.webp/square?v=6&sig=QMZNepxVoZBptHqGFla2omIEKIw%3D",
+      "bazaar_desc": "Furs: See 13 enchantments, 5 hidden abilities. Offered by 18 merchants. Every 5.0 sec.: Your Shield and Heal items gain [+10/+15/+20] Shield and [+10/+15/+20] Heal for the fight. Passive: When you Freeze or Crit with a non-Weapon item, Charge this 1 seconds. (BazaarDB automated finding: The Freeze trigger can be triggered by a Weapon item. Confirm with Deep Mechanics.) Passive: Your items are affected by Freeze for half as long. Patch 13.3.",
+      "card_path": "/card/8xs89y1lmzcvn5w3mwgpf14vgh/Furs"
+    },
+    "distilled_sunlight": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a352becc35bcb443a14ffb623db35c730e4e2465@256.webp/tall?v=6&sig=CJi%2F3Nz1gqtuiA3SZyc42h2rNRU%3D",
+      "bazaar_desc": "Distilled Sunlight: See 13 enchantments, 1 hidden ability. Offered by 14 merchants. Passive: The Cooldown of the item to the left of this is reduced by [5%/10%]. Passive: When this is transformed, Enchant it with Shiny if able. Patch 13.3.",
+      "card_path": "/card/91g5l6x4983w5hkb6mdm923jh6/Distilled-Sunlight"
+    },
+    "skyliner": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/334ef2d1185a5d44070e5da68006fb10ee089ac2@256.webp/wide?v=6&sig=EEKzxEZZxNPVKAWnXUPL4qqdZ8U%3D",
+      "bazaar_desc": "Skyliner: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Obtained from 1 source. Every 9.0 sec.: Deal [150/300] Damage Burn [25/45] Passive: This has +1 Multicast for each Flying item you have. Patch 13.3.",
+      "card_path": "/card/95wz42byqd9qwlnyg2tk57yybj/Skyliner"
+    },
+    "shuriken": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1094a8f49a3013046d8126ded76af4b73122b827@256.webp/tall?v=6&sig=5wjMceBfEB52dAxAd6W%2F9%2FdijC8%3D",
+      "bazaar_desc": "Shuriken: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Every 8.0 sec.: Deal [5/10/20/40] Damage Ammo: [3/4/5/6] Passive: This has Multicast equal to its current ammo. Passive: When you use this, spend all its Ammo. Patch 13.3.",
+      "card_path": "/card/97fkzmjqmgwqh675yw0k5c97tt/Shuriken"
+    },
+    "tri_net": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/518edb1bf448c7c5cce7c3b8e5aa226226412a9e@256.webp/square?v=6&sig=V3UcTdLDXAiF7xqu7mgDkAAbprc%3D",
+      "bazaar_desc": "Tri-Net: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every 9.0 sec.: Deal 3 Damage Slow 1 item for 1 second(s) Multicast: 3 Passive: When you Slow, this gains [+3/+6/+9/+12] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/9ct4kbyy65m1qzn7vdbskfhq1y/Tri-Net"
+    },
+    "night_vision": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7c82d01a8d4b3016a7e7a230e18444b8a58d9f47@256.webp/tall?v=6&sig=shbAOiR9U9yRQgfB%2BQP%2F6ZZp5dI%3D",
+      "bazaar_desc": "Night Vision: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 3.0 sec.: Slow adjacent items for [2/1] second(s). Passive: When an adjacent item is Slowed, Haste an item [1/2] second(s). Patch 13.3.",
+      "card_path": "/card/9f2nf833fhwjkjf93zqssqkvvq/Night-Vision"
+    },
+    "waterskin": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/83658c0b07aab354ade4ce06e46df8cf189cb124@256.webp/tall?v=6&sig=oBQXtXC8r6e%2FyjPdUjeaWl8aSYc%3D",
+      "bazaar_desc": "Waterskin: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Charge the item to the left of this 1 second(s) Passive: When you use the item to the left of this, Heal [15/30/60/120]. Patch 13.3.",
+      "card_path": "/card/9h38c776fl25mjkxbqv3fc64mh/Waterskin"
+    },
+    "silver_stake": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e0f333a5aec2466f9c2d8014e4c20d7ef5d9c7b4@256.webp/tall?v=6&sig=rf3g1OmXmfTU6t8brGblEudguuI%3D",
+      "bazaar_desc": "Silver Stake: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Deal 10 Damage Passive: This has triple Damage against Monsters. Passive: When you defeat a Monster with this, this permanently gains [+10/+20/+30/+40] Damage. Patch 13.3.",
+      "card_path": "/card/9m9n205ljtbp3xdf1qcxqdlml4/Silver-Stake"
+    },
+    "orange_piggles_l": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9002e20c63fe3caf00f97bf6200f54a310ab1f57@256.webp/tall?v=6&sig=eLM3pcioEnbT7N%2FB8xeDhdM12So%3D",
+      "bazaar_desc": "Orange Piggles L: See 12 enchantments, 1 hidden ability. Every 4.0 sec.: The Burn item to the left of this gains [+1/+2/+3/+4] Burn for the fight Patch 13.3.",
+      "card_path": "/card/9xv4ym15s2pnlz7qgy5x6qftzy/Orange-Piggles-L"
+    },
+    "excavation_tools": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9fd915d606bf7d58ad2ddb3d7b373f5181aebae4@256.webp/tall?v=6&sig=m68kOZeuCQvGahV5C9A2Ul41R0E%3D",
+      "bazaar_desc": "Excavation Tools: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Charge an adjacent Relic [1/2/3] second(s) Passive: When you buy this, get a Catalyst. Patch 13.3.",
+      "card_path": "/card/9xw3hghbcks4w4bnt4fs2swcm6/Excavation-Tools"
+    },
+    "marlon": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dec4d69cb5e0ac2f5edf03d6deab3f191d5ae671@256.webp/square?v=6&sig=y3y0%2FZqptyx%2FwtDrCltvN%2FViinU%3D",
+      "bazaar_desc": "Marlon: See 13 enchantments, 3 hidden abilities. Offered by 18 merchants. Every 3.0 sec.: Deal 15 Damage An item starts Flying. Passive: When you use a Flying item, this gains [+20%/+30%/+40%/+50%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/9yz7l8hy06xyvz7t9v54dcz7q2/Marlon"
+    },
+    "spiked_collar": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f4f8a89d0b99e840c40fa7243ec349c7c56cd896@256.webp/tall?v=6&sig=iicODMijVB4V7YxgU9jTtB9fSQs%3D",
+      "bazaar_desc": "Spiked Collar: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Passive: When you use a Friend, deal [10/15/20] Damage. Patch 13.3.",
+      "card_path": "/card/bhj7f3zpy3n9m8t3dw6n21m1zp/Spiked-Collar"
+    },
+    "meat_grinder": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dc65af8bae0ec15b98ac65a03ccb0bc33c8acfbb@256.webp/square?v=6&sig=jp3BbdVYQJ%2FlbChCkqhDlUnyaGU%3D",
+      "bazaar_desc": "Meat Grinder: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every [6.0/5.0/4.0] sec.: Charge adjacent Food 2 seconds Passive: When you use an adjacent Food, deal [25/50/75] Damage Patch 13.3.",
+      "card_path": "/card/bkj744j9dcz5ytf2q60dpxmgty/Meat-Grinder"
+    },
+    "flame_jet_drone": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ea93b6182d0ded7ee8b893b154ed721a09acce84@256.webp/tall?v=6&sig=GSpdgT%2B%2FwfJFTQnQiHa4LWR1WDY%3D",
+      "bazaar_desc": "Flame Jet Drone: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 5.0 sec.: Burn 4 Passive: When this starts Flying, this gains [+4/+8/+12/+16] Burn for the fight. Patch 13.3.",
+      "card_path": "/card/bkkd17fvpvnp9ltjkdhf9gw66l/Flame-Jet-Drone"
+    },
+    "galactic_translator": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b7745c24402315f4823900515b66ee332bea636a@256.webp/tall?v=6&sig=056g%2FivUi00P0nWpFGESMSupf3Y%3D",
+      "bazaar_desc": "Galactic Translator: See 4 hidden abilities. Obtained from 1 source. Passive: Merchants sell items for 1 less Gold and buy items for 1 more Gold. Patch 13.3.",
+      "card_path": "/card/bm0d1b20p73xsvlbckxxybzjf4/Galactic-Translator"
+    },
+    "observatory": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/971dce7ff004759057411c5adf7a155563a24c59@256.webp/wide?v=6&sig=GdFigDFM6FFhF1myiaCRoyum92I%3D",
+      "bazaar_desc": "Observatory: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Every [8.0/7.0/6.0] sec.: Charge adjacent items 2 seconds Passive: When you use a Flying item, Charge this 2 second(s). Patch 13.3.",
+      "card_path": "/card/bxbm0265gxkynl7nbbwp9hzv4t/Observatory"
+    },
+    "runed_amulet": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/659f85c8930fe3a23ecb84fd01c930e3db30fbcf@256.webp/tall?v=6&sig=CJczIuaFQcNH5okTz7t2HDAAPNg%3D",
+      "bazaar_desc": "Runed Amulet: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 6.0 sec.: Your Weapons gain [10/20/30/40] Damage for the fight Passive: When you Enrage, reduce this item's cooldown by 1 second for the fight. Patch 13.3.",
+      "card_path": "/card/bxm92h0hq9yg0zn2ty426slj9f/Runed-Amulet"
+    },
+    "cheese_wheel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2040858e418b54e12b24a6637fd5c3d254d9ff05@256.webp/square?v=6&sig=039Ybx1%2BShlNdLNILJTHPQjhhbY%3D",
+      "bazaar_desc": "Cheese Wheel: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every [8.0/7.0/6.0] sec.: Double this item's Shield for the fight Shield 5 Patch 13.3.",
+      "card_path": "/card/bz7smsy2p6408fv51pkkkx4dnf/Cheese-Wheel"
+    },
+    "lightning_butterfly": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/40f999a295c28969f0e5cede382d156939acc912@256.webp/tall?v=6&sig=cOjMqd0%2FeOqdo5ekmLBQVd11rnI%3D",
+      "bazaar_desc": "Lightning Butterfly: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Obtained from 1 source. Every 5.0 sec.: Deal [5/10/15/20] Damage Your Flying Weapons gain [+5/+10/+15/+20] Damage for the fight Passive: At the start of each fight, this starts Flying. Patch 13.3.",
+      "card_path": "/card/c009xx9j15jxz1216f6qycfbwt/Lightning-Butterfly"
+    },
+    "spatula": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8694d7ba97f94cc912b5a19c54d8766f304993b4@256.webp/tall?v=6&sig=ouKgViiR9n7%2F6mTZt4Ro3nRJiuI%3D",
+      "bazaar_desc": "Spatula: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 4.0 sec.: Deal 10 Damage Passive: When you use an adjacent Food, it gains [+10%/+15%/+20%/+25%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/c1zvc4h07830gsbvxbcb7h88j4/Spatula"
+    },
+    "anemometer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/13edd4ab0c1084f066f0aa6655c24e4dc312e0d4@256.webp/square?v=6&sig=51jKVU%2BT%2F7d42PyXIHo%2Fr6p6Lwo%3D",
+      "bazaar_desc": "Anemometer: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Every [5.0/4.0/3.0] sec.: An adjacent item starts Flying Passive: When one of your items starts or stops Flying, Haste it for 2 seconds. Patch 13.3.",
+      "card_path": "/card/c56dsswtqytm3dfy2xw3043qqy/Anemometer"
+    },
+    "integrated_hud": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e31f1794e8b1cc9232466616a2d8630b33d87bce@256.webp/tall?v=6&sig=%2FTlnLegBKjX7vH29CBb7prYsB1w%3D",
+      "bazaar_desc": "Integrated HUD: See 13 enchantments, 2 hidden abilities. Offered by 18 merchants. Passive: The item to the right of this has [+20%/+30%/+40%] Crit Chance. Passive: When you Crit with the item to the right of this, Slow an item for 1 second(s). Patch 13.3.",
+      "card_path": "/card/c6cy0mpnfjzhbgzkw1v08f5jk8/Integrated-HUD"
+    },
+    "birthday_cake": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3ed38ad3d5fdd08adab7a83c3dac61b4b3ce5f55@256.webp/square?v=6&sig=9jZJs%2BlOTM6kisKspSl6%2BDu6szo%3D",
+      "bazaar_desc": "Birthday Cake: See 13 enchantments, 4 hidden abilities. Offered by 17 merchants. Every 4.0 sec.: Shield equal to this item's Crit Chance Passive: This has +20% Crit Chance Passive: At the start of each day, this gains [+5%/+10%/+15%/+20%] Crit Chance Patch 13.3.",
+      "card_path": "/card/c77s2pxqcx19xpfk8vdpj0dvx5/Birthday-Cake"
+    },
+    "radar_dome": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/18839db2aa5418a44fb67a8ccaf42d170ab92996@256.webp/wide?v=6&sig=LbJda5fdoARtl5iTggGJfeDa0zE%3D",
+      "bazaar_desc": "Radar Dome: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Every [4.0/3.0] sec.: 1 item starts Flying Patch 13.3.",
+      "card_path": "/card/c907vm0p6fc44fy1m9p9qjvxx6/Radar-Dome"
+    },
+    "pillbuggy": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/198551a515f3709a69f1437d8092bd8020f45a5d@256.webp/square?v=6&sig=ezNh4I54rTT%2BH5xYVA4mYYXMBMA%3D",
+      "bazaar_desc": "Pillbuggy: See 13 enchantments, 4 hidden abilities. Offered by 17 merchants. Every 10.0 sec.: Shield 40 Deal Damage equal to your Shield Passive: When this is Hasted, this gains [+40/+80/+120] Shield for the fight. Patch 13.3.",
+      "card_path": "/card/ccx26f0fh2dhskwvtftv5q7cxs/Pillbuggy"
+    },
+    "tugboat": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/050372c28ceafd949a03aa019aa56d47b723aeac@256.webp/tall?v=6&sig=PdtaEFs9i6NiADr1NfYX1NC5RWM%3D",
+      "bazaar_desc": "Tugboat: See 13 enchantments, 2 hidden abilities. Offered by 18 merchants. Every 5.0 sec.: Slow [1/2/3] item(s) for 1 second(s) If this is Flying, adjacent items start Flying. Patch 13.3.",
+      "card_path": "/card/cft23x298ms1p2vvjyft9w5nhl/Tugboat"
+    },
+    "piggles_protectors": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a235354bc2a81de272fbdf9db777a7aa0bfc3b03@256.webp/tall?v=6&sig=Fq8ZaoMbWQ4MaY6BelPEZtqsyak%3D",
+      "bazaar_desc": "Piggles Protectors: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 5.0 sec.: Shield [5/10/20/40] Passive: This has double Shield. Patch 13.3.",
+      "card_path": "/card/cjbp6pn80f596t6w2jj3kxlpy3/Piggles-Protectors"
+    },
+    "bomb_voyage": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/044058f808dafb2dfa3aea08e0582108b1dcfd15@256.webp/square?v=6&sig=tY89gbIV8DlH7ta0lqFVGou84xY%3D",
+      "bazaar_desc": "Bomb Voyage: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Every 6.0 sec.: Deal [50/100] Damage Burn [5/10] Passive: When this stops Flying, destroy it. Passive: When this is destroyed, deal 10 times this item's Damage and Burn. Patch 13.3.",
+      "card_path": "/card/ck80fdq7f23f47jspwxn2dvjvp/Bomb-Voyage"
+    },
+    "kitchen_scale": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/19ab78b710788704ff5eb1a219e3aeb18edddfd7@256.webp/square?v=6&sig=GjM2T9til%2BZNREsqghHlhah5bZE%3D",
+      "bazaar_desc": "Kitchen Scale: See 13 enchantments, 4 hidden abilities. Offered by 16 merchants. Every [7.0/6.0/5.0] sec.: Haste adjacent items for 2 seconds Passive: If adjacent items are the same size, this item's Cooldown is halved. Patch 13.3.",
+      "card_path": "/card/ckfcpd3djdflyj8vym3360xtq5/Kitchen-Scale"
+    },
+    "blank_slate": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b18ee967175c19b562671d692f6e42ae27a8fafc@256.webp/square?v=6&sig=finbEk2OMlRFdV7A3IXfc9mkRr0%3D",
+      "bazaar_desc": "Blank Slate: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every 6.0 sec.: When you use an adjacent Relic, Charge this 1 second(s) Patch 13.3.",
+      "card_path": "/card/cmym9hnwtgccht5wy9yd43cy2v/Blank-Slate"
+    },
+    "ni_kola": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1f9684e17bd7669274e7d045ae26d97a64efbee9@256.webp/tall?v=6&sig=FLJK71bbhDy4VyO6dI8Tm7V%2Biok%3D",
+      "bazaar_desc": "Ni-Kola: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 4.0 sec.: Charge adjacent items [1/2/3] second(s) Slow adjacent items for 1 second(s) Ammo: 2 Patch 13.3.",
+      "card_path": "/card/cpgbk7lj0hn93xtzlln6h3tzfy/Ni-Kola"
+    },
+    "molten_ball_blaster": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/96b0d75f5b88d6e156ea3042110a13636211b59e@256.webp/square?v=6&sig=0Ndd4jSzGdmH5pQiW7d%2FLfe1YGY%3D",
+      "bazaar_desc": "Molten Ball Blaster: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Every 14.0 sec.: Deal [50/100/200/400] Damage Burn [10/15/20/25] Passive: When you use another Tool, Charge this 2 seconds. Patch 13.3.",
+      "card_path": "/card/csjbm3flslhy6vwj51lgzngwlc/Molten-Ball-Blaster"
+    },
+    "party_float": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/31ad9f2971d2da9dc8a2d9cee232e1bde2078255@256.webp/wide?v=6&sig=STlD3di2rWRYamChWKVD3EWnjRw%3D",
+      "bazaar_desc": "Party Float: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Every 4.0 sec.: An item starts Flying Passive: When you use a Flying item, Shield [50/100]. Passive: Your Flying items' Cooldowns are reduced by [10%/20%]. Patch 13.3.",
+      "card_path": "/card/cvp6fk46pjd8tmgbwcvgmmsl4t/Party-Float"
+    },
+    "oblivion_core": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/cc9af23e0deeb7705bd375d492c243dcc4fb5e86@256.webp/square?v=6&sig=JKiO9qRaNGk10kvt6ko9t%2FkIysg%3D",
+      "bazaar_desc": "Oblivion Core: See 13 enchantments, 3 hidden abilities. Every 8.0 sec.: Destroy an enemy item for the fight Passive: When you Destroy an item, Charge this 1 second(s) Patch 13.3.",
+      "card_path": "/card/cvsx2pmyqlq54tdbp35vvs8m30/Oblivion-Core"
+    },
+    "warding_glyphs": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/48c0f28f2ad103e9cadb4fb5f72fe22887471533@256.webp/tall?v=6&sig=UOnL%2FTPJMFjwMrCTk0IfcVju6C8%3D",
+      "bazaar_desc": "Warding Glyphs: See 13 enchantments, 1 hidden ability. Offered by 19 merchants. Passive: When you Enrage, your Heal and Shield items gain [+20%/+30%/+40%/+50%] Crit Chance for the fight. Patch 13.3.",
+      "card_path": "/card/cw29q4t6d2stv6yvsfljgm0k1/Warding-Glyphs"
+    },
+    "tethers": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/08aed6829f2aba170b5b28c7b7717dbf0c50ec2d@256.webp/square?v=6&sig=zl%2F5dIsBFpqUAWolsoJ6d%2FFNqdw%3D",
+      "bazaar_desc": "Tethers: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Obtained from 1 source. Every 8.0 sec.: 1 of your items stop Flying Passive: When you use a Flying item, Charge this 1 second. Passive: When your items stop Flying, Shield [30/60/90/120]. Patch 13.3.",
+      "card_path": "/card/cw7c4fcv7xhmn8cffs5m760vbh/Tethers"
+    },
+    "warp_drive": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/35587f751ed4f549d9c6f990ee9f92949adb66c7@256.webp/square?v=6&sig=peeM5t6DWdRfQvkBH1zSSHot7aY%3D",
+      "bazaar_desc": "Warp Drive: See 13 enchantments, 6 hidden abilities. Obtained from 1 source. Every 8.0 sec.: Destroy this for the fight. Passive: Adjacent items are Vehicles. Passive: Your Vehicles have their cooldowns reduced by [10%/15%]. Passive: When this is Destroyed, Charge your items 2 seconds. Patch 13.3.",
+      "card_path": "/card/cxng90q9j9gl5tt58wl7kd7cwg/Warp-Drive"
+    },
+    "zarlic": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2247ba85b79dc871397ea53199383321a4dafdb4@256.webp/tall?v=6&sig=Ho2rprvAKdDXVuOWn4w1k8MFjmo%3D",
+      "bazaar_desc": "Zarlic: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Every 6.0 sec.: Burn 2 Haste [1/2/3] Food for 2 second(s) Passive: When another Food's Crit Chance increases, Charge this 1 second. Patch 13.3.",
+      "card_path": "/card/d00d4cm10fy7fk5flc4dv0fvc6/Zarlic"
+    },
+    "flying_fish": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7933b0c3ee0975a572176f1c7e51fb6524106a6e@256.webp/tall?v=6&sig=cuka6EODQqaIcU8l2E4Urm%2FTUuo%3D",
+      "bazaar_desc": "Flying Fish: See 13 enchantments, 4 hidden abilities. Offered by 18 merchants. Every 5.0 sec.: Deal [10/20/40/80] Damage This and an adjacent item start Flying. Passive: When you use a Flying item, Haste this for 1 second(s). Patch 13.3.",
+      "card_path": "/card/d0wycctkdb6z5cnz1gw3xylt9t/Flying-Fish"
+    },
+    "wildroot_amulet": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/56954ce3155c9cb7c187887eca67f3a3c2ca5d7b@256.webp/tall?v=6&sig=YyPi0LzRoBSLz4YTxdW2v%2FMP4TM%3D",
+      "bazaar_desc": "Wildroot Amulet: See 13 enchantments, 3 hidden abilities. Offered by 17 merchants. Obtained from 1 source. Every 4.0 sec.: Shield [10/20/30/40] Slow 1 item(s) for [2/3/4/5] second(s) Passive: When you Enrage, this Slows an additional item for the fight. Patch 13.3.",
+      "card_path": "/card/d395kt2md77ks5t4p5nbv1fkgd/Wildroot-Amulet"
+    },
+    "oblivion_vortex": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/5516d71251e056528f48145da700719dd1f32bf6@256.webp/square?v=6&sig=gjL7%2B%2F9VFLtbQ2SO2fIU8%2BczlrE%3D",
+      "bazaar_desc": "Oblivion Vortex: See 13 enchantments, 4 hidden abilities. Offered by 14 merchants. Every [9.0/7.0] sec.: Destroy your leftmost item. Charge your other items equal to half that item's cooldown. Patch 13.3.",
+      "card_path": "/card/ddkztn9q3q465wkqv135991p8x/Oblivion-Vortex"
+    },
+    "messenger_sparrow": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/455a1b0209e24c9d68c208f700be6e5690f15b95@256.webp/tall?v=6&sig=5B7Z5Wnr61DFPFGSbfbMrwx5pMA%3D",
+      "bazaar_desc": "Messenger Sparrow: See 13 enchantments, 2 hidden abilities. Offered by 17 merchants. Every [5.0/4.0/3.0] sec.: Haste an item for 1 second(s) Charge your other Flying items 1 second Patch 13.3.",
+      "card_path": "/card/dff083nl4gc5cxt578lmtncl7p/Messenger-Sparrow"
+    },
+    "fruit_press": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e541edd3e21282d6c0f783f13987e9c2de6b7471@256.webp/square?v=6&sig=sGdBIzD093MC8QMVA5fuwG%2BMYLQ%3D",
+      "bazaar_desc": "Fruit Press: See 13 enchantments, 4 hidden abilities. Offered by 15 merchants. Every 5.0 sec.: Destroy your leftmost Food for the fight. Deal 10 Damage Passive: When you Destroy one of your Food, double this item's Damage for the fight. Passive: When you use a Food, this gains [+5/+10/+20] Damage for the fight. Patch 13.3.",
+      "card_path": "/card/dgqdxgtv9hb7sxf5xtqpff8mb6/Fruit-Press"
+    },
+    "boar_mask": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/de8448dc9301261c6d3ba316eda3c50468e1963c@256.webp/square?v=6&sig=%2BfxjHthXS4VlXKdMrziz%2FdxkTtI%3D",
+      "bazaar_desc": "Boar Mask: See 13 enchantments, 7 hidden abilities. Offered by 17 merchants. Passive: The first time any item is used each fight, gain 30 Rage. Passive: When you Enrage, deal damage and gain Shield equal to [10%/15%/20%] of your Max Health. Patch 13.3.",
+      "card_path": "/card/djkbdjpjcqknfdyyql2w9dswq4/Boar-Mask"
+    },
+    "squirrel_suit": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ad0e30c21cd7adc4ac251eb399d994e15075b782@256.webp/square?v=6&sig=qWpqxZyaUcYGM01NzQU2IOl0F8s%3D",
+      "bazaar_desc": "Squirrel Suit: See 13 enchantments, 3 hidden abilities. Offered by 18 merchants. Every 4.0 sec.: This stops Flying Passive: When you use an adjacent Flying item, this starts Flying. Passive: When this starts Flying, Haste adjacent items for [1/2/3/4] second(s). Patch 13.3.",
+      "card_path": "/card/dmmvtb5dtkcz627l95yqt200fg/Squirrel-Suit"
+    },
+    "disintegration_ray": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f1a42340b3b5d5f6cd89a87534683307a0a02b19@256.webp/square?v=6&sig=7rKwIQyuKShMpkmyI4Jzo366KWs%3D",
+      "bazaar_desc": "Disintegration Ray: See 13 enchantments, 2 hidden abilities. Every [3.0/2.0] sec.: Deal [100/200] Damage Ammo: 3 Passive: When this runs out of Ammo, destroy an enemy item. Patch 13.3.",
+      "card_path": "/card/f1d429t0b9k6lqg7bcdgch89t2/Disintegration-Ray"
+    },
+    "beast_tooth": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f6df478151f4797729656e0a3bb963e7de506b47@256.webp/tall?v=6&sig=gMbvucOvTHGG1%2FG9AGEUvFebDbY%3D",
+      "bazaar_desc": "Beast Tooth: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Passive: When you use an adjacent Weapon, gain 4 Rage. Passive: When you Enrage, adjacent Weapons gain [+30/+60/+90/+120] damage for the fight. Patch 13.3.",
+      "card_path": "/card/fb3jhcy7p9zks5zzf1sqy8337s/Beast-Tooth"
+    },
+    "security_blanket": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/eb92d88022c66b257e940f1caa376dbffd8ef259@256.webp/tall?v=6&sig=fb3jxEAMDcYrCfipfa15JaMgTnw%3D",
+      "bazaar_desc": "Security Blanket: See 13 enchantments, 5 hidden abilities. Offered by 18 merchants. Every [7.0/6.0/5.0/4.0] sec.: Heal 25 Shield 25 Passive: When this is Slowed, Frozen or Destroyed, gain 10 Rage. Patch 13.3.",
+      "card_path": "/card/fc9hcf0fkcy7zkzck4whw19hb/Security-Blanket"
+    },
+    "learning_crystal": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/03e1846865e3c549157551a4b965e74346a5470e@256.webp/tall?v=6&sig=dI3rwpef8lw2%2Ft2EZx9kq%2FAHPPo%3D",
+      "bazaar_desc": "Learning Crystal: See 13 enchantments, 1 hidden ability. Obtained from 2 sources. Passive: When you sell this, learn a Skill from another Hero. Patch 13.3.",
+      "card_path": "/card/ff0p7q3y89bskycwj7twyy0d5q/Learning-Crystal"
     }
   },
   "monsters": {}
