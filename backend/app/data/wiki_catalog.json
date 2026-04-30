@@ -6,8 +6,8 @@
     "catalog_item_ids": 947,
     "monsters_count": 101,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-04-29T08:42:15.084044+00:00",
-    "bazaar_gap_last_run_new_items": 0,
+    "bazaar_gap_import_at": "2026-04-30T08:41:07.423477+00:00",
+    "bazaar_gap_last_run_new_items": 1,
     "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
@@ -32870,6 +32870,30 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/zzk2pjl1fpz0hvl1l6jghsfm8s/Lucky-Clover",
       "image_url": "https://i.bazaardb.gg/v1/z13.0/b9d708c967cf1b1747d72ac6ec400e80cab2129e@256.webp/tall?v=6&sig=4QwH9Jfm7p7IGE%2BsIheoMokggSY%3D"
+    },
+    "scavenger": {
+      "name": "Scavenger",
+      "desc": "Scavenger: See 1 hidden ability. Passive: When you Level Up, get a small item from another Hero Patch 13.3.",
+      "bazaar_desc": "Scavenger: See 1 hidden ability. Passive: When you Level Up, get a small item from another Hero Patch 13.3.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/17cww9nsk6hzl13215ncs460647/Scavenger",
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3baf085471a4bcbe446eaf628c74f958c379b803@256.webp/circle?v=6&sig=BEaaeKaTx%2FyuajouqlvxkBtjLZc%3D"
     }
   },
   "monsters": {

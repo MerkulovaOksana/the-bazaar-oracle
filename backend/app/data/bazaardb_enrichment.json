@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-04-29T08:44:18.038713+00:00",
-    "wiki_catalog_items": 1527,
+    "fetched_at": "2026-04-30T08:42:28.771907+00:00",
+    "wiki_catalog_items": 1528,
     "wiki_catalog_monsters": 129
   },
   "items": {
@@ -7573,6 +7573,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z13.0/b9d708c967cf1b1747d72ac6ec400e80cab2129e@256.webp/tall?v=6&sig=4QwH9Jfm7p7IGE%2BsIheoMokggSY%3D",
       "bazaar_desc": "Lucky Clover: See 6 hidden abilities. Offered by 1 merchant. Obtained from 1 source. Passive: Merchant items have a [10%/20%/40%/80%] chance to upgrade to a higher tier. Patch 13.3.",
       "card_path": "/card/zzk2pjl1fpz0hvl1l6jghsfm8s/Lucky-Clover"
+    },
+    "scavenger": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3baf085471a4bcbe446eaf628c74f958c379b803@256.webp/circle?v=6&sig=BEaaeKaTx%2FyuajouqlvxkBtjLZc%3D",
+      "bazaar_desc": "Scavenger: See 1 hidden ability. Passive: When you Level Up, get a small item from another Hero Patch 13.3.",
+      "card_path": "/card/17cww9nsk6hzl13215ncs460647/Scavenger"
     }
   },
   "monsters": {
@@ -7744,6 +7749,466 @@
       "image_url": "https://i.bazaardb.gg/v1/z13.0/ea65fc2194c52c48b21e3678b1332483d940b8c1@256.webp/encounter?v=6&sig=9fwIU%2F6PR2Emomkeoj80L4viZKQ%3D",
       "bazaar_desc": "Foundation Weeper. Day 6 Monster. Skills: Exposing Toxins. Items: Extract, Bandages, Ouroboros Statue, Death Caps, Thurible, Ectoplasm, Bandages, Temple Expedition Ticket. Patch 13.3.",
       "card_path": "/card/sjs1y5dhy9wlstw98qv4s25l46/Foundation-Weeper"
+    },
+    "frost_street_challenger": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a7dc8a65441e8ba3b4844442facfe4f892a78070@256.webp/encounter?v=6&sig=LmxevPrdJDfjp%2B8HP8UYRz%2B%2BS2I%3D",
+      "bazaar_desc": "Frost Street Challenger. Day 3 Monster. Skills: Snowstorm. Items: Icicle, Weights, Handaxe, Frozen Bludgeon, Snow Globe. Patch 13.3.",
+      "card_path": "/card/fb3s2lhbgxc0x8wcsnmqzd71sh/Frost-Street-Challenger"
+    },
+    "frost_street_champion": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/15a7f30594d87ae55658fe9ad523fe25eb052322@256.webp/encounter?v=6&sig=SS1yDVLQ2eotJiNSVYbf5xmtNjw%3D",
+      "bazaar_desc": "Frost Street Champion. Day 10+ Monster. Skills: Blizzard, Invigorating Cold. Items: Iceberg, Nitrogen Hammer, Sapphire, Frozen Bludgeon, Frost Potion, Snowflake. Patch 13.3.",
+      "card_path": "/card/bytt91q7t8qt3ghmj0bxsnqs0z/Frost-Street-Champion"
+    },
+    "ghost_pepper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/434b008b59f1dfcd6f296a084bea4b9bd0f242fd@256.webp/encounter?v=6&sig=1mZKN%2By04%2BGI%2BPEvz2egFZYZKHI%3D",
+      "bazaar_desc": "Ghost Pepper. Day 7 Monster. Skills: Heat Lover, Fiery. Items: Cinders, Nitro, Micro Dave, Bomb Squad, Char Cole, Curry, Hot Sauce, Black Pepper, Lighter. Patch 13.3.",
+      "card_path": "/card/18vcvnhy5tl2bhcp7bpknv65hzp/Ghost-Pepper"
+    },
+    "giant_mosquito": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/50190fd9d018b145032c0e47d0509f251f9e04dd@256.webp/encounter?v=6&sig=GoYt1I4ppNiXI0xQoHeHfLxMalo%3D",
+      "bazaar_desc": "Giant Mosquito. Day 3 Monster. Skills: Rush, Keen Eye, Trained. Items: Insect Wing, Stinger, Venom, Proboscis, Amber, Mothmeal, Flying Potion, Insect Wing. Patch 13.3.",
+      "card_path": "/card/114q26gwstg68pnx5xjqgb9sdlm/Giant-Mosquito"
+    },
+    "gorgon_noble": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/277ebed25a723af1aefa0620abfecdeec01e6990@256.webp/encounter?v=6&sig=STntwnpeKGXS6lPlmcM18X1C830%3D",
+      "bazaar_desc": "Gorgon Noble. Day 5 Monster. Skills: Petrifying Gaze, Paralytic Poison, Initial Dose. Items: Temple Expedition Ticket, Black Rose, Clockwork Blades, Nightshade, Trained Spider, Basilisk Fang. Patch 13.3.",
+      "card_path": "/card/14g702cp8g961mvt8v233b3tk28/Gorgon-Noble"
+    },
+    "grandfather_klok": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7592400bb1d7905d52560cb31eb504ef0d8e7129@256.webp/encounter?v=6&sig=wuYjk2P5Ua7IlJLrHhSQ56a1ZDQ%3D",
+      "bazaar_desc": "Grandfather Klok. Day 5 Monster. Skills: Precision Tools, Time to Tinker. Items: Scrap, Multitool, Hands of Time, Rivet Gun, Cog, Atomic Clock, Precision Calipers, Crash Site Ticket. Patch 13.3.",
+      "card_path": "/card/14v4tkc45vb1x4f8qx39gx7xyqm/Grandfather-Klok"
+    },
+    "greenheart_guardian": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e8f77662d5e8b98f7cf1597599752edea6a051a5@256.webp/encounter?v=6&sig=gbz0X1km8MB6ABR0gy6lKz3agsk%3D",
+      "bazaar_desc": "Greenheart Guardian. Temple Expedition Monster. Skills: Guardian's Fury. Items: Fang, Venom, Fang, Venom, Poppy Field, Emerald, Guardian Shell. Patch 13.3.",
+      "card_path": "/card/12xnhh8tx5zb66gy28329x0844v/Greenheart-Guardian"
+    },
+    "harkuvian_rocket_trooper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2393c017b8c6e16e9aed39afdbb76d977c311502@256.webp/encounter?v=6&sig=%2B32XGeGSdZZ1dtvk5QUYkfx8a0Q%3D",
+      "bazaar_desc": "Harkuvian Rocket Trooper. Day 5 Monster. Skills: Flashy Reload, Keen Eye, Gunner. Items: Eagle Talisman, Shadowed Cloak, Harkuvian Launcher, Rocket Boots, Goggles, Gunpowder. Patch 13.3.",
+      "card_path": "/card/g1jb4v85pv3b9gs6fqb9ch18v3/Harkuvian-Rocket-Trooper"
+    },
+    "haunted_kimono": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/51e6b39b54a853d60212fa86e27b2b9e2b9f02de@256.webp/encounter?v=6&sig=6NKw1p68D4o5KdjWPTKnWPqGR3M%3D",
+      "bazaar_desc": "Haunted Kimono. Day 1 Monster. Skills: Haunting Flight. Items: Scrap, Silk Scarf, Scrap. Patch 13.3.",
+      "card_path": "/card/hsmsh522qg02wcy6lv2bdsj8q/Haunted-Kimono"
+    },
+    "hellbilly": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1f56e394a1fd15fe8a75239e6ae8e0e7b36dcf6f@256.webp/encounter?v=6&sig=hUpBG75kI9%2BXYKHMn%2BBEC5nqC2Y%3D",
+      "bazaar_desc": "Hellbilly. Day 4 Monster. Skills: Left-Handed. Items: Med Kit, Haladie, Ganjo, Double Barrel, Scrap, Crash Site Ticket. Patch 13.3.",
+      "card_path": "/card/qcn3dbxkmtx6flh02w5bwthkqt/Hellbilly"
+    },
+    "hooverbike_hooligan": {
+      "error": "no matching card in search results"
+    },
+    "hulking_experiment": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c1c4096f1d50a7e0fd13f80a49535a73c7cc7ec7@256.webp/encounter?v=6&sig=yBskDUzsJoZOt%2BtTVMBtow29CCc%3D",
+      "bazaar_desc": "Hulking Experiment. Day 10+ Monster. Skills: Adaptive Ordinance, Parting Shot. Items: Athanor, Bottled Lightning, Energy Potion, Fire Potion, Rainbow Potion, Noxious Potion, Noxious Potion, Rainbow Potion. Patch 13.3.",
+      "card_path": "/card/cgck3mqsb3m5t75ndb252zyg66/Hulking-Experiment"
+    },
+    "infernal": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f09026dea732464f82979658c99a568a77491300@256.webp/encounter?v=6&sig=T0fFTqMpR464e3KKXm9kWulI4kY%3D",
+      "bazaar_desc": "Infernal. Day 6 Monster. Skills: Burning Rage, Tracer Fire, Strength. Items: Cinders, Fire Claw, Magma Core, Infernal Greatsword, Magma Core, Ruby, Cinders. Patch 13.3.",
+      "card_path": "/card/15pfsx40d6gp9q38m2hvxvfw5cw/Infernal"
+    },
+    "infernal_envoy": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/23d204f8d071b757f0755980152ae74bd73e42b4@256.webp/encounter?v=6&sig=6PflBqUkvnqvdqZvp94Km9Xt4kA%3D",
+      "bazaar_desc": "Infernal Envoy. Day 5 Monster. Skills: Vengeance. Items: Fire Claw, Cinders, Sunlight Spear, Cinders, Fire Claw. Patch 13.3.",
+      "card_path": "/card/w7jkxh64s09nvq1l9m85kdzl2m/Infernal-Envoy"
+    },
+    "infernal_frigate": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/4adf7461e0842a723324758780fb3a3264732300@256.webp/encounter?v=6&sig=oM2BbGxm4PvqlnBgZhsmbn43Wf8%3D",
+      "bazaar_desc": "Infernal Frigate. Day 8 Monster. Skills: Firestarter. Items: Trebuchet, Rocket Launcher, Pop Snappers, Incendiary Rounds, Pop Snappers, Thrusters, Temple Expedition Ticket. Patch 13.3.",
+      "card_path": "/card/h05mqwzwkbphnsbd5m5vqxldx2/Infernal-Frigate"
+    },
+    "joyful_jack": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/cc85aab16b40883c6411733a2b1fba6e58e1037f@256.webp/encounter?v=6&sig=iGrSbMCbtLnUN6XSMA%2BbpL5Xm%2FA%3D",
+      "bazaar_desc": "Joyful Jack. Day 7 Monster. Skills: Equivalent Exchange, Critical Aid. Items: Extract, Black Rose, Poppy Field, Floor Spike, Bushel, Succulents, Temple Expedition Ticket. Patch 13.3.",
+      "card_path": "/card/2jzj9xs001stx5hxj0nkxntvg4/Joyful-Jack"
+    },
+    "kyver_commander": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f89c825487169fa821e74cbcc96c1112483ee73c@256.webp/encounter?v=6&sig=XZ602yTe%2FDRo%2BOPDCKjm2RkNgkk%3D",
+      "bazaar_desc": "Kyver Commander. Day 5 Monster. Skills: Counterstrike. Items: Insect Wing, Junkyard Lance, Busy Bee, Busy Bee, Honeycomb, Insect Wing. Patch 13.3.",
+      "card_path": "/card/f8tj12qmlm9vkts691lt4jg6kz/Kyver-Commander"
+    },
+    "kyver_drone": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a0f8427a9e8f716ace8cea143871e04957a96f28@256.webp/encounter?v=6&sig=KtMBw2bIVJnzuJNK5z%2FIEYXhWkY%3D",
+      "bazaar_desc": "Kyver Drone. Day 1 Monster. Skills: Trained. Items: Insect Wing, Stinger, Langxian, Honeycomb, Insect Wing. Patch 13.3.",
+      "card_path": "/card/zmm6kf98bcjb7c7l421cf8vkm7/Kyver-Drone"
+    },
+    "lich": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1877c350f74b6f4192a900b9bf3d48ecf3c6578e@256.webp/encounter?v=6&sig=3cPhbNNrexAHZF0PUai3jMw3qEo%3D",
+      "bazaar_desc": "Lich. Day 6 Monster. Skills: Chilling Touch, Petrifying Gaze. Items: Cauldron, Ectoplasm, Icicle, Necronomicon, Icicle, Wand, Emerald, Soul Ring. Patch 13.3.",
+      "card_path": "/card/jkct1mjfkpzf7swqg2v3vvyk18/Lich"
+    },
+    "loan_shark": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dc7011040e2574130928ba44aa3676df79843464@256.webp/encounter?v=6&sig=n5QddB0y5uzve5G2gyD8FobZL1M%3D",
+      "bazaar_desc": "Loan Shark. Day 6 Monster. Skills: Power Broker, Crashing Waves. Items: Sharkray, Sharkclaws, Sharkclaws, ATM, Cash Cannon. Patch 13.3.",
+      "card_path": "/card/13djv347bssgj7wbznpx3sbmsw9/Loan-Shark"
+    },
+    "lord_arken": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b0d18a72ef99ed5c908da6c784daf22f07ae153b@256.webp/encounter?v=6&sig=%2BQPQisfh6CKY9klt8dEKHz8foIE%3D",
+      "bazaar_desc": "Lord Arken. Day 10+ Monster. Skills: Unwavering, Strength, Flurry of Blows. Items: Vitality Potion, Gatling Gun, The Eclipse, Thrusters, Gatling Gun, Arken's Ring. Patch 13.3.",
+      "card_path": "/card/qh4btzg467xc9zy687jq29746n/Lord-Arken"
+    },
+    "lord_of_the_wastes": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7241f3b5f793a9f348da871104ef403e81aa6258@256.webp/encounter?v=6&sig=5kjQv%2FZuYMLSYyZqrxMImJieH50%3D",
+      "bazaar_desc": "Lord of the Wastes. Day 10+ Monster. Skills: Foreboding Winds. Items: Letter Opener, Basilisk Fang, Sextant, Magic Carpet, Letter Opener, Clockwork Blades, Energy Potion. Patch 13.3.",
+      "card_path": "/card/19kn0hl3klqjw82llpwpv0ndpcl/Lord-of-the-Wastes"
+    },
+    "master_alchemist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e840c538f3f3952677a8fe116f1521041fcecdf3@256.webp/encounter?v=6&sig=lL8w1M%2BSlDbFNTmqm9P2%2FylISaQ%3D",
+      "bazaar_desc": "Master Alchemist. Day 10+ Monster. Skills: Retool. Items: Mortar & Pestle, Refractor, Rainbow Potion, Cauldron, Rainbow Potion, Weather Glass. Patch 13.3.",
+      "card_path": "/card/wds26kf772c6jwj4z1kw2dynbz/Master-Alchemist"
+    },
+    "mimic": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1308660bc56232d3e78a008372f339b6fb8c93ed@256.webp/encounter?v=6&sig=4qzY3FwVWQBDOw1NhHmI%2BT6YMUY%3D",
+      "bazaar_desc": "Mimic. Encounter Monster. Skills: Ravenous, Strength. Items: Fang, Fang, Fang, Fang, Fang, Fang, Fang, Fang, Fang, Fang. Patch 13.3.",
+      "card_path": "/card/nx4zh4p75fvjz4z0035k21mlbh/Mimic"
+    },
+    "mod_squad": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a5eef0c7455c1e662d455f8d43f12a960f51ad4d@256.webp/encounter?v=6&sig=dBbhaOGoudykiq2NzqnS8PjaYdg%3D",
+      "bazaar_desc": "Mod Squad. Day 5 Monster. Skills: Beautiful Friendship. Items: Crypto, First Aiden, Chris Army Knife, Bill Dozer, Bomb Squad, Char Cole, Crypto. Patch 13.3.",
+      "card_path": "/card/10tjy3fqbmn5tfd3thk2k7bcjmk/Mod-Squad"
+    },
+    "morguloth": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/547cb0f6d97e587b25d88a0cfc54e38eeb7af267@256.webp/encounter?v=6&sig=tvfdFWbnYjCc1pZt9Rg6CQq7cSM%3D",
+      "bazaar_desc": "Morguloth. Day 10 Monster. Skills: Jack of All Trades, Strength. Items: Cleaver, Box Cutter, Handaxe, Haladie, Chris Army Knife, Ritual Dagger, Sword of Swords, Lockbox. Patch 13.3.",
+      "card_path": "/card/53252nyjtm5ggjllpy51c1g8sz/Morguloth"
+    },
+    "mr_moo": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2714536b754b926c841405594e970c0ba6e4e8a1@256.webp/encounter?v=6&sig=gU4K3LFfQldGEPNtf%2BWdSmIoKMU%3D",
+      "bazaar_desc": "Mr. Moo. Encounter Monster. Skills: Dual Wield. Items: Incendiary Rounds, Incendiary Rounds, Incendiary Rounds, Tommoo Gun, Incendiary Rounds, Incendiary Rounds, Tommoo Gun, Incendiary Rounds, Incendiary Rounds, Incendiary Rounds. Patch 13.3.",
+      "card_path": "/card/kxptgjnpgtmtyfbcblbbmy0l7g/Mr.-Moo"
+    },
+    "mythkeeper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/a2ca510f219d350b3bc161863c06b51517a26242@256.webp/encounter?v=6&sig=G6zLdNlXvQPa046%2BOxnQtvcYZ9M%3D",
+      "bazaar_desc": "Mythkeeper. Temple Expedition Monster. Skills: Siphoned Shield. Items: Wand, Robe, Zoot Flute, Forgotten God, Incense, Ectoplasm, Fungal Spores, Venomous Dose. Patch 13.3.",
+      "card_path": "/card/d1xxf87l420n68m5hg9nx0tshs/Mythkeeper"
+    },
+    "oasis_guardian": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8cee0f6eafd1a8eb9ee27260ccb845c3e50c4f70@256.webp/encounter?v=6&sig=poBA62ITw8om4rIzQ3GymBI2kD4%3D",
+      "bazaar_desc": "Oasis Guardian. Day 8 Monster. Skills: Waters of Infinity. Items: Ouroboros Statue, Venomander, Sleeping Potion, Incense, Magnus' Femur, Nightshade. Patch 13.3.",
+      "card_path": "/card/p8h7scj5mff7pj3zt1y4x0dbk9/Oasis-Guardian"
+    },
+    "outlands_dervish": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/07c116e295bf8bf254600245b41ef01ec931279f@256.webp/encounter?v=6&sig=k1SIevpKyW2NJ1n7UnUXV51Qv0w%3D",
+      "bazaar_desc": "Outlands Dervish. Day 4 Monster. Skills: Keen Eye. Items: Bar of Gold, Shoe Blade, Clockwork Blades, Clockwork Blades, Shoe Blade, Bar of Gold. Patch 13.3.",
+      "card_path": "/card/qwmgzwwnvxxxtlvlcty1mvf8dt/Outlands-Dervish"
+    },
+    "preening_duelist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/895bab12fec76b67deefc7b21b3ad5f4a7d7ffaa@256.webp/encounter?v=6&sig=U%2BeeahOhdROkFlVTUARIO8kOeSI%3D",
+      "bazaar_desc": "Preening Duelist. Day 5 Monster. Skills: All Talk. Items: Gunpowder, Powder Horn, Revolver, Cannonball, Pistol Sword, Throwing Knives, Gunpowder. Patch 13.3.",
+      "card_path": "/card/x972z1g8296z7ts7pqsjqb2knn/Preening-Duelist"
+    },
+    "prince_marianas": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dde711457979405556990b168d3257543ecb694a@256.webp/encounter?v=6&sig=O2E5ZuqPmX37eAkiRnFfayCfKGY%3D",
+      "bazaar_desc": "Prince Marianas. Day 4 Monster. Skills: Slowed Targets. Items: Temple Expedition Ticket, Coconut, Chum, Piranha, IllusoRay, Narwhal, Electric Eels, Citrus. Patch 13.3.",
+      "card_path": "/card/dxfyktdm2g779gd9cqktxms5vd/Prince-Marianas"
+    },
+    "product_demonstrator": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0116cd2cbf8cbe6b389359e84c9f702b9619417a@256.webp/encounter?v=6&sig=myoC8obnWNmPUTvdI3JdxSL4Pwk%3D",
+      "bazaar_desc": "Product Demonstrator. Day 3 Monster. Skills: Product Showcase. Items: Cinders, Eject Button, Ice Bomb, Ornithopter, Rocket Drone, Fire Bomb, Recycler Bot, Gunpowder. Patch 13.3.",
+      "card_path": "/card/8fcgxx4zq4zg0vbzpy7jwkzn6f/Product-Demonstrator"
+    },
+    "property_baron": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/84c18311ecc94e5c21dd55463f38903ca278b77f@256.webp/encounter?v=6&sig=zVjExWrxUbX2R2xdWhEg2Vz7dP8%3D",
+      "bazaar_desc": "Property Baron. Day 10+ Monster. Skills: Master Salesman, Trader. Items: Skyscraper, Subscraper, Billboard, Keychain. Patch 13.3.",
+      "card_path": "/card/60jlxbb5djvk3wglfjfztvpq0h/Property-Baron"
+    },
+    "pyro": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fe315fddea3a5074a3cfbc1e8af33f2590863d90@256.webp/encounter?v=6&sig=H%2F1AuU2%2Bt59jEcgzx%2FwxLC3OQME%3D",
+      "bazaar_desc": "Pyro. Day 1 Monster. Skills: Fiery. Items: Cinders, Lighter, Fire Bomb, Cinders. Patch 13.3.",
+      "card_path": "/card/bybl8zqml05dxsmsxhdk6yt3cm/Pyro"
+    },
+    "qomatz": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b9d6b3bc662d0ffb2ba1657b8697d6eef84df8bf@256.webp/encounter?v=6&sig=GapjA9dijxLJ%2F4Qx7RoZwg%2B4HQI%3D",
+      "bazaar_desc": "Qomatz. Temple Expedition Monster. Skills: Ancient Vengeance. Items: Cosmic Plumage, Claws, Viper Cane, Basilisk Fang, Philosopher's Stone, Ethergy Conduit. Patch 13.3.",
+      "card_path": "/card/vwvmp7xb3cmf95s1z6dbpqjj2b/Qomatz"
+    },
+    "radiant_corsair": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/655b931944204a40c0e670360f6f0c80d388f3d4@256.webp/encounter?v=6&sig=vuIRf%2FudKNNu3atkD9efim9E3DE%3D",
+      "bazaar_desc": "Radiant Corsair. Day 7 Monster. Skills: Fiery Rebirth, Right-Handed, Final Flame. Items: Grappling Hook, Anchor, Dock Lines, Katana, Lighthouse. Patch 13.3.",
+      "card_path": "/card/h4f4xbgpdkzlg3ld16dmd9qnjn/Radiant-Corsair"
+    },
+    "retiree": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/cb963921a3d692346eef10213ce6b287f116fcd6@256.webp/encounter?v=6&sig=bIoYIMcsX6KUd7%2Bq2JlkSzH6G0I%3D",
+      "bazaar_desc": "Retiree. Day 4 Monster. Skills: Extreme Comfort. Items: Piggy Bank, Succulents, Golf Clubs, Bushel, Bandages, Med Kit. Patch 13.3.",
+      "card_path": "/card/tvf707xqd8xq2sdctsb6n148km/Retiree"
+    },
+    "roaming_isle": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/94e0d9a4a61830a9f03ca5d034062f61444bd830@256.webp/encounter?v=6&sig=e2K57JqPRiPvSxK6n9qabWni8Lg%3D",
+      "bazaar_desc": "Roaming Isle. Day 9 Monster. Skills: Shored Up, First Responder, Follow-Up Care. Items: Tropical Island, Sea Shell, Pet Rock, Catfish, Jellyfish, Seaweed, Seaweed, Clamera. Patch 13.3.",
+      "card_path": "/card/5vhp4th2dg2gfk3ffcs1yp45d7/Roaming-Isle"
+    },
+    "rogue_scrapper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/180535cdaf13361b01e3dc1d059ee07c2e8f5e85@256.webp/encounter?v=6&sig=P%2BRTd3Q7ffC4uPkX94DiNBn4zgo%3D",
+      "bazaar_desc": "Rogue Scrapper. Day 2 Monster. Skills: Rust. Items: Scrap, Gearnola Bar, Junkyard Club, Junkyard Repairbot, Barbed Wire, Med Kit. Patch 13.3.",
+      "card_path": "/card/4tbjtt8wd832lj4fktcx07h4c2/Rogue-Scrapper"
+    },
+    "sabretooth": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/811a20ef63e45ca7fc212bc85094e00b0371721d@256.webp/encounter?v=6&sig=13SKSCKpFWLA3GdA%2FbU6e%2Fd3k2w%3D",
+      "bazaar_desc": "Sabretooth. Day 5 Monster. Skills: Diamond Fangs. Items: Pelt, Pelt, Pelt, Pelt, Fang, Fang, Pelt, Pelt, Pelt, Pelt. Patch 13.3.",
+      "card_path": "/card/c7nnfxzp5whdpz3w78nbm3kdz7/Sabretooth"
+    },
+    "scovyle": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/336b8a37df2e43b89c35551db8041c342c47aaac@256.webp/encounter?v=6&sig=oRlBjW%2Fk3Gi0sfHAjxbGSLPn1uQ%3D",
+      "bazaar_desc": "Scovyle. Day 5 Monster. Skills: Fiery. Items: Cinders, Curry, Skillet, Black Pepper, Hot Sauce, Pickled Peppers. Patch 13.3.",
+      "card_path": "/card/qvzz6nqv0hp0x6byjhz0373pbx/Scovyle"
+    },
+    "sergeant_suds": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b3885fc181e326489ebc89fa264d7e6e4160c490@256.webp/encounter?v=6&sig=kOHgKaTQYo1F6WlDR6xanIZSoic%3D",
+      "bazaar_desc": "Sergeant Suds. Day 7 Monster. Skills: Clean Storefront. Items: Bar of Soap, Hogwash, Bar of Soap, Bar of Soap, Bar of Soap, Bar of Soap, Bar of Soap, Bar of Soap. Patch 13.3.",
+      "card_path": "/card/19616f82nmbptj1zs8ns4s695y8/Sergeant-Suds"
+    },
+    "sparring_partner": {
+      "error": "no matching card in search results"
+    },
+    "street_gamer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fe7423090aed8fb81707559f99ac91a8ef14387e@256.webp/encounter?v=6&sig=ZaPJk5s2re733xRfPCTozKAJ8EQ%3D",
+      "bazaar_desc": "Street Gamer. Day 3 Monster. Skills: Small Refresh. Items: Red Piggles R, Premium Red Piggles, Piggles, Piggles Protectors, Yellow Piggles L, Temple Expedition Ticket. Patch 13.3.",
+      "card_path": "/card/b5y2dcj6200ppdnmflv24jsd08/Street-Gamer"
+    },
+    "tempest_bravo": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/21700ad270e3612ae4a3e12e44d058ae000e5921@256.webp/encounter?v=6&sig=3D%2FFCavlvc6dLKtAh84%2BZ6I92Lk%3D",
+      "bazaar_desc": "Tempest Bravo. Day 3 Monster. Skills: Flamedancer. Items: Cinders, Bar of Gold, Cutlass, Cutlass, Bar of Gold, Sharpening Stone. Patch 13.3.",
+      "card_path": "/card/q559t8w2t8glmmnssv5zgsd0d/Tempest-Bravo"
+    },
+    "terrorform": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/6119ecb4dbcdff950b0e5972eb1cc38265de917a@256.webp/encounter?v=6&sig=m5ol9z%2BVjBfKKhmi31SE1N4cFT0%3D",
+      "bazaar_desc": "Terrorform. Day 9 Monster. Skills: Passive Power, Flashy Reload. Items: Torpedo, Piranha, Shot Glasses, Elemental Depth Charge, Bottled Lightning, Mantis Shrimp, Biomerge Arm. Patch 13.3.",
+      "card_path": "/card/9t503jx9km5pdpncmtn8fv9gts/Terrorform"
+    },
+    "test_subject_alpha_monster": {
+      "error": "no matching card in search results"
+    },
+    "thug": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/f265024b41cc4ada5e454308f51eacdea0bbbe15@256.webp/encounter?v=6&sig=CwKuDcKI4d63TWGyA5w0tQCugJ4%3D",
+      "bazaar_desc": "Thug. Day 7 Monster. Skills: Bonk, Long Strides, Brawler, Strength. Items: Bar of Gold, Double Whammy, Improvised Bludgeon, Pawn Shop, Brass Knuckles. Patch 13.3.",
+      "card_path": "/card/6qfkp2q20mhlhjv54gg7sc1py9/Thug"
+    },
+    "tortuga_monster": {
+      "error": "no matching card in search results"
+    },
+    "trash_golem": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/788c558763b4e9b606ccdb9d78131d01024aa39b@256.webp/encounter?v=6&sig=3DFOCoNsxcKuZLPpUQnowXchFN8%3D",
+      "bazaar_desc": "Trash Golem. Day 6 Monster. Skills: Jury Rigger. Items: Junkyard Catapult, Plasma Grenade, Grenade, Noxious Potion, Rainbow Potion, Grapeshot, Powder Keg. Patch 13.3.",
+      "card_path": "/card/wlmx85ny2clgjm6smkq61nf3x3/Trash-Golem"
+    },
+    "trash_titan": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/2891c5b669320a20fdef5338889b6cac5752697e@256.webp/encounter?v=6&sig=fNmhNkCzIZZhVZ12YkARCE6Kd4E%3D",
+      "bazaar_desc": "Trash Titan. Day 10+ Monster. Skills: Juggler. Items: Venom, Emerald, Catalyst, Junkyard Lance, Hemlock, Ectoplasm, Ectoplasm, Venomander. Patch 13.3.",
+      "card_path": "/card/4ps3vpqxqyjf228jgswyjxvvg1/Trash-Titan"
+    },
+    "trashtown_mayor": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/16a25df1d88c1e5e9ae70a2244383b564cc5b69a@256.webp/encounter?v=6&sig=3mdNNq2Tp828ko3pBo2iZlR9GN8%3D",
+      "bazaar_desc": "Trashtown Mayor. Day 5 Monster. Skills: Augmented Weaponry, Augmented Defenses. Items: Crash Site Ticket, Sharpening Stone, Brass Knuckles, Dog, Temporary Shelter, Pepper Spray. Patch 13.3.",
+      "card_path": "/card/tglc80p2mzd2j51fdyl0fzkc06/Trashtown-Mayor"
+    },
+    "treasure_turtle": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/66c5e9bfa13ea37edb97dc387752afce98538d5e@256.webp/encounter?v=6&sig=qq9POxJCQbz4d7B1sp1rheTGNCE%3D",
+      "bazaar_desc": "Treasure Turtle. Day 7 Monster. Skills: Hunker Down, Toughness. Items: Bag of Jewels, Seaweed, Sea Shell, Turtle Shell, Catfish, Pearl, Clamera, Temple Expedition Ticket, Lucky Clover. Patch 13.3.",
+      "card_path": "/card/mc20n4nbnlkkv2fw3nytgz041t/Treasure-Turtle"
+    },
+    "ventriloquist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c944bdfe7485aea389d2141ff2c468ae54d6e5f7@256.webp/encounter?v=6&sig=6EJPfBLS47ZmNkhw0fS%2FABwxLpQ%3D",
+      "bazaar_desc": "Ventriloquist. Day 2 Monster. Skills: Free Ride. Items: Eagle Talisman, Honing Steel, Friendly Doll, Switchblade, Butterfly Swords, Old Sword, Sharpening Stone, Broken Shackles. Patch 13.3.",
+      "card_path": "/card/b9jmw0tzfzf77ltl62y3wvxnz3/Ventriloquist"
+    },
+    "veteran_octopus": {
+      "error": "no matching card in search results"
+    },
+    "viper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/6b092bf8fb696cf942ea10fb4116cf167b80bb60@256.webp/encounter?v=6&sig=BhH3XWZpWphZrIB19XUfZkiBZxw%3D",
+      "bazaar_desc": "Viper. Day 1 Monster. Skills: Lash Out. Items: Gland, Fang, Fang, Extract. Patch 13.3.",
+      "card_path": "/card/yt24hfwlm9mh916tvy0qp9wlm1/Viper"
+    },
+    "viper_tyrant": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/be7953d4991c89249e1af38102c956b862627e51@256.webp/encounter?v=6&sig=7dPHv0UulEy7n82M8Y4NFUZ%2BKgQ%3D",
+      "bazaar_desc": "Viper Tyrant. Day 7 Monster. Skills: Poison Tyrant. Items: Gland, Extract, Venom, Fang, Basilisk Fang, Venom, Copper Ed, Noxious Potion, Extract, Gland. Patch 13.3.",
+      "card_path": "/card/5cd7vxj3clfc1mg0kspq4ptcjg/Viper-Tyrant"
+    },
+    "void_colossus": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0859218719e4516f58507e4c9a26791cc1e99b9e@256.webp/encounter?v=6&sig=9143QyUKovd%2FlPJoS%2BiZRjxVIRA%3D",
+      "bazaar_desc": "Void Colossus. Day 10+ Monster. Skills: Void Energy, Void Rage. Items: Ruby, Void Ray, Eye of the Colossus, Void Ray, Void Shield. Patch 13.3.",
+      "card_path": "/card/lq1h73207ww17yfbsx3hy2cw49/Void-Colossus"
+    },
+    "void_golem": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/1f7bce45336bb94a4d63bae3eca00e80b8ddcdba@256.webp/encounter?v=6&sig=yx%2FMGCB%2FediLfw%2BOF%2BFD11wT%2FQc%3D",
+      "bazaar_desc": "Void Golem. Day 10+ Monster. Skills: Into the Void, Void Render. Items: Singularity, Void Ray, Void Ray, Caltrops, Caltrops, Spices. Patch 13.3.",
+      "card_path": "/card/fkbcxpvg28kygd2f382xn05x7m/Void-Golem"
+    },
+    "void_knight": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/606e063afd47941db09bfdc75c7cb9bb4bffe9fe@256.webp/encounter?v=6&sig=wIHDH%2FwLeOc%2F8fDl4W8mfQlYo4o%3D",
+      "bazaar_desc": "Void Knight. Day 9 Monster. Skills: Hypnotic Drain, Desperate Cleanse. Items: Sapphire, Shadowed Cloak, Scythe, Mortal Coil, Runic Great Axe. Patch 13.3.",
+      "card_path": "/card/zwcdmgv83sjm5j6jsmwn81130p/Void-Knight"
+    },
+    "volkas_enforcer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/58636e8d86967e421d45c464ddec6f0dcc747ae6@256.webp/encounter?v=6&sig=RuazKTF8Icc327XVdlWT3VzR0lQ%3D",
+      "bazaar_desc": "Volkas Enforcer. Day 10+ Monster. Skills: Cryomastery, Reaching the Summit. Items: Cryosphere, Cryosleeve, Stopwatch, Icebreaker, Ice Pick, Frost Potion, Icicle. Patch 13.3.",
+      "card_path": "/card/fvgb9ntkdw3y1qn4fzmbn6vym7/Volkas-Enforcer"
+    },
+    "wandering_shoal": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/d69f4d52160e9bf89a98adf139127deb49553b36@256.webp/encounter?v=6&sig=exT8nGRssKFczYSgRGFKGa43r2E%3D",
+      "bazaar_desc": "Wandering Shoal. Day 8 Monster. Skills: Thick Hide, Improved Toxins. Items: Electric Eels, Catfish, Jellyfish, Piranha, Amber, Seaweed, Pufferfish. Patch 13.3.",
+      "card_path": "/card/v4d6pdqd00xl5t9wyfvchmntl6/Wandering-Shoal"
+    },
+    "weapons_platform": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/fb73585aec6ec66cbf3b33f2430e08563c6c41a5@256.webp/encounter?v=6&sig=NsZ1CtB1nALM2MMJmdXcswlq1Z8%3D",
+      "bazaar_desc": "Weapons Platform. Day 9 Monster. Skills: Distributed Systems, Keen Eye. Items: Cog, Kinetic Cannon, Battery, Coolant, First Aiden, Laser Pistol, Power Sander, SMG. Patch 13.3.",
+      "card_path": "/card/13lb5zpjjxbfjzzqfd17typ965b/Weapons-Platform"
+    },
+    "yerdan": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/20733ebfec6361e8746f3a9d009fcfc92019140d@256.webp/encounter?v=6&sig=2dU506JUDoIcxvF6ua%2B0tAZd2d8%3D",
+      "bazaar_desc": "Yerdan. Day 9 Monster. Skills: Relax Bro, Right-Handed. Items: Tournament Arena, Piggles Board, Red Piggles R, Yo-Yo, Red Piggles A, Premium Red Piggles, Red Piggles L. Patch 13.3.",
+      "card_path": "/card/vs7jxxw106y86kpyslyhczybmj/Yerdan"
+    },
+    "zookeeper": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/3b5a35a9e8a86cc10dc41ab125f5753c1008b17d@256.webp/encounter?v=6&sig=1FKK88wnUtbYvj3VUUjlK%2BtCxqU%3D",
+      "bazaar_desc": "Zookeeper. Day 6 Monster. Skills: Toxic Friendship. Items: Pelt, Dragon Whelp, Crook, Leeches, Salamander Pup, Trained Spider, Pelt. Patch 13.3.",
+      "card_path": "/card/kz82jk2tkpgs3m9kqv4bkxfk7l/Zookeeper"
+    },
+    "outlands_terror": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0c2b2dd9e6a977bb69820ded705979cf9de41512@256.webp/encounter?v=6&sig=FnTrFaNGuLOH8ZCcqAo9mswd7Aw%3D",
+      "bazaar_desc": "Outlands Terror. Day 10 Monster. Skills: Beast Unleashed. Items: Eagle Sigil, Claws, Wolf Mask, Outlands Terror, Assault Sigil, Fang. Patch 13.3.",
+      "card_path": "/card/j5gv88g39ty0v15wkp0c336xn2/Outlands-Terror"
+    },
+    "weather_machine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c447c7ef490a37441b64a794d68534a0d385cc1a@256.webp/wide?v=6&sig=uRBIBwSCbU9%2FUqmVIhiQqykXdKY%3D",
+      "bazaar_desc": "Weather Machine: See 13 enchantments, 4 hidden abilities. Offered by 18 merchants. Obtained from 2 sources. Every 5.0 sec.: [2/3/4] items start Flying Freeze an item on each Player's board for [1/2/3] second(s) Slow all items for [1/2/3] second(s) Patch 13.3.",
+      "card_path": "/card/101khfz9qzd8gcgdw7tkxly9ktj/Weather-Machine"
+    },
+    "banannibal": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8424c04ebd4564e9c93dcc71a160c323408fd13e@256.webp/encounter?v=6&sig=UFr%2FVp6qCaTvNQOGA7qZjQ0R6jY%3D",
+      "bazaar_desc": "Banannibal. Day 1 Monster. Skills: Healthy Jolt. Items: Med Kit, Bluenanas, Duct Tape. Patch 13.3.",
+      "card_path": "/card/4k4n5d9g1c9ydpt7c1gy7wg72q/Banannibal"
+    },
+    "hoverbike_hooligan": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c0cd568d84089117d13cd1f4307220416fd3cc44@256.webp/encounter?v=6&sig=JfIthEz8XIoQeNFMJ9lEfNnqQJQ%3D",
+      "bazaar_desc": "Hoverbike Hooligan. Day 3 Monster. Skills: Gunner. Items: Gunpowder, Laser Pistol, SMG, Bolas, Weakpoint Detector, Grappling Hook, Eagle Talisman. Patch 13.3.",
+      "card_path": "/card/8w81pgsxz9pfx2l7t82mnwdcty/Hoverbike-Hooligan"
+    },
+    "mutant_baker": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/c450387f54576333caf4ee36b97439583dbb857e@256.webp/encounter?v=6&sig=Vt7gvpPACut5jkinkQUs0afFQXA%3D",
+      "bazaar_desc": "Mutant Baker. Day 3 Monster. Skills: The Right Tool. Items: Venomous Dose, Butter, Bread Knife, Bread, Knife Sharpener, Rolling Pin. Patch 13.3.",
+      "card_path": "/card/zthxv7p15xl69xz1cjtqfj9ctq/Mutant-Baker"
+    },
+    "wild_boar": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/dd882138ef6a04a64c1becb3b67c41d747f1d2e1@256.webp/encounter?v=6&sig=3m3KF2LvAmYpUnArhCrfIKxfVQc%3D",
+      "bazaar_desc": "Wild Boar. Day 4 Monster. Skills: Feeding Frenzy. Items: Wildroot Amulet, Blueberry Pie, Wild Boar, Basket, Truffles. Patch 13.3.",
+      "card_path": "/card/nw61bbz6c05mpkdqlfgvvkdbfh/Wild-Boar"
+    },
+    "worry_wart": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/af109b3482d3d6080b1f0f51eade1fe1569a3fb3@256.webp/encounter?v=6&sig=10%2BeTEh%2B9EkMpDJ9KOw2rPKgA64%3D",
+      "bazaar_desc": "Worry Wart. Day 4 Monster. Skills: Slippery Fella. Items: Extract, Drowsdrop, Worry Wart, Warpaint, Frog Hollow, Extract. Patch 13.3.",
+      "card_path": "/card/dv1tc6l7cpbl84nc23knw1tsbj/Worry-Wart"
+    },
+    "sandwich_artist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/294053c39753e9a19a47c661db4a8a6d76496f2d@256.webp/encounter?v=6&sig=5080Z%2FtH4Bno1LTAc9ULmG6wTL0%3D",
+      "bazaar_desc": "Sandwich Artist. Day 6 Monster. Skills: Regenerative. Items: Bread, Salt, Butter, Giant Sub, Spice Rack, Baked Potato. Patch 13.3.",
+      "card_path": "/card/16g2vt95jy8s5zqppmhv3zd2cy3/Sandwich-Artist"
+    },
+    "unibou": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/0c5717028202906d0acae34c0d7fdbfd5129f45f@256.webp/encounter?v=6&sig=BRLFqdTnuXOUROUmDY85MvV0poA%3D",
+      "bazaar_desc": "Unibou. Day 7 Monster. Skills: Lone Charge. Items: Unibou, Karst, Succulents, Bushel, Honey Jar, Snow Wisp. Patch 13.3.",
+      "card_path": "/card/s8kh75vqmqd4y23l1nqcp1z8bx/Unibou"
+    },
+    "wildman": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/93b0aa3c5fa751f594d61aa3b2681e57bc54f2b7@256.webp/encounter?v=6&sig=ywoEQAb0S8ZM1fLbJqfoqKmYnWk%3D",
+      "bazaar_desc": "Wildman. Day 7 Monster. Skills: Frontier Living. Items: Pelt, Battle Axe, Bear Mask, Hunting Knife, Bagpipes, Warpaint, Resistance Bands. Patch 13.3.",
+      "card_path": "/card/qnvnmv94932s695cx96nspzg8b/Wildman"
+    },
+    "cloudtop_officer": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/66105f07fa02e8ef8dec5f4f5b5f4d50333fd382@256.webp/encounter?v=6&sig=MG2ZiCwKvkNCuet%2FPSteEgNOJTk%3D",
+      "bazaar_desc": "Cloudtop Officer. Day 8 Monster. Skills: Bombing Run. Items: Air-Pressure Rifle, Altimeter, Battle Balloon, Propeller, Tethers, Flycycle. Patch 13.3.",
+      "card_path": "/card/lybpqhnqybwz2j3yfjn0jv28f7/Cloudtop-Officer"
+    },
+    "stew": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/51bf0e6c6b874a2a5ecf9220bb836fa56f738116@256.webp/encounter?v=6&sig=iYFUQRP6hHuhr6HJqEIf%2BQIpP3M%3D",
+      "bazaar_desc": "Stew. Day 8 Monster. Skills: Anything to Win. Items: Curry, Black Pepper, Oven Mitts, Cauldron, Pickled Peppers, Hot Sauce, Scorchpepper. Patch 13.3.",
+      "card_path": "/card/ctxqs29ks0m2vd4j7xzxw5c1mc/Stew"
+    },
+    "wolverine": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/b0649f6220f1a906fc05704f8bbc41f2ca4e42c3@256.webp/encounter?v=6&sig=xQaIWr%2B5O%2FTkqhqcB%2BNc3a1pz%2Fk%3D",
+      "bazaar_desc": "Wolverine. Day 8 Monster. Skills: Ferocious Bite. Items: Pelt, Eagle Sigil, Wolverine, Beast Call, Wolf, Fang, Warpaint, Claws. Patch 13.3.",
+      "card_path": "/card/16dqkzq5y8bgp9bz98qyzys13pn/Wolverine"
+    },
+    "anaconda": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8268da6391f6030110c3472a6a82585a2c9bb5e3@256.webp/encounter?v=6&sig=%2BQwCrxAvpjF6HXcA2Ai7N5WGsmI%3D",
+      "bazaar_desc": "Anaconda. Day 9 Monster. Skills: Honed In. Items: Anaconda, Hidden Lake, Fang, Fang, Assault Sigil. Patch 13.3.",
+      "card_path": "/card/nwqwn46mmqg427fbwzb0ll5fqv/Anaconda"
+    },
+    "foundation_revenant": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/69431932b218bd74e3c3eae02ca8493403222eb4@256.webp/encounter?v=6&sig=UrFDzZZvKh8Yl7SzA6CDVYukkIs%3D",
+      "bazaar_desc": "Foundation Revenant. Day 9 Monster. Skills: Exposing Toxins, Purifying Flame. Items: Soul Ring, Emerald, Ouroboros Statue, Shadowed Cloak, Basilisk Fang, Ectoplasm, Thurible, Bandages. Patch 13.3.",
+      "card_path": "/card/19k4kjdfqfy1mtcyjjk6cf5l8tg/Foundation-Revenant"
+    },
+    "infernal_dreadnought": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/9e6405a6b7e1eaf8f1b425fbad7918eb16c36f0a@256.webp/encounter?v=6&sig=jPEbDyhn74KbmzsFlzow5SPJb8g%3D",
+      "bazaar_desc": "Infernal Dreadnought. Day 10 Monster. Skills: Pyromania. Items: Skyliner, Jetpack, Solar Drone, Balloon Engine, Launch Tower. Patch 13.3.",
+      "card_path": "/card/9fllk70yzkcm16zk9ktbspvk1v/Infernal-Dreadnought"
+    },
+    "test_subject_alpha": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/94bdf346ff36287b82cd79ea17156f1a3e2f5367@256.webp/encounter?v=6&sig=BYLuF%2B3A2m3W2BfKRqjenYwFOT8%3D",
+      "bazaar_desc": "Test Subject Alpha. Day 10 Monster. Skills: Toxic Fuel, Vital Reserve. Items: Venomous Dose, Fungal Spores, Rapid Injection System, Barbed Claws, Test Subject Alpha, Infused Bracers. Patch 13.3.",
+      "card_path": "/card/19s5lnpq8bk0vx217qdwkc96npp/Test-Subject-Alpha"
+    },
+    "tortuga": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e6252cd36d2d7dd4d069ec108746708734bddcc1@256.webp/encounter?v=6&sig=WqLhS7g3OutQeMR0CA2YF8zftpU%3D",
+      "bazaar_desc": "Tortuga. Day 10 Monster. Skills: Friendzone, Warm Hugs. Items: Tortuga, Pesky Pete, Zoarcid, Catfish, Pufferfish, Jellyfish, Old Saltclaw. Patch 13.3.",
+      "card_path": "/card/6t8zjf9zn2g6blq35hvns10nbm/Tortuga"
+    },
+    "dooltron": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/de8de1dce704fae015ed3c650d6e54c89342a01d@256.webp/encounter?v=6&sig=I%2B%2Bj03z7kiNxLh1f5ba4%2Btpgp3w%3D",
+      "bazaar_desc": "Dooltron. Day 10 Monster. Skills: Nanobot Construction, Electrified Hull. Items: BLU-B33TL3, GRN-W4SP, BLK-SP1D3R, RED-F1R3FLY, YLW-M4NT1S, Z-Sword, Dooltron. Patch 13.3.",
+      "card_path": "/card/5ymcgq60b9xfn41lzmtkghf1pj/Dooltron"
+    },
+    "rex_spex": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/ab651e8fd43544f25f134981d3c0ca1d91304e9f@256.webp/encounter?v=6&sig=KizG6ExpKrPGS49kdXGrPTAnWn4%3D",
+      "bazaar_desc": "Rex Spex. Day 10 Monster. Skills: Healthy Friendship, Static Acceleration. Items: Dinosawer, Rex Spex, YLW-M4NT1S, Dino Disguise, Zoarcid, Race Carl. Patch 13.3.",
+      "card_path": "/card/6847znsxmgnn97n3f93625gkhq/Rex-Spex"
+    },
+    "gibbus": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/756fa578b23c904276ac036bc0ace07b88188d69@256.webp/encounter?v=6&sig=gNV%2FiJd2anklz9tOp0QFP4dzU9E%3D",
+      "bazaar_desc": "Gibbus. Day 10 Monster. Skills: Wax and Wane. Items: Moon Orb, Shot Glasses, Earrings, Weather Machine, Solar Drone, Steam Hose, Thrusters. Patch 13.3.",
+      "card_path": "/card/smn5wn7wmtv4mcj74yv7d0m6nk/Gibbus"
+    },
+    "eight_arm_davvy": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/7e823251072d1a197e880531b4c67c20de7180a3@256.webp/encounter?v=6&sig=ms2v9egdOMbcERkDLr%2FgAgsjw4E%3D",
+      "bazaar_desc": "Eight Arm Davvy. Day 10+ Monster. Skills: Arms Race, Hyper Focus, Strength. Items: Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Octopus, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass, Tiny Cutlass. Patch 13.3.",
+      "card_path": "/card/sjxttmxjkqwx3wfbw099ynxgbb/Eight-Arm-Davvy"
+    },
+    "conspiracy_theorist": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/568982e625f1cceaac35078655d982ea96075d4a@256.webp/encounter?v=6&sig=7nTehIqCFBV8jdFBc%2FZC5wFuWN0%3D",
+      "bazaar_desc": "Conspiracy Theorist. Crash Site Monster. Skills: Frontal Shielding, It's All Connected. Items: Tinfoil Hat, Globe, Sat-Comm, Wallace, Force Field. Patch 13.3.",
+      "card_path": "/card/lnh7hllybzyykcbtzdj73z0xgy/Conspiracy-Theorist"
+    },
+    "augmented_hellbilly": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/8df27bb03bff80dfba2b3c531cc8c5167ead49e1@256.webp/encounter?v=6&sig=s5X1qS%2FFE4nJLr%2BJ1f9kK1FTUIg%3D",
+      "bazaar_desc": "Augmented Hellbilly. Crash Site Monster. Skills: Strength, Retro-Tech. Items: Pitchfork, Ganjo, Bionic Arm, Lens, Tesla Coil, Battery. Patch 13.3.",
+      "card_path": "/card/2jsbyc0qfx895gt16flddjm98h/Augmented-Hellbilly"
+    },
+    "caltrops_trap": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/55331bf83c5b300414bffcdcd5400c368e253fd1@256.webp/encounter?v=6&sig=5wMN9CorKi7ALaSAcjLJpzObJcw%3D",
+      "bazaar_desc": "Caltrops Trap. Fiery Door Monster. Skills: . Items: Caltrops, Caltrops, Lockbox, Caltrops, Caltrops. Patch 13.3.",
+      "card_path": "/card/sl3c6s8l3s411k8v1zf7yv6gyy/Caltrops-Trap"
+    },
+    "the_vessel": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e55e240cfb475aa8e52a36cd18e78bf9cacf540f@256.webp/encounter?v=6&sig=HoiChsri1YVYgKKzPN3hB95SJCQ%3D",
+      "bazaar_desc": "The Vessel. Crash Site Monster. Skills: Energy Transference. Items: Boosted Saucer, Warp Drive, Tractor Beam, Abducted Cow, Learning Crystal, Galactic Translator. Patch 13.3.",
+      "card_path": "/card/dclnh6gj2b9yz84xmlpx9gg9ln/The-Vessel"
+    },
+    "aleppa_tantius": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/642521afc14eac9349811869d96db21877a65ad9@256.webp/encounter?v=6&sig=lJPUlxlw8ilLWCuDfCEhyn2R2Kc%3D",
+      "bazaar_desc": "Aleppa Tantius. Family Reunion Monster. Skills: Scramble Fighters. Items: Security Drone, Tantius Carrier, Rocket Drone, Caracara, Jetpack, Lightning Butterfly. Patch 13.3.",
+      "card_path": "/card/z35yyk9m4y950ggvxdkb20kt1n/Aleppa-Tantius"
+    },
+    "bounty_hunter": {
+      "image_url": "https://i.bazaardb.gg/v1/z13.0/e4779527fb80e116fbcc65e3375710a2041b92d0@256.webp/encounter?v=6&sig=a%2B%2Bajw3DeevDxYH7NIYri5ddNKA%3D",
+      "bazaar_desc": "Bounty Hunter. Encounter Monster. Skills: Ambush. Items: Revolver, Thrown Net, Revolver, Cutlass, Wanted Poster, Flashbang, Broken Shackles. Patch 13.3.",
+      "card_path": "/card/2bt0kdnjmxzzjf2hs805shhdhj/Bounty-Hunter"
     }
   }
 }
