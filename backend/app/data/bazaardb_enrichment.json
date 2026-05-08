@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-05-07T08:57:14.868442+00:00",
-    "wiki_catalog_items": 1560,
+    "fetched_at": "2026-05-08T07:55:15.117496+00:00",
+    "wiki_catalog_items": 1565,
     "wiki_catalog_monsters": 138
   },
   "items": {
@@ -7738,6 +7738,21 @@
       "image_url": "https://i.bazaardb.gg/v1/z14.0/15a0c1e93665740d314d72273a93584b6fabf7eb@256.webp/tall?v=6&sig=A1vBLmry%2F4tKY0EmEZSr3d0INgM%3D",
       "bazaar_desc": "Spark Plug: See 13 enchantments, 1 hidden ability. Offered by 1 merchant. Obtained from 2 sources. Passive: At the start of each fight, Haste an item for [2/3/4/5] second(s) Patch 14.0.",
       "card_path": "/card/tfnbgd2wjyg84z2gjnkkn6j2p2/Spark-Plug"
+    },
+    "one_shot_2c_one_kill": {
+      "error": "no matching card in search results"
+    },
+    "inspired_by_jules_3a_stove": {
+      "error": "no matching card in search results"
+    },
+    "eject_2c_eject": {
+      "error": "no matching card in search results"
+    },
+    "inspired_by_jules_3a_cooler": {
+      "error": "no matching card in search results"
+    },
+    "mortar_26_pestle": {
+      "error": "no matching card in search results"
     }
   },
   "monsters": {
