@@ -1,9 +1,9 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-06-03T11:04:00.298601+00:00",
-    "wiki_catalog_items": 1565,
-    "wiki_catalog_monsters": 138
+    "fetched_at": "2026-06-04T10:13:38.509176+00:00",
+    "wiki_catalog_items": 1591,
+    "wiki_catalog_monsters": 139
   },
   "items": {
     "28_hour_fitness": {
@@ -7753,6 +7753,136 @@
     },
     "mortar_26_pestle": {
       "error": "no matching card in search results"
+    },
+    "vector_command": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/058a3e07399d0c59fd081918ad00e38b38bc6605@256.webp/circle?v=6&sig=gJFJ8pfX1umABXj8DHepyD7WMNs%3D",
+      "bazaar_desc": "Vector Command: See 1 hidden ability. Offered by 5 skill trainers. Passive: When you use a Vehicle or Drone, your items gain [+3/+6/+9] Patch 15.0.",
+      "card_path": "/card/11ncvq0pjfkp7ptv1xfzjb2jbj6/Vector-Command"
+    },
+    "snowball_fight": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/b364bd0cba4365b059ab7892ba347fa637234d5e@256.webp/circle?v=6&sig=ncjXPHQzwZHG6XwGNiDvMi%2FVc0c%3D",
+      "bazaar_desc": "Snowball Fight: See 3 hidden abilities. Offered by 4 skill trainers. Passive: The first [4/8] times you use a Toy each fight, Charge a Freeze item 1 second(s) Patch 15.0.",
+      "card_path": "/card/12f1ptcmk8zjtd4cvggbwbz0n6t/Snowball-Fight"
+    },
+    "tech_savvy": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/d1ec3ea5dd38d933b0b19e33fae76ad49e32b013@256.webp/circle?v=6&sig=BSFjDh9XnHje6M5PBjmF71f7VQg%3D",
+      "bazaar_desc": "Tech Savvy: See 1 hidden ability. Offered by 4 skill trainers. Passive: The Cooldown of your Tech items is reduced by [5%/10%]. Patch 15.0.",
+      "card_path": "/card/12y7fmpc7hdfdykfm56gw634skx/Tech-Savvy"
+    },
+    "burning_infernal": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/8d5e410a4ab9381b5015bc1a4c115014a4f70d05@256.webp/circle?v=6&sig=oE7C0V8VTJjFFs3B4BPAkgeOedI%3D",
+      "bazaar_desc": "Burning Infernal: See 1 hidden ability. Obtained from 1 source. Passive: When you Burn, your items gain [10/15/20] Patch 15.0.",
+      "card_path": "/card/13m9t0ypk7jy17p5j9lv3mgbgcb/Burning-Infernal"
+    },
+    "poison_forge": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/a2c7b50f311b586421ad5427dd7021ba310a922f@256.webp/circle?v=6&sig=W0GchTmPSrWy9l9JNdYPSSufk0A%3D",
+      "bazaar_desc": "Poison Forge: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Poison, your items gain [+2/+4/+6] Damage for the fight Patch 15.0.",
+      "card_path": "/card/188jh9dhb4vsxllvx8dg6dt8m3g/Poison-Forge"
+    },
+    "poison_flame": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/2cde64149b17e1905fa0212f70465f4590dadb46@256.webp/circle?v=6&sig=I5rOQesCbVxnfxGYmEfYnUTOL0M%3D",
+      "bazaar_desc": "Poison Flame: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Poison, your items gain [+1/+2/+3] Burn for the fight Patch 15.0.",
+      "card_path": "/card/18lfg4hm2nhjcgqy5zzhmncdx1p/Poison-Flame"
+    },
+    "evasive_maneuvers": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/27839df212cb77fd664c3cbf94a84822b9b15fca@256.webp/circle?v=6&sig=invk8TpfBIJpTh9Q6wU69ZtwdXo%3D",
+      "bazaar_desc": "Evasive Maneuvers: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you use a Vehicle or Drone, your items gain [+3/+6/+9] Patch 15.0.",
+      "card_path": "/card/1d24hzkcbshz40n7ghwgkwyzgk/Evasive-Maneuvers"
+    },
+    "library_arsonist": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/2008ec91ede075966f2ab2e08b9e4e4a01d43fc4@256.webp/circle?v=6&sig=OerBbYS7UYTEJKzUSw9wrrjB2%2BI%3D",
+      "bazaar_desc": "Library Arsonist is a skill in The Bazaar game. Passive: You started the fire Tooltip:  | Patch 15.0.",
+      "card_path": "/card/2qztvjctmtjwtm5cmpsnwf31cd/Library-Arsonist"
+    },
+    "playful_arsonist": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/87fe70b9d228ed306aacd7d5ae22b2e4015c325d@256.webp/circle?v=6&sig=wXdkpWgte1G5KU8CPvfsyMMawYM%3D",
+      "bazaar_desc": "Playful Arsonist: See 3 hidden abilities. Offered by 5 skill trainers. Passive: The first [4/8] times you use a Toy each fight, Charge a Burn item 1 second(s) Patch 15.0.",
+      "card_path": "/card/5mz2wqxwm7k3py792gqzcb7s5s/Playful-Arsonist"
+    },
+    "merchant_club": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/451b39f8a329fc917c057545221e12b9e8ce2859@256.webp/circle?v=6&sig=ZCEfkvd9Lh%2Foj%2FbTryR%2Boj9r5%2BU%3D",
+      "bazaar_desc": "Merchant Club: See 2 hidden abilities. Passive: Merchants offer you one item at [1/2/4/8] less Gold Patch 15.0.",
+      "card_path": "/card/8dc26bhd4gc0nl8c9nzwlf2fk2/Merchant-Club"
+    },
+    "execute": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/e60ca376930ee663a379d801d1fcfc929fde6fb6@256.webp/circle?v=6&sig=g6Zfff1kICeAgyakG1m8pDZrWo0%3D",
+      "bazaar_desc": "Execute: See 2 hidden abilities. Offered by 3 skill trainers. Passive: The first time your opponent falls below 20% Max Health each fight, deal 9999 damage Patch 15.0.",
+      "card_path": "/card/8jvg57h0n4qfl9cd9bkqphx6j7/Execute"
+    },
+    "blight_rage": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/4d59879d59b52b77ee1bfebd051a801a8e0cca0f@256.webp/circle?v=6&sig=hFNpMLBo6p0Uq7PL40R9%2FVnKHLI%3D",
+      "bazaar_desc": "Blight Rage: See 1 hidden ability. Offered by 7 skill trainers. Passive: When you become Enraged, your items gain [+3/+6/+9/+12] for the fight Patch 15.0.",
+      "card_path": "/card/b02wz5y2yc8295c412lcpwyv/Blight-Rage"
+    },
+    "sous_chef": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/13875041be7857a67fbf6ea68b06fe287f41a0ab@256.webp/circle?v=6&sig=kmR48tvAt18Gh44H8ptG2uqVUls%3D",
+      "bazaar_desc": "Sous Chef: See 2 hidden abilities. Offered by 6 skill trainers. Passive: The first time you use a Food each fight, Haste [1/2/3] Tool(s) for 2 second(s) Patch 15.0.",
+      "card_path": "/card/f2t0wd7vzqccsd9zgfdv8k6zkx/Sous-Chef"
+    },
+    "piercing_rage": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/bc08daa0359571249a0a22a924d33ff769fd1d47@256.webp/circle?v=6&sig=tK6c7NoVWRAU%2F4eaKivuY5Vx%2FM4%3D",
+      "bazaar_desc": "Piercing Rage: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you become Enraged, your items gain [+10/+20/+30/+40] for the fight Patch 15.0.",
+      "card_path": "/card/gd65tf61fk4jbd1ghbxyt8lx77/Piercing-Rage"
+    },
+    "hot_wheels": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/e3d2fb89126d313a4ffe638b2a4528b5b153fea3@256.webp/circle?v=6&sig=t0p4P4Yp0wR%2FibNkTwq%2BVKk8VJM%3D",
+      "bazaar_desc": "Hot Wheels: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you use a Vehicle or Drone, your items gain [+1/+2/+3] Patch 15.0.",
+      "card_path": "/card/gzq5nvlb3j83v0mq0k151dx1fc/Hot-Wheels"
+    },
+    "burning_blade": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/07c3202635234e3323acb272d5072e6b6beb2157@256.webp/circle?v=6&sig=AKSK6QWVPn36gRb1MuZKLFtiNtk%3D",
+      "bazaar_desc": "Burning Blade: See 3 hidden abilities. Passive: The first [4/8] times you use a Weapon each fight, Charge a Burn item 1 second(s) Patch 15.0.",
+      "card_path": "/card/jd0xp11kjply36cslx24pdz3yb/Burning-Blade"
+    },
+    "defender_s_flames": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/2e922204a49180c2cb3a5614dd6a958e8f7ff212@256.webp/circle?v=6&sig=FRtETMcCBgYT%2BoR52dzKlr%2B%2FZio%3D",
+      "bazaar_desc": "Defender's Flames: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Shield, your items gain [+1/+2/+3] Burn Patch 15.0.",
+      "card_path": "/card/m0cfz1fh79t36mjx5hqlhnzc9c/Defender's-Flames"
+    },
+    "happy_accident": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/5e87f55bff2477152475750c6b678911e3c3c10c@256.webp/circle?v=6&sig=0rB2f0P1f4KcUdj7Ij2eoqY0%2B%2FQ%3D",
+      "bazaar_desc": "Happy Accident: See 2 hidden abilities. Obtained from 1 source. Passive: At the start of each fight, enchant one of your non-Enchanted Drones and one of your non-Enchanted Vehicles Patch 15.0.",
+      "card_path": "/card/q9yj47xg4w371mhkq3vzlkd12h/Happy-Accident"
+    },
+    "defender_s_toxins": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/c16f5d22bf90d34858bdc25f5b56f0f2da66814a@256.webp/circle?v=6&sig=3qPcxhT%2F0LV7Id2PQKCAKeVNGUA%3D",
+      "bazaar_desc": "Defender's Toxins: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you Shield, your items gain [+1/+2/+3] Poison Patch 15.0.",
+      "card_path": "/card/wlnwvc3pbszqw2tzwvxksy0d9s/Defender's-Toxins"
+    },
+    "data_transfer": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/d40740a4bcb05d34891198b2b9bd233b2ea64701@256.webp/circle?v=6&sig=NFIJUXS2BOmK7h%2Bznlyu7wdBM%2BQ%3D",
+      "bazaar_desc": "Data Transfer: See 3 hidden abilities. Offered by 6 skill trainers. Passive: When you use a Tech item, adjacent items gain [+3/+6/+9], [+3/+6/+9] and [+3/+6/+9] Patch 15.0.",
+      "card_path": "/card/zbsblfw9wpxq3w6pswybdpj3qq/Data-Transfer"
+    },
+    "caracal": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/fd0c63fceaba6cd9dad989eb7b6c2935c2198d1d@256.webp/tall?v=6&sig=Aqyi5%2F5K5xoFXzSdlk1g2gZa1kk%3D",
+      "bazaar_desc": "Caracal: See 13 enchantments, 4 hidden abilities. Offered by 16 merchants. Every 5.0 sec.: Deal [5/10/20/40] Damage for each Type this has Haste a small item for 1 second(s) Passive: At the start of each day, this gains a random Type Patch 15.0.",
+      "card_path": "/card/13jj00p8141sgwf9798tyt3lp8z/Caracal"
+    },
+    "fountain": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/8da31cb710887071feb7c981d504730291dd2016@256.webp/square?v=6&sig=Yv6OGmFQwnOBlfQkPynd9MPm2rU%3D",
+      "bazaar_desc": "Fountain: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Every 4.0 sec.: Slow [1/2/3] item(s) for 2 second(s) Charge your Heal and Regen items 1 second Patch 15.0.",
+      "card_path": "/card/1653p2vxsd3st6sxdmzx681vmbm/Fountain"
+    },
+    "rampage_module": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/2cd3e54648b1a5b75179999042a3fd6e095b28df@256.webp/tall?v=6&sig=eodIlV8EBYlT%2B42I5mpqoBA5C9k%3D",
+      "bazaar_desc": "RAMPage Module: See 13 enchantments, 2 hidden abilities. Offered by 16 merchants. Passive: When you Slow, Poison or Freeze, adjacent items gain [8/16/24] and [1/2/3] Patch 15.0.",
+      "card_path": "/card/19dy50448vlbm3w80dpxzq7021/RAMPage-Module"
+    },
+    "wind_dragon": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/777755e4dd823bec4656129d2e5cd3b0f42d5e1f@256.webp/square?v=6&sig=uDkyoA9eOJhiTJDjnRFh5zg2wic%3D",
+      "bazaar_desc": "Wind Dragon: See 13 enchantments, 3 hidden abilities. Offered by 16 merchants. Every [5.0/4.0/3.0] sec.: An item starts Flying Passive: When you use a Dragon or Flying item, Haste it for 1 second(s) and deal [10/15/20] damage Patch 15.0.",
+      "card_path": "/card/8kn50s4vyycdkwddc18x0j7cqz/Wind-Dragon"
+    },
+    "laurel_s_bouncy_ball": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/6d362478afa9a5c397171af38d493b9392988598@256.webp/tall?v=6&sig=H2n2VxHwwQkAGhp8F4InYDredLw%3D",
+      "bazaar_desc": "Laurel's Bouncy Ball: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Every 3.0 sec.: Haste 2 other item(s) for [1/2] second(s) Passive: When this Hastes an adjacent item, charge this 1 second Patch 15.0.",
+      "card_path": "/card/gn8j12pp3qxxsbq3pjbcxv2b40/Laurel's-Bouncy-Ball"
+    },
+    "burnacuda": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/42656581736d29b987b02b1e7c27d78a261a4386@256.webp/tall?v=6&sig=JJxXPt4pj4CPseNlbC3%2BT1sAogY%3D",
+      "bazaar_desc": "Burnacuda: See 13 enchantments, 2 hidden abilities. Offered by 18 merchants. Every 2.0 sec.: Burn [2/4/6/8] Haste an adjacent item for 1 second(s) Ammo: 2 Patch 15.0.",
+      "card_path": "/card/qfg1929872wkv794199zd6mz44/Burnacuda"
     }
   },
   "monsters": {
@@ -8429,6 +8559,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z14.0/a6eb39384558d41691b7d722f26fd8a1fedc5867@256.webp/encounter?v=6&sig=fCH%2Fi%2FswfI5wf3jjR7FqQ58%2FYr0%3D",
       "bazaar_desc": "Byg. Day 7 Monster. Skills: Workout Routine. Items: Pyg's Gym, Weights, Oinkment, Brass Knuckles, Championship Belt, Lifting Gloves. Patch 14.0.",
       "card_path": "/card/y5zpmgfwkshkfvkf0v2ywsxcg3/Byg"
+    },
+    "drone_operator": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/40dccdb1d12f1ef82a691177dadaba8016f02980@256.webp/encounter?v=6&sig=Yiut27bAjxpklh1z%2B9mtoVLO3Ps%3D",
+      "bazaar_desc": "Drone Operator. Day 5 Monster. Skills: Happy Accident. Items: Flame Jet Drone, Tugboat, Relay Drone, Angle Grinder Drone, Drone Crusher, Lightning Butterfly, Boom Boom Bot, Targeting Drone. Patch 15.0.",
+      "card_path": "/card/k0q27svqj7yk9qlpcs98psmz8f/Drone-Operator"
     }
   }
 }
