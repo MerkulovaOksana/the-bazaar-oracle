@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-06-04T10:13:38.509176+00:00",
-    "wiki_catalog_items": 1591,
+    "fetched_at": "2026-06-05T10:03:44.626694+00:00",
+    "wiki_catalog_items": 1600,
     "wiki_catalog_monsters": 139
   },
   "items": {
@@ -7883,6 +7883,51 @@
       "image_url": "https://i.bazaardb.gg/v1/z15.0/42656581736d29b987b02b1e7c27d78a261a4386@256.webp/tall?v=6&sig=JJxXPt4pj4CPseNlbC3%2BT1sAogY%3D",
       "bazaar_desc": "Burnacuda: See 13 enchantments, 2 hidden abilities. Offered by 18 merchants. Every 2.0 sec.: Burn [2/4/6/8] Haste an adjacent item for 1 second(s) Ammo: 2 Patch 15.0.",
       "card_path": "/card/qfg1929872wkv794199zd6mz44/Burnacuda"
+    },
+    "catch_of_the_day": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/8cdc9f0cade62e94d56e19b318837ac76e2c9d65@256.webp/circle?v=6&sig=zPqrm0hEqNheIkh8EtwFsfFU3B4%3D",
+      "bazaar_desc": "Catch of the Day: See 1 hidden ability. Offered by 6 skill trainers. Passive: Your items have [+2%/+4%/+6%] Crit chance per Food or Aquatic item you have Patch 15.0.",
+      "card_path": "/card/6lhz0q28lgpvn2c77k92j3q4wt/Catch-of-the-Day"
+    },
+    "catalytic_converter": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/8e3c51f86d8b5905102ca54b5531b86532f424b4@256.webp/circle?v=6&sig=aWHcl6qyE0jQ2bku94OQFqjrgQg%3D",
+      "bazaar_desc": "Catalytic Converter: See 2 hidden abilities. Offered by 5 skill trainers. Passive: When you buy or upgrade a skill, get a Catalyst Patch 15.0.",
+      "card_path": "/card/6pcmp9dbvjv3j4sy3bz2hf6gpb/Catalytic-Converter"
+    },
+    "suppressing_fire": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/1c5d537d6fc174d9ccf4dc65fe7014e40459efdd@256.webp/circle?v=6&sig=KqAXt%2BmJmlaf6sOnuUxhJVn4eSY%3D",
+      "bazaar_desc": "Suppressing Fire: See 3 hidden abilities. Offered by 4 skill trainers. Passive: The first [3/6] times you use an Ammo item each fight, an enemy item has its cooldown increased by 5% Patch 15.0.",
+      "card_path": "/card/f861w9ljbs8nwg66yzqyhvxqxk/Suppressing-Fire"
+    },
+    "ancient_weapons": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/78286d43cd56a36329b608e8f54b8da871cbb30e@256.webp/circle?v=6&sig=DYMxN%2F349am327WwM7rGNPLyeoU%3D",
+      "bazaar_desc": "Ancient Weapons: See 1 hidden ability. Offered by 5 skill trainers. Passive: When you use a Relic, your items gain [+3/+6/+9] for the fight Patch 15.0.",
+      "card_path": "/card/t7fnx9w9vpcnvnx74bxgyws7q6/Ancient-Weapons"
+    },
+    "flashpoint_toxins": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/4426f6797e00f6b5f9b9d6da7c9cc13f9e79b184@256.webp/circle?v=6&sig=03ostO7hjEQWzjD3I0ahlp9eMLE%3D",
+      "bazaar_desc": "Flashpoint Toxins: See 1 hidden ability. Offered by 6 skill trainers. Passive: When you use an Ammo item, your items gain [+1/+2/+3] Poison Patch 15.0.",
+      "card_path": "/card/wpq955mv7fk19tmnnlfnqljcsw/Flashpoint-Toxins"
+    },
+    "drone_crusher": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/ceac29b12e60e215967ed05e1599a0af6a4222da@256.webp/square?v=6&sig=OeWM2QX3vrj7qjKHRLmU%2BD35xN0%3D",
+      "bazaar_desc": "Drone Crusher: See 13 enchantments, 7 hidden abilities. Offered by 17 merchants. Obtained from 1 source. Every 4.0 sec.: Use and destroy adjacent small Drones Passive: When your items are destroyed, transform them into small Drone(s) and Burn [4/8/12] Passive: Your Drones' cooldowns are reduced by [0.5/1/1.5] second(s) Patch 15.0.",
+      "card_path": "/card/9gkpy4lcpq2xv49jj80nqfvqbw/Drone-Crusher"
+    },
+    "reroll_token": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/ee8d950870cc2eecc72fd0e91b59982af1397753@256.webp/tall?v=6&sig=vXTT2bZzy5HL5hmd2gDUyxc6ea4%3D",
+      "bazaar_desc": "Reroll Token: See 12 enchantments, 1 hidden ability. Obtained from 2 sources. Passive: When you sell this, reroll your hourly Encounters Patch 15.0.",
+      "card_path": "/card/cccm3xkdxhpbv2l5671ss0j2x5/Reroll-Token"
+    },
+    "atlas": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/50544385b6cae50de58edbf4cc14e472c5260d2c@256.webp/square?v=6&sig=CX2OFaNEqvt5FFlbfgl7f7W791c%3D",
+      "bazaar_desc": "Atlas: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Passive: When you fight a Monster, this permanently gains [+1/+2/+3] value Patch 15.0.",
+      "card_path": "/card/jjfk27csd57zxll7hgty7hzv7/Atlas"
+    },
+    "compass": {
+      "image_url": "https://i.bazaardb.gg/v1/z15.0/61a222fab66869da7dd3f77a7545b22a75417993@256.webp/tall?v=6&sig=4KgQzq%2F9gvHJC8Jcd38bajuKs2Q%3D",
+      "bazaar_desc": "Compass: See 12 enchantments, 3 hidden abilities. Offered by 15 merchants. Obtained from 1 source. Passive: When you visit a non-Merchant or non-Monster encounter, this permanently gains [1/2/3/4] value Passive: When you sell this, reroll your hourly Encounters Patch 15.0.",
+      "card_path": "/card/k2vsqvh23471c5c50qwpc5k5gt/Compass"
     }
   },
   "monsters": {
