@@ -6,8 +6,8 @@
     "catalog_item_ids": 947,
     "monsters_count": 101,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-06-05T10:03:16.883538+00:00",
-    "bazaar_gap_last_run_new_items": 9,
+    "bazaar_gap_import_at": "2026-06-10T10:25:17.262457+00:00",
+    "bazaar_gap_last_run_new_items": 0,
     "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
