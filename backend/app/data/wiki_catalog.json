@@ -2,13 +2,10 @@
   "meta": {
     "source": "thebazaar.wiki.gg Cargo (items+skills) + Category:Monsters",
     "items_count": 636,
-    "skills_count": 311,
-    "catalog_item_ids": 947,
-    "monsters_count": 101,
-    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-06-10T10:25:17.262457+00:00",
-    "bazaar_gap_last_run_new_items": 0,
-    "bazaar_gap_last_run_new_monsters": 0
+    "skills_count": 312,
+    "catalog_item_ids": 1601,
+    "monsters_count": 139,
+    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages."
   },
   "items": {
     "28_hour_fitness": {
@@ -17187,6 +17184,26 @@
       "applies_freeze": 0,
       "applies_poison": 0.0,
       "applies_haste": 2000,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0
+    },
+    "rage": {
+      "name": "Rage",
+      "desc": "When you use a Small/Medium/Large item, gain :Template:Rage/:Template:Rage/:Template:Rage",
+      "category": "skill",
+      "tier": "diamond",
+      "size": "small",
+      "cooldown_ms": 0,
+      "multicast": 1,
+      "damage": 0.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
       "applies_slow": 0,
       "applies_charge": 0,
       "crit_multiplier": 2.0

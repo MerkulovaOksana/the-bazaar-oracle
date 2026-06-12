@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-06-11T10:39:51.651976+00:00",
-    "wiki_catalog_items": 1600,
+    "fetched_at": "2026-06-12T10:17:51.811022+00:00",
+    "wiki_catalog_items": 1601,
     "wiki_catalog_monsters": 139
   },
   "items": {
@@ -7928,6 +7928,9 @@
       "image_url": "https://i.bazaardb.gg/v1/z15.0/61a222fab66869da7dd3f77a7545b22a75417993@256.webp/tall?v=6&sig=4KgQzq%2F9gvHJC8Jcd38bajuKs2Q%3D",
       "bazaar_desc": "Compass: See 12 enchantments, 3 hidden abilities. Offered by 15 merchants. Obtained from 1 source. Passive: When you visit a non-Merchant or non-Monster encounter, this permanently gains [1/2/3/4] value Passive: When you sell this, reroll your hourly Encounters Patch 15.0.",
       "card_path": "/card/k2vsqvh23471c5c50qwpc5k5gt/Compass"
+    },
+    "rage": {
+      "error": "no matching card in search results"
     }
   },
   "monsters": {
