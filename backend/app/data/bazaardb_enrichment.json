@@ -1,9 +1,9 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-07-01T09:52:02.419136+00:00",
-    "wiki_catalog_items": 1601,
-    "wiki_catalog_monsters": 139
+    "fetched_at": "2026-07-02T09:40:35.648050+00:00",
+    "wiki_catalog_items": 1604,
+    "wiki_catalog_monsters": 141
   },
   "items": {
     "28_hour_fitness": {
@@ -7931,6 +7931,21 @@
     },
     "rage": {
       "error": "no matching card in search results"
+    },
+    "covering_fire": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/0c333d4e2988cc37956c738e842598b012de2686@256.webp/circle?v=6&sig=CVE5YKpk0QUVYirjITeQWzBbg9I%3D",
+      "bazaar_desc": "Covering Fire: See 1 hidden ability. Obtained from 1 source. Passive: When you Crit, Shield equal to that item's Crit Chance Patch 16.0.",
+      "card_path": "/card/135zy9b0bp337ksy7nfqfd1hf89/Covering-Fire"
+    },
+    "executioner_s_mark": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/c833ea27a018a9d31580f31f7b6db1d15be83ea6@256.webp/circle?v=6&sig=bfTPC7M5EFHYz0zMIqgH0rAVz84%3D",
+      "bazaar_desc": "Executioner's Mark: See 1 hidden ability. Obtained from 1 source. Passive: While your enemy is below half health, your Weapons' Cooldowns are reduced by [5%/10%] Patch 16.0.",
+      "card_path": "/card/7yg0wpq5778q475d28q2w7z3ly/Executioner's-Mark"
+    },
+    "event_poster": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/fbf5af02157767b6743a7038a219842c529a589e@256.webp/tall?v=6&sig=geiRTRkTTRRAhBSIlBkuUcyrLO8%3D",
+      "bazaar_desc": "Event Poster: See 13 enchantments, 2 hidden abilities. Obtained from 1 source. Every 4.0 sec.: Charge [1/2/3] other Dragons 1 second Passive: Adjacent items are Dragons Patch 16.0.",
+      "card_path": "/card/c7q0yvk7cssmfp50z6235bnc3w/Event-Poster"
     }
   },
   "monsters": {
@@ -8612,6 +8627,16 @@
       "image_url": "https://i.bazaardb.gg/v1/z15.0/40dccdb1d12f1ef82a691177dadaba8016f02980@256.webp/encounter?v=6&sig=Yiut27bAjxpklh1z%2B9mtoVLO3Ps%3D",
       "bazaar_desc": "Drone Operator. Day 5 Monster. Skills: Happy Accident. Items: Flame Jet Drone, Tugboat, Relay Drone, Angle Grinder Drone, Drone Crusher, Lightning Butterfly, Boom Boom Bot, Targeting Drone. Patch 15.0.",
       "card_path": "/card/k0q27svqj7yk9qlpcs98psmz8f/Drone-Operator"
+    },
+    "capital_punisher": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/c9650edf48c852cc40d991675b4c0071747fc7e0@256.webp/encounter?v=6&sig=feBjYPskzEn2nCimOqn2uzPNdoo%3D",
+      "bazaar_desc": "Capital Punisher. Day 7 Monster. Skills: Executioner's Mark, Keen Eye. Items: Eagle Talisman, Steel Bramble, Executioner's Cleaver, Swash Buckle, Tusked Helm, Sharpening Stone, Bear Claws. Patch 16.0.",
+      "card_path": "/card/16201dp8lq780bbl6w6l2zt1t38/Capital-Punisher"
+    },
+    "annexed_army": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/708391aa034b05896d48058b17939be4ab6d8af4@256.webp/encounter?v=6&sig=TBU%2Bgvpdjd07INkfwXxbO3vk%2BZg%3D",
+      "bazaar_desc": "Annexed Army. Day 10 Monster. Skills: Covering Fire, Deadly Eye, Annexian Sabotage. Items: Shotgun, Integrated HUD, Cyber-Sai, Utility Belt, Gatling Gun, Laser Pistol. Patch 16.0.",
+      "card_path": "/card/qxn59msyvkyymd557xw9nl71db/Annexed-Army"
     }
   }
 }

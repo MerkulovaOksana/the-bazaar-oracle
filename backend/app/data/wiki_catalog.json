@@ -5,7 +5,10 @@
     "skills_count": 312,
     "catalog_item_ids": 1601,
     "monsters_count": 139,
-    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages."
+    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
+    "bazaar_gap_import_at": "2026-07-02T09:40:06.219126+00:00",
+    "bazaar_gap_last_run_new_items": 3,
+    "bazaar_gap_last_run_new_monsters": 2
   },
   "items": {
     "28_hour_fitness": {
@@ -34634,6 +34637,78 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/k2vsqvh23471c5c50qwpc5k5gt/Compass",
       "image_url": "https://i.bazaardb.gg/v1/z15.0/61a222fab66869da7dd3f77a7545b22a75417993@256.webp/tall?v=6&sig=4KgQzq%2F9gvHJC8Jcd38bajuKs2Q%3D"
+    },
+    "covering_fire": {
+      "name": "Covering Fire",
+      "desc": "Covering Fire: See 1 hidden ability. Obtained from 1 source. Passive: When you Crit, Shield equal to that item's Crit Chance Patch 16.0.",
+      "bazaar_desc": "Covering Fire: See 1 hidden ability. Obtained from 1 source. Passive: When you Crit, Shield equal to that item's Crit Chance Patch 16.0.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/135zy9b0bp337ksy7nfqfd1hf89/Covering-Fire",
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/0c333d4e2988cc37956c738e842598b012de2686@256.webp/circle?v=6&sig=CVE5YKpk0QUVYirjITeQWzBbg9I%3D"
+    },
+    "executioner_s_mark": {
+      "name": "Executioner's Mark",
+      "desc": "Executioner's Mark: See 1 hidden ability. Obtained from 1 source. Passive: While your enemy is below half health, your Weapons' Cooldowns are reduced by [5%/10%] Patch 16.0.",
+      "bazaar_desc": "Executioner's Mark: See 1 hidden ability. Obtained from 1 source. Passive: While your enemy is below half health, your Weapons' Cooldowns are reduced by [5%/10%] Patch 16.0.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/7yg0wpq5778q475d28q2w7z3ly/Executioner's-Mark",
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/c833ea27a018a9d31580f31f7b6db1d15be83ea6@256.webp/circle?v=6&sig=bfTPC7M5EFHYz0zMIqgH0rAVz84%3D"
+    },
+    "event_poster": {
+      "name": "Event Poster",
+      "desc": "Event Poster: See 13 enchantments, 2 hidden abilities. Obtained from 1 source. Every 4.0 sec.: Charge [1/2/3] other Dragons 1 second Passive: Adjacent items are Dragons Patch 16.0.",
+      "bazaar_desc": "Event Poster: See 13 enchantments, 2 hidden abilities. Obtained from 1 source. Every 4.0 sec.: Charge [1/2/3] other Dragons 1 second Passive: Adjacent items are Dragons Patch 16.0.",
+      "category": "property",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/c7q0yvk7cssmfp50z6235bnc3w/Event-Poster",
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/fbf5af02157767b6743a7038a219842c529a589e@256.webp/tall?v=6&sig=geiRTRkTTRRAhBSIlBkuUcyrLO8%3D"
     }
   },
   "monsters": {
@@ -36497,6 +36572,28 @@
       "bazaar_desc": "Drone Operator. Day 5 Monster. Skills: Happy Accident. Items: Flame Jet Drone, Tugboat, Relay Drone, Angle Grinder Drone, Drone Crusher, Lightning Butterfly, Boom Boom Bot, Targeting Drone. Patch 15.0.",
       "source": "bazaar_only",
       "bazaar_card_path": "/card/k0q27svqj7yk9qlpcs98psmz8f/Drone-Operator"
+    },
+    "capital_punisher": {
+      "name": "Capital Punisher",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z16.0/c9650edf48c852cc40d991675b4c0071747fc7e0@256.webp/encounter?v=6&sig=feBjYPskzEn2nCimOqn2uzPNdoo%3D",
+      "items": [],
+      "bazaar_desc": "Capital Punisher. Day 7 Monster. Skills: Executioner's Mark, Keen Eye. Items: Eagle Talisman, Steel Bramble, Executioner's Cleaver, Swash Buckle, Tusked Helm, Sharpening Stone, Bear Claws. Patch 16.0.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/16201dp8lq780bbl6w6l2zt1t38/Capital-Punisher"
+    },
+    "annexed_army": {
+      "name": "Annexed Army",
+      "hp": 400,
+      "day": 1,
+      "tier": "bronze",
+      "image": "https://i.bazaardb.gg/v1/z16.0/708391aa034b05896d48058b17939be4ab6d8af4@256.webp/encounter?v=6&sig=TBU%2Bgvpdjd07INkfwXxbO3vk%2BZg%3D",
+      "items": [],
+      "bazaar_desc": "Annexed Army. Day 10 Monster. Skills: Covering Fire, Deadly Eye, Annexian Sabotage. Items: Shotgun, Integrated HUD, Cyber-Sai, Utility Belt, Gatling Gun, Laser Pistol. Patch 16.0.",
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/qxn59msyvkyymd557xw9nl71db/Annexed-Army"
     }
   }
 }
