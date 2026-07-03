@@ -3,12 +3,12 @@
     "source": "thebazaar.wiki.gg Cargo (items+skills) + Category:Monsters",
     "items_count": 636,
     "skills_count": 312,
-    "catalog_item_ids": 1601,
-    "monsters_count": 139,
+    "catalog_item_ids": 1604,
+    "monsters_count": 141,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-07-02T09:40:06.219126+00:00",
-    "bazaar_gap_last_run_new_items": 3,
-    "bazaar_gap_last_run_new_monsters": 2
+    "bazaar_gap_import_at": "2026-07-03T09:51:32.404452+00:00",
+    "bazaar_gap_last_run_new_items": 0,
+    "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
     "28_hour_fitness": {
