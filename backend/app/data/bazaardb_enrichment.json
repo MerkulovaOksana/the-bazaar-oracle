@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-07-06T10:51:54.179025+00:00",
-    "wiki_catalog_items": 1604,
+    "fetched_at": "2026-07-07T10:15:21.023609+00:00",
+    "wiki_catalog_items": 1605,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -7946,6 +7946,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z16.0/fbf5af02157767b6743a7038a219842c529a589e@256.webp/tall?v=6&sig=geiRTRkTTRRAhBSIlBkuUcyrLO8%3D",
       "bazaar_desc": "Event Poster: See 13 enchantments, 2 hidden abilities. Obtained from 1 source. Every 4.0 sec.: Charge [1/2/3] other Dragons 1 second Passive: Adjacent items are Dragons Patch 16.0.",
       "card_path": "/card/c7q0yvk7cssmfp50z6235bnc3w/Event-Poster"
+    },
+    "aila_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Aila's Package: See 12 enchantments, 2 hidden abilities. Offered by 13 merchants. Passive: When you sell this to Aila, get an Enchanted large Weapon and 1 XP Patch 16.1.",
+      "card_path": "/card/137xn23pd0d1dhn96yhhd85kkb7/Aila's-Package"
     }
   },
   "monsters": {
