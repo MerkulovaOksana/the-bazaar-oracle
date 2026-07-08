@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-07-07T10:15:21.023609+00:00",
-    "wiki_catalog_items": 1605,
+    "fetched_at": "2026-07-08T08:51:58.676888+00:00",
+    "wiki_catalog_items": 1644,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -7951,6 +7951,201 @@
       "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
       "bazaar_desc": "Aila's Package: See 12 enchantments, 2 hidden abilities. Offered by 13 merchants. Passive: When you sell this to Aila, get an Enchanted large Weapon and 1 XP Patch 16.1.",
       "card_path": "/card/137xn23pd0d1dhn96yhhd85kkb7/Aila's-Package"
+    },
+    "midsworth_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Midsworth's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Midsworth, get an Enchanted Medium item and 1 XP Patch 16.1.",
+      "card_path": "/card/p0ykjyxwkhnh56gddmjnctg3k/Midsworth's-Package"
+    },
+    "hef_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Hef's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Hef, get an Enchanted small Burn item and 3 XP Patch 16.1.",
+      "card_path": "/card/h712blm38cpyypfd2vz1h41033/Hef's-Package"
+    },
+    "knightshade_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Knightshade's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Knightshade, get an Enchanted large Poison item and 3 XP Patch 16.1.",
+      "card_path": "/card/j6qx837pfswxzqc4ww2dc8cn26/Knightshade's-Package"
+    },
+    "shelter_shelby_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Shelter Shelby's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Shelter Shelby, get an Enchanted small Friend item and 1 XP Patch 16.1.",
+      "card_path": "/card/12yzghm2dz443b3xgpscd7pqgl4/Shelter-Shelby's-Package"
+    },
+    "freiya_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Freiya's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Freiya, get an Enchanted small Freeze item and 3 XP Patch 16.1.",
+      "card_path": "/card/7m1snlcjqqvcxj06vmy1f7l8s/Freiya's-Package"
+    },
+    "nautica_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Nautica's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Nautica, get an Enchanted medium Aquatic item and 1 XP Patch 16.1.",
+      "card_path": "/card/58jcldvmgngp1jpftj1wmsf7hq/Nautica's-Package"
+    },
+    "tok_s_clocks_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Tok's Clocks' Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Tok's Clocks, get an Enchanted large Haste, Slow and Cooldown item and 1 XP Patch 16.1.",
+      "card_path": "/card/38l7clzlwt1c07tk3qnh98585k/Tok's-Clocks'-Package"
+    },
+    "quixel_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Quixel's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Quixel, get an Enchanted Medium item and 1 XP Patch 16.1.",
+      "card_path": "/card/mcg4mld8fmdzg4nk615lh0295b/Quixel's-Package"
+    },
+    "cobweb_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Cobweb's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Cobweb, get an Enchanted small Slow item and 3 XP Patch 16.1.",
+      "card_path": "/card/wfcd4scmx9j3pkbmlz6pc03370/Cobweb's-Package"
+    },
+    "jay_jay_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Jay Jay's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Jay Jay, get an Enchanted large item and 1 XP Patch 16.1.",
+      "card_path": "/card/mc0xjbfm3syvtxhmt3m4gtv9zv/Jay-Jay's-Package"
+    },
+    "barkun_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Barkun's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Barkun, get an Enchanted Large item and 1 XP Patch 16.1.",
+      "card_path": "/card/16v803v2vjvhpkstfglw1zw1qgf/Barkun's-Package"
+    },
+    "pol_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Pol's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Pol, get an Enchanted Large item and 1 XP Patch 16.1.",
+      "card_path": "/card/2j6xzph63n1sw91p95qg2klskf/Pol's-Package"
+    },
+    "orion_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Orion's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Orion, get an Enchanted medium Tool item and 1 XP Patch 16.1.",
+      "card_path": "/card/dfkspdnf3pqwszc2b806tdc6nb/Orion's-Package"
+    },
+    "mittel_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Mittel's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Mittel, get an Enchanted Medium item and 1 XP Patch 16.1.",
+      "card_path": "/card/d9z8by7j2d6cl3d2g395zvpb7/Mittel's-Package"
+    },
+    "chronos_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Chronos' Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Chronos, get an Enchanted large Haste item and 3 XP Patch 16.1.",
+      "card_path": "/card/f218t3kc5j6h9jfksw0pwqlwhp/Chronos'-Package"
+    },
+    "curio_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Curio's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Curio, get an Enchanted medium Neutral item and 1 XP Patch 16.1.",
+      "card_path": "/card/m0s99bw7l6kf4hyq0xmbgvxh25/Curio's-Package"
+    },
+    "eli_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Eli's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Eli, get an Enchanted large Potion item and 1 XP Patch 16.1.",
+      "card_path": "/card/bg2pwgqxjcm0zq2pvgz9744y3k/Eli's-Package"
+    },
+    "the_antiquarian_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "The Antiquarian's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to The Antiquarian, get an Enchanted large Relic from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/9n0mmw727gx0lqxwc106vc3d56/The-Antiquarian's-Package"
+    },
+    "pinfeather_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Pinfeather's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Pinfeather, get an Enchanted large Flying from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/1bqc3jsnmlj66qybfnp13fqdzl/Pinfeather's-Package"
+    },
+    "tinker_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Tinker's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Tinker, get an Enchanted small Friend item and 1 XP Patch 16.1.",
+      "card_path": "/card/3mg0416dtpgch9ygnxcz66bl8/Tinker's-Package"
+    },
+    "goldie_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Goldie's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Goldie, get an Enchanted small item and 2 XP Patch 16.1.",
+      "card_path": "/card/2wc3wmj500bzmj5nz54308zmcw/Goldie's-Package"
+    },
+    "kina_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Kina's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Kina, get an Enchanted small non-Weapon item and 1 XP Patch 16.1.",
+      "card_path": "/card/33g6mpvd8hzb4q8v9pl2mykw5b/Kina's-Package"
+    },
+    "kev_s_armory_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Kev's Armory's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Kev's Armory, get an Enchanted medium Health or Shield item and 1 XP Patch 16.1.",
+      "card_path": "/card/426bb3vg2yty1v7mymfp2ghb6m/Kev's-Armory's-Package"
+    },
+    "aero_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Aero's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Aero, get an Enchanted medium Vehicle or Drone item and 1 XP Patch 16.1.",
+      "card_path": "/card/427g5px2zc9tqvfs0y62s1y8fb/Aero's-Package"
+    },
+    "aimbot_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Aimbot's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Aimbot, get an Enchanted large Crit from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/4kq80cqkylmz8qtfswvxxy98xx/Aimbot's-Package"
+    },
+    "serafina_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Serafina's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Serafina, get an Enchanted small Enchanted item and 3 XP Patch 16.1.",
+      "card_path": "/card/50gcjjwth8xgyj90vt55mkmgqd/Serafina's-Package"
+    },
+    "silvia_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Silvia's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Silvia, get an Enchanted small item and 1 XP Patch 16.1.",
+      "card_path": "/card/58mdc4pwn54x2tsg1xqxm4zh9t/Silvia's-Package"
+    },
+    "mr_morland_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Mr. Morland's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Mr. Morland, get an Enchanted small Property item and 1 XP Patch 16.1.",
+      "card_path": "/card/5zy1mw068q2x763yqv5n48fwkh/Mr.-Morland's-Package"
+    },
+    "luxe_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Luxe's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Luxe, get an Enchanted small item and 3 XP Patch 16.1.",
+      "card_path": "/card/62ch5g44mjw6c76ym1wjwphxz6/Luxe's-Package"
+    },
+    "herma_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/21f82fb7d8ef635d762f032e1dc40be3406ead01@256.webp/tall?v=7&sig=1PF6t3JkM4nFvouKQY1UMnmpJoI%3D",
+      "bazaar_desc": "Herma's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Herma, get an Enchanted small Heal or Regen item and 1 XP Patch 16.1.",
+      "card_path": "/card/64ww6w2ldbdqtl3qb79qdmzvgb/Herma's-Package"
+    },
+    "gastro_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Gastro's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Gastro, get an Enchanted medium Food item and 1 XP Patch 16.1.",
+      "card_path": "/card/9lwdmd8pscpmd8l342812y5dk4/Gastro's-Package"
+    },
+    "colt_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Colt's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Colt, get an Enchanted large Ammo item and 1 XP Patch 16.1.",
+      "card_path": "/card/9t7m49cvv0459n19tb0mwn0hj1/Colt's-Package"
+    },
+    "gaseo_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Gaseo's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Gaseo, get an Enchanted medium Apparel from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/d0nwqszdh6pcpm8qgglzkdjd6t/Gaseo's-Package"
+    },
+    "tatiana_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Tatiana's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Tatiana, get an Enchanted medium Toy from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/dkw1847l39701nps9b3t1kygvj/Tatiana's-Package"
+    },
+    "ande_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Ande's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Ande, get an Enchanted Small item and 1 XP Patch 16.1.",
+      "card_path": "/card/dylnnqgn7f1nqzl8j6cd6lg1pd/Ande's-Package"
+    },
+    "valpak_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "Valpak's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Valpak, get an Enchanted large item and 1 XP Patch 16.1.",
+      "card_path": "/card/f51kxgpgbyjq0zqtb2n43y2k3l/Valpak's-Package"
+    },
+    "prospero_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Prospero's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Prospero, get an Enchanted medium Economic item and 1 XP Patch 16.1.",
+      "card_path": "/card/j9lldyvllkznxy4ccqvy7shc92/Prospero's-Package"
+    },
+    "the_tester_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/5cfa64e37c41fe1168e0fdf476d5574640492920@256.webp/wide?v=7&sig=JWwgVIx71L%2FC0XSe1E0pAOgdvXc%3D",
+      "bazaar_desc": "The Tester's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to The Tester, get an Enchanted large Tech from any Hero item and 2 XP Patch 16.1.",
+      "card_path": "/card/kkc47vv82s0jx3q5f47ypdc1mx/The-Tester's-Package"
+    },
+    "flex_s_package": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
+      "bazaar_desc": "Flex's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Flex, get an Enchanted medium Max Health item and 3 XP Patch 16.1.",
+      "card_path": "/card/m3q6h89sy8bj465fjplbwyg7hn/Flex's-Package"
     }
   },
   "monsters": {
