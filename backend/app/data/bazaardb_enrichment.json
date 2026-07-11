@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-07-10T10:01:37.153431+00:00",
-    "wiki_catalog_items": 1644,
+    "fetched_at": "2026-07-11T08:20:11.670007+00:00",
+    "wiki_catalog_items": 1645,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -8146,6 +8146,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D",
       "bazaar_desc": "Flex's Package: See 12 enchantments, 2 hidden abilities. Passive: When you sell this to Flex, get an Enchanted medium Max Health item and 3 XP Patch 16.1.",
       "card_path": "/card/m3q6h89sy8bj465fjplbwyg7hn/Flex's-Package"
+    },
+    "annexian_sabotage": {
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/8416e36b636c931a09c3c1b8476d2e5a8bc352dd@256.webp/circle?v=8&sig=nFASISPhCt2HVnorSOBmVlLFs7s%3D",
+      "bazaar_desc": "Annexian Sabotage: See 8 hidden abilities. Obtained from 1 source. Passive: Items and skills have their Charge, Freeze, Slow, and Haste durations reduced by half Patch 16.1.",
+      "card_path": "/card/hmj02wl27nlsyjfjkqslp1mz0t/Annexian-Sabotage"
     }
   },
   "monsters": {

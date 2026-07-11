@@ -6,8 +6,8 @@
     "catalog_item_ids": 1644,
     "monsters_count": 141,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-07-10T10:01:11.356313+00:00",
-    "bazaar_gap_last_run_new_items": 0,
+    "bazaar_gap_import_at": "2026-07-11T08:19:46.954312+00:00",
+    "bazaar_gap_last_run_new_items": 1,
     "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
@@ -35669,6 +35669,30 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/m3q6h89sy8bj465fjplbwyg7hn/Flex's-Package",
       "image_url": "https://i.bazaardb.gg/v1/z16.0/917edb6a03da06f53642f51f8229e3ab6f235f2a@256.webp/square?v=7&sig=9Di1W4nt%2FUlK8f7qwk1a331fWm4%3D"
+    },
+    "annexian_sabotage": {
+      "name": "Annexian Sabotage",
+      "desc": "Annexian Sabotage: See 8 hidden abilities. Obtained from 1 source. Passive: Items and skills have their Charge, Freeze, Slow, and Haste durations reduced by half Patch 16.1.",
+      "bazaar_desc": "Annexian Sabotage: See 8 hidden abilities. Obtained from 1 source. Passive: Items and skills have their Charge, Freeze, Slow, and Haste durations reduced by half Patch 16.1.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/hmj02wl27nlsyjfjkqslp1mz0t/Annexian-Sabotage",
+      "image_url": "https://i.bazaardb.gg/v1/z16.0/8416e36b636c931a09c3c1b8476d2e5a8bc352dd@256.webp/circle?v=8&sig=nFASISPhCt2HVnorSOBmVlLFs7s%3D"
     }
   },
   "monsters": {
