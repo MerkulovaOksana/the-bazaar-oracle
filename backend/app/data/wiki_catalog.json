@@ -6,8 +6,8 @@
     "catalog_item_ids": 1780,
     "monsters_count": 141,
     "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
-    "bazaar_gap_import_at": "2026-08-14T07:44:27.746558+00:00",
-    "bazaar_gap_last_run_new_items": 0,
+    "bazaar_gap_import_at": "2026-08-15T06:56:50.734187+00:00",
+    "bazaar_gap_last_run_new_items": 1,
     "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
@@ -38933,6 +38933,30 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/zp7vcyx3jbzf3pk1fsqx1qfw9b/Lumi",
       "image_url": "https://i.bazaardb.gg/v1/z17.0/92294bb2131ea77813200c3d6ad3a20e3c68b99c@256.webp/tall?v=8&sig=7Md0uc%2Fce61IaCQ0l7%2FzYWc8hO8%3D"
+    },
+    "leaping_tempo": {
+      "name": "Leaping Tempo",
+      "desc": "Leaping Tempo: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use a Tempo item each fight, [1/2/3] item(s) start Flying Patch 17.2.",
+      "bazaar_desc": "Leaping Tempo: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use a Tempo item each fight, [1/2/3] item(s) start Flying Patch 17.2.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/x57s1tmcbd4y49c0j920m914n3/Leaping-Tempo",
+      "image_url": "https://i.bazaardb.gg/v1/z17.0/88d6773f568a93a07d2559f4f017680951eacdb5@256.webp/circle?v=8&sig=x43dKKZhT9gSaQmQPDT972Vsupk%3D"
     }
   },
   "monsters": {

@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-08-14T07:44:49.934332+00:00",
-    "wiki_catalog_items": 1780,
+    "fetched_at": "2026-08-15T06:57:12.716928+00:00",
+    "wiki_catalog_items": 1781,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -8826,6 +8826,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z17.0/92294bb2131ea77813200c3d6ad3a20e3c68b99c@256.webp/tall?v=8&sig=7Md0uc%2Fce61IaCQ0l7%2FzYWc8hO8%3D",
       "bazaar_desc": "Lumi: See 13 enchantments, 1 hidden ability. Offered by 15 merchants. Every [5.0/4.0/3.0] sec.: Charge adjacent Enchanted items 1 second Patch 17.1.",
       "card_path": "/card/zp7vcyx3jbzf3pk1fsqx1qfw9b/Lumi"
+    },
+    "leaping_tempo": {
+      "image_url": "https://i.bazaardb.gg/v1/z17.0/88d6773f568a93a07d2559f4f017680951eacdb5@256.webp/circle?v=8&sig=x43dKKZhT9gSaQmQPDT972Vsupk%3D",
+      "bazaar_desc": "Leaping Tempo: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use a Tempo item each fight, [1/2/3] item(s) start Flying Patch 17.2.",
+      "card_path": "/card/x57s1tmcbd4y49c0j920m914n3/Leaping-Tempo"
     }
   },
   "monsters": {
