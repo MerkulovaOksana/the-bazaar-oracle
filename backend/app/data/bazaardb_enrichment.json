@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-08-16T06:56:29.608241+00:00",
-    "wiki_catalog_items": 1781,
+    "fetched_at": "2026-08-17T07:12:10.676885+00:00",
+    "wiki_catalog_items": 1782,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -8831,6 +8831,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z17.0/88d6773f568a93a07d2559f4f017680951eacdb5@256.webp/circle?v=8&sig=x43dKKZhT9gSaQmQPDT972Vsupk%3D",
       "bazaar_desc": "Leaping Tempo: See 2 hidden abilities. Offered by 5 skill trainers. Passive: The first time you use a Tempo item each fight, [1/2/3] item(s) start Flying Patch 17.2.",
       "card_path": "/card/x57s1tmcbd4y49c0j920m914n3/Leaping-Tempo"
+    },
+    "it_still_works": {
+      "image_url": "https://i.bazaardb.gg/v1/z17.0/cc8d5a8bfc4029e0f8bcb16ed9d08c86563839a6@256.webp/circle?v=8&sig=CEjHolTeFsTklOR6hi%2B9F%2FfmZgE%3D",
+      "bazaar_desc": "It Still Works: See 3 hidden abilities. Obtained from 1 source. Passive: The first [1/2] times your items are destroyed, repair it Patch 17.2.",
+      "card_path": "/card/18vngplq14tcwcvkhw00jpp61y3/It-Still-Works"
     }
   },
   "monsters": {
