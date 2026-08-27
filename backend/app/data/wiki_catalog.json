@@ -5,7 +5,10 @@
     "skills_count": 312,
     "catalog_item_ids": 1782,
     "monsters_count": 141,
-    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages."
+    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
+    "bazaar_gap_import_at": "2026-08-27T17:54:16.295028+00:00",
+    "bazaar_gap_last_run_new_items": 1,
+    "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
     "28_hour_fitness": {
@@ -10070,13 +10073,13 @@
     },
     "sharpening_stone": {
       "name": "Sharpening Stone",
-      "desc": "When you sell this, your leftmost Weapon gains 5/10/15/20 Damage .",
-      "category": "weapon",
+      "desc": "When you sell this, your leftmost Weapon gains 4/8/16/32 Damage .",
+      "category": "property",
       "tier": "bronze",
       "size": "small",
-      "cooldown_ms": 6000,
+      "cooldown_ms": 0,
       "multicast": 1,
-      "damage": 10.0,
+      "damage": 0.0,
       "healing": 0.0,
       "shield_amount": 0.0,
       "crit_chance": 0.0,
@@ -38978,6 +38981,30 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/18vngplq14tcwcvkhw00jpp61y3/It-Still-Works",
       "image_url": "https://i.bazaardb.gg/v1/z17.0/cc8d5a8bfc4029e0f8bcb16ed9d08c86563839a6@256.webp/circle?v=8&sig=CEjHolTeFsTklOR6hi%2B9F%2FfmZgE%3D"
+    },
+    "photo_booth_grand_opening": {
+      "name": "Photo Booth Grand Opening",
+      "desc": "Photo Booth Grand Opening: Offered by 3 skill trainers. Passive: Photo Booth will appear at the start of Day 5 Patch 17.4.",
+      "bazaar_desc": "Photo Booth Grand Opening: Offered by 3 skill trainers. Passive: Photo Booth will appear at the start of Day 5 Patch 17.4.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/b9ttclt1nkb04xz17vl45h1pwv/Photo-Booth-Grand-Opening",
+      "image_url": "https://i.bazaardb.gg/v1/z17.0/0e4daf17ddd0745b397b5c55792139701b5886d5@256.webp/circle?v=8&sig=Ynbo3UbjR%2FraX1dtZxcsMmoY59k%3D"
     }
   },
   "monsters": {

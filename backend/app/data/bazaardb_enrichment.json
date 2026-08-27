@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-08-26T06:52:45.878420+00:00",
-    "wiki_catalog_items": 1782,
+    "fetched_at": "2026-08-27T17:54:46.570856+00:00",
+    "wiki_catalog_items": 1783,
     "wiki_catalog_monsters": 141
   },
   "items": {
@@ -8836,6 +8836,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z17.0/cc8d5a8bfc4029e0f8bcb16ed9d08c86563839a6@256.webp/circle?v=8&sig=CEjHolTeFsTklOR6hi%2B9F%2FfmZgE%3D",
       "bazaar_desc": "It Still Works: See 3 hidden abilities. Obtained from 1 source. Passive: The first [1/2] times your items are destroyed, repair it Patch 17.2.",
       "card_path": "/card/18vngplq14tcwcvkhw00jpp61y3/It-Still-Works"
+    },
+    "photo_booth_grand_opening": {
+      "image_url": "https://i.bazaardb.gg/v1/z17.0/0e4daf17ddd0745b397b5c55792139701b5886d5@256.webp/circle?v=8&sig=Ynbo3UbjR%2FraX1dtZxcsMmoY59k%3D",
+      "bazaar_desc": "Photo Booth Grand Opening: Offered by 3 skill trainers. Passive: Photo Booth will appear at the start of Day 5 Patch 17.4.",
+      "card_path": "/card/b9ttclt1nkb04xz17vl45h1pwv/Photo-Booth-Grand-Opening"
     }
   },
   "monsters": {
