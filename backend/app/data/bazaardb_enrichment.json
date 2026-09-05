@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-09-04T10:50:58.880202+00:00",
-    "wiki_catalog_items": 1811,
+    "fetched_at": "2026-09-05T10:28:31.379154+00:00",
+    "wiki_catalog_items": 1813,
     "wiki_catalog_monsters": 145
   },
   "items": {
@@ -8981,6 +8981,16 @@
       "image_url": "https://i.bazaardb.gg/v1/z18.0/5b323f94c4086d277b0512318da8171e68e9a419@256.webp/tall?v=8&sig=IAoNEe0hzC%2FhDo%2BS94uUpyv2K94%3D",
       "bazaar_desc": "Fridge Art: See 13 enchantments, 2 hidden abilities. Offered by 15 merchants. Passive: Your Small Tools are Toys Passive: At the start of each day, get a Toy or Tool Skill Patch 18.0.",
       "card_path": "/card/ylx6m4p4s88mmz1lhx2xvl4tgv/Fridge-Art"
+    },
+    "huge_tank": {
+      "image_url": "https://i.bazaardb.gg/v1/z18.0/d96ea6c290a0cf7243c536bba34790180391e14b@256.webp/circle?v=8&sig=jAM7dAf57JC3M2ZFPIQITbrDGNA%3D",
+      "bazaar_desc": "Huge Tank: See 2 hidden abilities. Offered by 6 skill trainers. Passive: Your items have +Shield equal to [1%/2%] of your Max Health Patch 18.1.",
+      "card_path": "/card/10w3flc3sqcdtlfw4yj934v55ty/Huge-Tank"
+    },
+    "huge_warrior": {
+      "image_url": "https://i.bazaardb.gg/v1/z18.0/ea0a83a6e9f2b7fee2c31af29191fc386e344cb1@256.webp/circle?v=8&sig=3rOIvbHZcnCR6d8cIlon%2BmQaIlc%3D",
+      "bazaar_desc": "Huge Warrior: See 2 hidden abilities. Offered by 6 skill trainers. Passive: Your items have +Damage equal to [1%/2%] of your Max Health Patch 18.1.",
+      "card_path": "/card/p95vl6k3xjmg4l3ty9zmfw6ly5/Huge-Warrior"
     }
   },
   "monsters": {
