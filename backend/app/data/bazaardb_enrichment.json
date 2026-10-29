@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-10-28T12:19:40.426834+00:00",
-    "wiki_catalog_items": 1861,
+    "fetched_at": "2026-10-29T12:52:24.496674+00:00",
+    "wiki_catalog_items": 1868,
     "wiki_catalog_monsters": 147
   },
   "items": {
@@ -9231,6 +9231,41 @@
       "image_url": "https://i.bazaardb.gg/v1/z19.0/ba3769e85b2aa8f0cb63cbbd79a0e721d51f7cd0@256.webp/square?v=8&sig=FcuwePzQSSQm0A9OOd9xgYbIm8o%3D",
       "bazaar_desc": "Sunlight Vault: See 13 enchantments, 3 hidden abilities. Offered by 15 merchants. Every 8.0 sec.: Destroy this and your Burn and Regen items gain +1 Multicast Passive: When you use a Relic, your items gain [4/6] and [4/6] Patch 19.0.",
       "card_path": "/card/xyyynjz0yj3gq0cdv62fj4kh7c/Sunlight-Vault"
+    },
+    "the_dragons_fan": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/b6dfc832bb7466903a833b12f628d1ecbc51e6c3@256.webp/circle?v=8&sig=%2F%2FtIfDDahbnLipb7lnMQndK3JOA%3D",
+      "bazaar_desc": "The Dragons' Fan is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from The Dragons Patch 19.4.",
+      "card_path": "/card/10yp738x66lnwqgzzl4l0276fn1/The-Dragons'-Fan"
+    },
+    "jules_sous_chef": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/b716c67e48da73521bbca2b220cf777b1094ea7e@256.webp/circle?v=8&sig=CoEf2urO%2BuQHA95AILdrQeQCsVA%3D",
+      "bazaar_desc": "Jules' Sous Chef is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Jules Patch 19.4.",
+      "card_path": "/card/78k4jn6txmg7gp34qyfs0wyw69/Jules'-Sous-Chef"
+    },
+    "dooley_s_pal": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/8bc5da9ad6e74499cb3668d503cc53fc05e75e05@256.webp/circle?v=8&sig=KbyTra5NYrOwXiN50dLLuX%2FnEl0%3D",
+      "bazaar_desc": "Dooley's Pal is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Dooley Patch 19.4.",
+      "card_path": "/card/7df21znqz5nt8wqkhnfq2fybkn/Dooley's-Pal"
+    },
+    "mak_s_confidant": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/732ecadc10f4dca95bd3743e3e74cc25785b8ea5@256.webp/circle?v=8&sig=M13pElNwxppPE9f%2B03Rx0JoYEiA%3D",
+      "bazaar_desc": "Mak's Confidant is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Mak Patch 19.4.",
+      "card_path": "/card/9c80bd6yh1c0mxfxb0gxbvwdsz/Mak's-Confidant"
+    },
+    "pygmalien_s_client": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/b96576657542be7b3096d06f0ece06e5318f2928@256.webp/circle?v=8&sig=%2Bm%2FDIu0JZh%2BhLl1pLixqvtDvHsM%3D",
+      "bazaar_desc": "Pygmalien's Client is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Pygmalien Patch 19.4.",
+      "card_path": "/card/hqcbz8jx8p2jn35g9h995y2wcm/Pygmalien's-Client"
+    },
+    "karnok_s_crush": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/f0b8a250966905e89dd4d829c42aaf2d1d54db6c@256.webp/circle?v=8&sig=ewL6JpWbpUO9saYfiJZRsRypMls%3D",
+      "bazaar_desc": "Karnok's Crush is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Karnok Patch 19.4.",
+      "card_path": "/card/npddqjgz8xk3csh950ljxdnqfc/Karnok's-Crush"
+    },
+    "stelle_s_supplier": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/906cc086fcd94fb9d1efcb0a6debe9071d7d5434@256.webp/circle?v=8&sig=mn7xkgb29IKOwd2%2B8l1oUCl5DsE%3D",
+      "bazaar_desc": "Stelle's Supplier is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Stelle Patch 19.4.",
+      "card_path": "/card/xl29k7cjnfs306211nn72z7897/Stelle's-Supplier"
     }
   },
   "monsters": {
