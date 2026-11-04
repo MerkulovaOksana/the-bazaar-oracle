@@ -1,8 +1,8 @@
 {
   "meta": {
     "source": "bazaardb.gg",
-    "fetched_at": "2026-11-03T13:48:17.508362+00:00",
-    "wiki_catalog_items": 1868,
+    "fetched_at": "2026-11-04T14:13:57.540248+00:00",
+    "wiki_catalog_items": 1869,
     "wiki_catalog_monsters": 147
   },
   "items": {
@@ -9266,6 +9266,11 @@
       "image_url": "https://i.bazaardb.gg/v1/z19.0/906cc086fcd94fb9d1efcb0a6debe9071d7d5434@256.webp/circle?v=8&sig=mn7xkgb29IKOwd2%2B8l1oUCl5DsE%3D",
       "bazaar_desc": "Stelle's Supplier is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Stelle Patch 19.4.",
       "card_path": "/card/xl29k7cjnfs306211nn72z7897/Stelle's-Supplier"
+    },
+    "vanessa_s_fence": {
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/bd382fbf87928a9f8063d9a2dc17073fa7a73771@256.webp/circle?v=8&sig=BOKjxkAjqhz5s%2FFm12S2b5iqcpM%3D",
+      "bazaar_desc": "Vanessa's Fence is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Vanessa Patch 19.4.",
+      "card_path": "/card/xktjnhjyv4d7kmvf7n8095kw4b/Vanessa's-Fence"
     }
   },
   "monsters": {

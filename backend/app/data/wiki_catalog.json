@@ -5,7 +5,10 @@
     "skills_count": 312,
     "catalog_item_ids": 1868,
     "monsters_count": 147,
-    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages."
+    "external_reference": "bazaardb.gg (e.g. patch 13.3) may list more rows than this wiki export; this file is limited to public wiki Cargo + monster pages.",
+    "bazaar_gap_import_at": "2026-11-04T14:13:36.420517+00:00",
+    "bazaar_gap_last_run_new_items": 1,
+    "bazaar_gap_last_run_new_monsters": 0
   },
   "items": {
     "28_hour_fitness": {
@@ -41042,6 +41045,30 @@
       "source": "bazaar_only",
       "bazaar_card_path": "/card/xl29k7cjnfs306211nn72z7897/Stelle's-Supplier",
       "image_url": "https://i.bazaardb.gg/v1/z19.0/906cc086fcd94fb9d1efcb0a6debe9071d7d5434@256.webp/circle?v=8&sig=mn7xkgb29IKOwd2%2B8l1oUCl5DsE%3D"
+    },
+    "vanessa_s_fence": {
+      "name": "Vanessa's Fence",
+      "desc": "Vanessa's Fence is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Vanessa Patch 19.4.",
+      "bazaar_desc": "Vanessa's Fence is a skill in The Bazaar game. Passive: Merchants now have a chance to offer items from Vanessa Patch 19.4.",
+      "category": "skill",
+      "tier": "bronze",
+      "size": "small",
+      "cooldown_ms": 6000,
+      "multicast": 1,
+      "damage": 12.0,
+      "healing": 0.0,
+      "shield_amount": 0.0,
+      "crit_chance": 0.0,
+      "applies_burn": 0.0,
+      "applies_freeze": 0,
+      "applies_poison": 0.0,
+      "applies_haste": 0,
+      "applies_slow": 0,
+      "applies_charge": 0,
+      "crit_multiplier": 2.0,
+      "source": "bazaar_only",
+      "bazaar_card_path": "/card/xktjnhjyv4d7kmvf7n8095kw4b/Vanessa's-Fence",
+      "image_url": "https://i.bazaardb.gg/v1/z19.0/bd382fbf87928a9f8063d9a2dc17073fa7a73771@256.webp/circle?v=8&sig=BOKjxkAjqhz5s%2FFm12S2b5iqcpM%3D"
     }
   },
   "monsters": {
